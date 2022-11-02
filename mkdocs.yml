@@ -1,0 +1,12 @@
+site_name: qchem-tda-explorations
+site_description: >-
+    A collection of examples accompanying the TDA-Qchem book (scratch repository).
+site_author: Gosia Olejniczak, Julien Tierny
+docs_dir: docs
+site_dir: build
+nav:
+    - Home: index.md
+    - About: README.md
+markdown_extensions:
+    - toc:
+        permalink: True
