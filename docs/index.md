@@ -23,13 +23,13 @@ There we describe how to reproduce the results and screenshots included in each 
 
 ### Chapter 6. Non-Covalent Interactions
 
-[Intermolecular hydrogen bonds in water dimer](h2oh2o/)
+[Intermolecular hydrogen bonds in water dimer](H2OH2O_Hbonds/)
 
-[Intramolecular hydrogen bonds in derivatives of 1H-pyrrole](c5h6on2/)
+[Intramolecular hydrogen bonds in derivatives of 1H-pyrrole](C5H6ON2_Hbonds/)
 
-[Intermolecular hydrogen bonds in At2-NH3 dimer](at2nh3/)
+[Intermolecular halogen bonds in At2-NH3 dimer](At2NH3_Xbonds/)
 
-[Intramolecular hydrogen bonds in CH2CHSAu molecule](ch2chsau/)
+[Intramolecular hydrogen bonds in CH2CHSAu molecule](CH2CHSAu_Hbonds/)
 
 ### Chapter 7
 
@@ -37,4 +37,9 @@ There we describe how to reproduce the results and screenshots included in each 
 
 ### Chapter 9
 
+[The magnetically-induced current density in LiH molecule](LiH_MICD/)
+
+[The magnetically-induced current density in C6H6 molecule](C6H6_MICD/)
+
+[The magnetically-induced current density in C4H4 molecule](C4H4_MICD/)
 
