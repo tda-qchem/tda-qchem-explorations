@@ -10,14 +10,14 @@ nav:
     - Home: index.md
     - About: README.md
 
-#theme:
-#  name: material
-#  palette: #
-#    - scheme: slate #
-#      primary: teal
-#      accent: teal
-#      display.background_color: grey
-#      background-color: grey
+theme:
+  name: material
+  palette: #
+    - scheme: slate #
+      primary: teal
+      accent: teal
+      display.background_color: grey
+      background-color: grey
 
 
 markdown_extensions:
