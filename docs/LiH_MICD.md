@@ -1,6 +1,11 @@
 # The magnetically-induced current density in LiH molecule
 
-![TODO-FIG](link)
+
+
+| ![Omega_bz.png](screenshots/LiH_MICD/Omega_bz.png) |
+|:--:|
+| Contour of omega_bz colored by bz_wz. Isovalue: omega_bz=0.75, bz_wz scale: restricted to [-0.1, 0.1]|
+
 
 
 ## Pipeline description
@@ -17,4 +22,8 @@
     * *bz_wz* - corresponds to the z-component of the curl of the current density vector (*j*) induced by the magnetic field (*b*) applied perpendicularly to the Li-H bond (*z*); it is a zz-component of the vorticity tensor.
 
 ## Outputs
+
+
+
+
 
