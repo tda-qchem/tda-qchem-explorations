@@ -1,10 +1,11 @@
 # The magnetically-induced current density in C6H6 molecule
 
-![TODO-FIG](link)
+| ![Omega_bz.png](screenshots/C6H6_MICD/Omega_bz.png) |
+|:--:|
+| Contour of omega_bz colored by bz_wz. Isovalue: omega_bz=0.52, bz_wz scale: restricted to [-0.1, 0.1]|
 
 
 ## Pipeline description
-
 
 ## Inputs
 
