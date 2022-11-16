@@ -39,5 +39,6 @@ These examples assume a default installation of DIRAC, TTK and QCTEN.
 
 # List of examples - data generation in progress:
 
+[Partitioning of a scalar function and integration over basins: electron density of H2O molecule](H2O_ED_basins/)
 
 

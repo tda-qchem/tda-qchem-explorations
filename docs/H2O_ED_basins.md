@@ -1,5 +1,10 @@
 # title
 
+<video width="320" height="240" controls>
+  <source src="videos/H2O_ED_basins/rotation128.ogv" type="video/mp4">
+</video>
+
+
 | ![figure.png](screenshots/EXAMPLE/figure.png) |
 |:--:|
 | Caption|
@@ -7,7 +12,14 @@
 
 # Pipeline description
 
-This example illustrates the challenges related to the segmentation of a domain of a scalar function into basins of uniform gradient flow from the Morse-Smale complex. As an example, we use the electron density of H2O molecule.
+This example illustrates the challenges related to the segmentation of a domain of a scalar function into basins of uniform gradient flow from the Morse-Smale complex, in particular:
+* proposing a segmentation which respects molecular symmetry and diminishes the the triangulation bias of the algorithms generating simplicial complexes;
+* getting a reliable predictions of values integrated over identified basins
+ 
+In this example, we use the electron density (ED) of H2O molecule as a test scalar field.
+
+Currently, we address these challenges by the rotational averaging of basins; this is a work in progress and detailed notes are [here](https://github.com/tda-qchem/tda-segmentation-rotational-averaging-paper/blob/main/notes.md).
+
 
 ## Quantum chemistry calculations
 
@@ -36,12 +48,19 @@ This example illustrates the challenges related to the segmentation of a domain 
 
 * Real-space data in VTI format:
 
-    * Electron density scalar field: [start_data_XXXX.vti](file.vti); data description:
-        * *ed* - electron density
+    * Electron density scalar field: [start_data_all.vti](../data/vti/start_data_all.vti); data description:
+        * *rho* - electron density of H2O molecule
 
 ### Outputs
 
 ### ParaView
+
+* state files from Julien:
+
+```
+cd data/H2O_ED_basins/pvsm
+paraview --state=rotations.pvsm
+```
 
 ### Python script
 
