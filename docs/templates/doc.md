@@ -11,7 +11,7 @@
 
 ### Inputs and run scripts
 
-* Molecular geometry of XXX molecule in CSV format (in atomic units): [mol.csv](molfile.csv)
+* Molecular geometry of XXX molecule in XYZ format (in Angstrom): [mol.xyz](molfile.xyz)
 * Input(s) for a wave function optimization: [inp.inp](inpfile.csv)
 * Input(s) for calculations of XXXX: : [inp.inp](inpfile.csv)
 * Run script: [run](run.sh)
