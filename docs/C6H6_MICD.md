@@ -1,4 +1,4 @@
-# The magnetically-induced current density in C6H6 molecule
+# The magnetically-induced current density in C6H6 molecule studied with the Omega function
 
 | ![Omega_bz.png](screenshots/C6H6_MICD/Omega_bz.png) |
 |:--:|

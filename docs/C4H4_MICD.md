@@ -1,4 +1,4 @@
-# The magnetically-induced current density in C4H4 molecule
+# The magnetically-induced current density in C4H4 molecule studied with the Omega function
 
 | ![Omega_bz.png](screenshots/C4H4_MICD/Omega_bz.png) |
 |:--:|
