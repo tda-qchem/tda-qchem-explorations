@@ -13,6 +13,12 @@ Each example includes:
 * links to quantum chemistry software and TTK documentation
 
 
+# Prerequisites
+
+These examples assume a default installation of DIRAC, TTK and QCTEN. 
+
+
+
 # List of examples
 
 
