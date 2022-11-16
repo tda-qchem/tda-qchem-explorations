@@ -44,11 +44,11 @@ Currently, we address these challenges by the rotational averaging of basins; th
 
 ### Inputs
 
-* Molecular geometry of H2O molecule in CSV format (in atomic units): [mol.csv](molfile.csv)
+* Molecular geometry of H2O molecule in CSV format (in atomic units): [H2O.csv](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/H2O_ED_basins/H2O.csv)
 
 * Real-space data in VTI format:
 
-    * Electron density scalar field: [start_data_all.vti](../data/vti/start_data_all.vti); data description:
+    * Electron density scalar field: [start_data_all.vti](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/H2O_ED_basins/vti/start_data_all.vti); data description:
         * *rho* - electron density of H2O molecule
 
 ### Outputs
