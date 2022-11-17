@@ -7,11 +7,11 @@
 
 # Pipeline description
 
-This example illustrates the calculation of the magnetically-induced current density (MICD) tensor in LiH molecule in the DIRAC software, followed by the calculation of the Omega index with the QCTEN script and the subsequent topological analysis of this index in the TTK software.                               
+This example illustrates the calculation of the magnetically-induced current density (MICD) tensor in LiH molecule in the DIRAC software, followed by the calculation of the Omega index with the QCTEN script and its subsequent topological analysis in the TTK software.
 
-The first step involving quantum chemistry calculations aims to export the MICD tensor and its gradient on a regular 3D grid. The setup chosen for these calculations involves the Dirac-Coulomb Hamiltonian, the Density Functional Theory method with the B3LYP functional, the basis set of triple-zeta quality (Def-TZVP), and the simple magnetic balance for the generation of a small component set in the presence of a magnetic perturbation. The magnetic field perturbation is applied perpendicularly to the Li-H bond ("z"). The cube grid has 128 nodes in each Cartesian direction. 
+The first step involving quantum chemistry calculations aims to export the MICD tensor and its gradient on a regular 3D grid. The setup chosen for these calculations involves the Dirac-Coulomb Hamiltonian, the Density Functional Theory method with the B3LYP functional, the basis set of triple-zeta quality (Def-TZVP), and the simple magnetic balance for the generation of a small component set in the presence of a magnetic perturbation. The magnetic field perturbation is applied perpendicularly to the Li-H bond ("z"). The cube grid has 128 points in each Cartesian direction.
 
-The purpose of the second step is a pointwise derivation of a scalar function from these tensor fields - in this case, the so-called Omega index, used as an indicator of vortices in the MICD field. This step also involves translating data exported in the previous step in CSV format to the VTI format favored by the TTK and ParaView codes. At the same time, it applies the resampling filter ("ResampleToImage") without changing the number of grid points or grid bounds.
+The purpose of the second step is a pointwise derivation of a scalar function from these tensor fields. In this case, the studied scalar field represent the so-called Omega index, which is used as an indicator of vortices in the first-order current density field. This step also involves translating data exported from DIRAC in CSV format to the VTI format favored by the TTK and ParaView codes. At the same time, it applies the resampling filter ("ResampleToImage") without changing the number of grid points or grid bounds.
 
 The final step involves analyzing the pre-processed Omega scalar field in the TTK software (one isosurface of this field is plotted in Figure XXX). This step starts with the calculation of the Morse-Smale complex ("XXX" filter) of the simplified data ("XXX" filter), which outputs elements of dimension 0 (critical points), dimension 1 (edges), and dimension 2 (surfaces)...{TODO}
 
@@ -35,7 +35,7 @@ The ultimate goal of this analysis is to extract vortices in the MICD field and 
 
 ### Execution
 
-* This paragraph assumes that the DIRAC's `pam` script is available in $PATH (see prerequisites - TODO, write a separate section)
+* This paragraph assumes that the DIRAC's `pam` script is available in `$PATH` (see prerequisites - TODO, write a separate section)
 * Wave function optimization and response calculations:
 
 ```
