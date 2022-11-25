@@ -84,7 +84,7 @@ SetActiveView(renderView3)
 # ----------------------------------------------------------------
 
 # create a new 'XML Image Data Reader'
-start_data_omega_bzvti = XMLImageDataReader(registrationName='start_data_omega_bz.vti', FileName=['/data/julien/Pro/git/collaborations/gosia/tda-qchem/tda-qchem-explorations/data/C6H6_MICD/vti/start_data_omega_bz.vti'])
+start_data_omega_bzvti = XMLImageDataReader(registrationName='start_data_omega_bz.vti', FileName=['data/C6H6_MICD/vti/start_data_omega_bz.vti'])
 start_data_omega_bzvti.CellArrayStatus = ['vtkGhostType']
 start_data_omega_bzvti.PointArrayStatus = ['bz_wz', 'omega_bz', 'vtkValidPointMask', 'vtkGhostType']
 start_data_omega_bzvti.TimeArray = 'None'
