@@ -58,6 +58,12 @@ start_data_allvti.CellArrayStatus = ['vtkGhostType']
 start_data_allvti.PointArrayStatus = ['rho', 'vtkValidPointMask', 'vtkGhostType']
 start_data_allvti.TimeArray = 'None'
 
+# create a new 'Contour'
+contour1 = Contour(registrationName='Contour1', Input=start_data_allvti)
+contour1.ContourBy = ['POINTS', 'rho']
+contour1.Isosurfaces = [0.1]
+contour1.PointMergeMethod = 'Uniform Binning'
+
 # create a new 'TTK TopologicalSimplificationByPersistence'
 tTKTopologicalSimplificationByPersistence1 = TTKTopologicalSimplificationByPersistence(registrationName='TTKTopologicalSimplificationByPersistence1', Input=start_data_allvti)
 tTKTopologicalSimplificationByPersistence1.InputArray = ['POINTS', 'rho']
@@ -87,12 +93,6 @@ threshold1.UpperThreshold = 2.0
 # create a new 'Threshold'
 threshold2 = Threshold(registrationName='Threshold2', Input=threshold1)
 threshold2.Scalars = ['CELLS', 'NumberOfCriticalPointsOnBoundary']
-
-# create a new 'Contour'
-contour1 = Contour(registrationName='Contour1', Input=start_data_allvti)
-contour1.ContourBy = ['POINTS', 'rho']
-contour1.Isosurfaces = [0.1]
-contour1.PointMergeMethod = 'Uniform Binning'
 
 # ----------------------------------------------------------------
 # setup the visualization in view 'renderView1'
@@ -323,19 +323,19 @@ threshold2Display.OpacityTransferFunction.Points = [2.0, 0.0, 0.5, 0.0, 3.0, 1.0
 # note: the Get..() functions create a new object, if needed
 # ----------------------------------------------------------------
 
-# get opacity transfer function/opacity map for 'CellDimension'
-cellDimensionPWF = GetOpacityTransferFunction('CellDimension')
-cellDimensionPWF.Points = [0.0, 0.0, 0.5, 0.0, 3.0, 1.0, 0.5, 0.0]
-cellDimensionPWF.ScalarRangeInitialized = 1
-
 # get opacity transfer function/opacity map for 'rho'
 rhoPWF = GetOpacityTransferFunction('rho')
 rhoPWF.Points = [0.10000000149011612, 0.0, 0.5, 0.0, 0.10001526027917862, 1.0, 0.5, 0.0]
 rhoPWF.ScalarRangeInitialized = 1
 
+# get opacity transfer function/opacity map for 'CellDimension'
+cellDimensionPWF = GetOpacityTransferFunction('CellDimension')
+cellDimensionPWF.Points = [0.0, 0.0, 0.5, 0.0, 3.0, 1.0, 0.5, 0.0]
+cellDimensionPWF.ScalarRangeInitialized = 1
+
 # ----------------------------------------------------------------
 # restore active source
-SetActiveSource(threshold2)
+SetActiveSource(tTKTopologicalSimplificationByPersistence1)
 # ----------------------------------------------------------------
 
 
