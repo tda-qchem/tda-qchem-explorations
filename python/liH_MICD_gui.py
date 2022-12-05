@@ -19,7 +19,7 @@ materialLibrary1 = GetMaterialLibrary()
 
 # Create a new 'Render View'
 renderView1 = CreateView('RenderView')
-renderView1.ViewSize = [1377, 564]
+renderView1.ViewSize = [1373, 564]
 renderView1.AxesGrid = 'GridAxes3DActor'
 renderView1.OrientationAxesVisibility = 0
 renderView1.CenterOfRotation = [0.0, -1e-20, 0.0]
@@ -34,7 +34,7 @@ renderView1.OSPRayMaterialLibrary = materialLibrary1
 
 # Create a new 'Render View'
 renderView10 = CreateView('RenderView')
-renderView10.ViewSize = [683, 563]
+renderView10.ViewSize = [750, 563]
 renderView10.AxesGrid = 'GridAxes3DActor'
 renderView10.OrientationAxesVisibility = 0
 renderView10.CenterOfRotation = [0.0, -1e-20, 0.0]
@@ -50,23 +50,97 @@ renderView10.BackEnd = 'OSPRay raycaster'
 renderView10.OSPRayMaterialLibrary = materialLibrary1
 
 # Create a new 'Render View'
+renderView11 = CreateView('RenderView')
+renderView11.ViewSize = [750, 563]
+renderView11.AxesGrid = 'GridAxes3DActor'
+renderView11.OrientationAxesVisibility = 0
+renderView11.CenterOfRotation = [0.0, 0.0, 3.266334533691406e-05]
+renderView11.StereoType = 'Crystal Eyes'
+renderView11.CameraPosition = [-0.5812353241563424, 19.77286197873074, 6.151246431197295]
+renderView11.CameraFocalPoint = [-0.08434227887015533, 0.22457085524336867, -0.6514562728539224]
+renderView11.CameraViewUp = [0.00802853791612718, -0.3284700936942724, 0.9444802486698202]
+renderView11.CameraFocalDisk = 1.0
+renderView11.CameraParallelScale = 7.845545096214063
+renderView11.UseColorPaletteForBackground = 0
+renderView11.Background = [1.0, 1.0, 1.0]
+renderView11.BackEnd = 'OSPRay raycaster'
+renderView11.Shadows = 1
+renderView11.AmbientSamples = 4
+renderView11.SamplesPerPixel = 4
+renderView11.OSPRayMaterialLibrary = materialLibrary1
+
+# Create a new 'Render View'
+renderView12 = CreateView('RenderView')
+renderView12.ViewSize = [1510, 1172]
+renderView12.InteractionMode = '2D'
+renderView12.AxesGrid = 'GridAxes3DActor'
+renderView12.OrientationAxesVisibility = 0
+renderView12.StereoType = 'Crystal Eyes'
+renderView12.CameraPosition = [0.0, 0.0, 37.50561681626333]
+renderView12.CameraViewUp = [4.440892098500626e-16, -1.0, 0.0]
+renderView12.CameraFocalDisk = 1.0
+renderView12.CameraParallelScale = 4.5284654804511275
+renderView12.UseColorPaletteForBackground = 0
+renderView12.Background = [1.0, 1.0, 1.0]
+renderView12.BackEnd = 'OSPRay raycaster'
+renderView12.OSPRayMaterialLibrary = materialLibrary1
+
+# Create a new 'Render View'
+renderView13 = CreateView('RenderView')
+renderView13.ViewSize = [1510, 1172]
+renderView13.InteractionMode = '2D'
+renderView13.AxesGrid = 'GridAxes3DActor'
+renderView13.OrientationAxesVisibility = 0
+renderView13.CenterOfRotation = [1.8272385756993126, 0.0, 0.0]
+renderView13.StereoType = 'Crystal Eyes'
+renderView13.CameraPosition = [42.99788415425163, 0.0, 0.0]
+renderView13.CameraFocalPoint = [1.8272385756993126, 0.0, 0.0]
+renderView13.CameraViewUp = [0.0, 0.0, 1.0]
+renderView13.CameraFocalDisk = 1.0
+renderView13.CameraParallelScale = 4.576017953063724
+renderView13.UseColorPaletteForBackground = 0
+renderView13.Background = [1.0, 1.0, 1.0]
+renderView13.BackEnd = 'OSPRay raycaster'
+renderView13.OSPRayMaterialLibrary = materialLibrary1
+
+# Create a new 'Render View'
+renderView14 = CreateView('RenderView')
+renderView14.ViewSize = [1510, 1172]
+renderView14.InteractionMode = '2D'
+renderView14.AxesGrid = 'GridAxes3DActor'
+renderView14.OrientationAxesVisibility = 0
+renderView14.CenterOfRotation = [0.0, -1.8043497209164818, 0.0]
+renderView14.StereoType = 'Crystal Eyes'
+renderView14.CameraPosition = [0.0, 38.67053788412107, 0.0]
+renderView14.CameraFocalPoint = [0.0, -1.8043497209164818, 0.0]
+renderView14.CameraViewUp = [1.0, 0.0, 0.0]
+renderView14.CameraFocalDisk = 1.0
+renderView14.CameraParallelScale = 5.9132436086409985
+renderView14.UseColorPaletteForBackground = 0
+renderView14.Background = [1.0, 1.0, 1.0]
+renderView14.BackEnd = 'OSPRay raycaster'
+renderView14.OSPRayMaterialLibrary = materialLibrary1
+
+# Create a new 'Render View'
 renderView2 = CreateView('RenderView')
-renderView2.ViewSize = [684, 563]
+renderView2.ViewSize = [750, 563]
 renderView2.AxesGrid = 'GridAxes3DActor'
 renderView2.OrientationAxesVisibility = 0
 renderView2.CenterOfRotation = [0.0, -1e-20, 0.0]
 renderView2.StereoType = 'Crystal Eyes'
-renderView2.CameraPosition = [0.0, 20.636890206955403, 0.0]
-renderView2.CameraFocalPoint = [0.0, -1e-20, 0.0]
-renderView2.CameraViewUp = [0.0, 0.0, 1.0]
+renderView2.CameraPosition = [-0.48610571363436184, 21.14156439337225, 5.938616165787505]
+renderView2.CameraFocalPoint = [-0.02574804975648673, -2.7045705873596004, -1.4561547569497613]
+renderView2.CameraViewUp = [-0.0029610111817006558, -0.2962398448439609, 0.9551089920734742]
 renderView2.CameraFocalDisk = 1.0
 renderView2.CameraParallelScale = 7.820080520075376
+renderView2.UseColorPaletteForBackground = 0
+renderView2.Background = [1.0, 1.0, 1.0]
 renderView2.BackEnd = 'OSPRay raycaster'
 renderView2.OSPRayMaterialLibrary = materialLibrary1
 
 # Create a new 'Render View'
 renderView3 = CreateView('RenderView')
-renderView3.ViewSize = [683, 563]
+renderView3.ViewSize = [682, 563]
 renderView3.AxesGrid = 'GridAxes3DActor'
 renderView3.OrientationAxesVisibility = 0
 renderView3.CenterOfRotation = [0.0, -1e-20, 0.0]
@@ -81,52 +155,51 @@ renderView3.OSPRayMaterialLibrary = materialLibrary1
 
 # Create a new 'Render View'
 renderView4 = CreateView('RenderView')
-renderView4.ViewSize = [684, 1172]
+renderView4.ViewSize = [681, 563]
 renderView4.AxesGrid = 'GridAxes3DActor'
 renderView4.OrientationAxesVisibility = 0
-renderView4.CenterOfRotation = [0.0, 1.9661997103305215, 0.0]
+renderView4.CenterOfRotation = [0.0, -1e-20, 0.0]
 renderView4.StereoType = 'Crystal Eyes'
-renderView4.CameraPosition = [0.0, 42.89490414558687, 0.0]
-renderView4.CameraFocalPoint = [0.0, 1.9661997103305215, 0.0]
+renderView4.CameraPosition = [0.0, 20.636890206955403, 0.0]
+renderView4.CameraFocalPoint = [0.0, -1e-20, 0.0]
 renderView4.CameraViewUp = [0.0, 0.0, 1.0]
 renderView4.CameraFocalDisk = 1.0
-renderView4.CameraParallelScale = 10.593128199216359
-renderView4.UseColorPaletteForBackground = 0
-renderView4.Background = [1.0, 1.0, 1.0]
+renderView4.CameraParallelScale = 7.820080520075376
 renderView4.BackEnd = 'OSPRay raycaster'
-renderView4.Shadows = 1
-renderView4.AmbientSamples = 4
-renderView4.SamplesPerPixel = 4
 renderView4.OSPRayMaterialLibrary = materialLibrary1
 
 # Create a new 'Render View'
 renderView5 = CreateView('RenderView')
-renderView5.ViewSize = [683, 564]
+renderView5.ViewSize = [750, 564]
 renderView5.AxesGrid = 'GridAxes3DActor'
 renderView5.OrientationAxesVisibility = 0
-renderView5.CenterOfRotation = [0.7125580310821533, 0.0, 0.0]
+renderView5.CenterOfRotation = [0.0, 0.0, 3.266334533691406e-05]
 renderView5.StereoType = 'Crystal Eyes'
-renderView5.CameraPosition = [1.8567215175885559, 6.49947558261868, 0.09456697029865793]
-renderView5.CameraFocalPoint = [1.0041010884536372, -0.037442552411962905, -0.030513653439580894]
-renderView5.CameraViewUp = [0.015946314931483005, -0.021207660170597074, 0.9996479131125091]
+renderView5.CameraPosition = [-0.5812353241563424, 19.77286197873074, 6.151246431197295]
+renderView5.CameraFocalPoint = [-0.08434227887015533, 0.22457085524336867, -0.6514562728539224]
+renderView5.CameraViewUp = [0.00802853791612718, -0.3284700936942724, 0.9444802486698202]
 renderView5.CameraFocalDisk = 1.0
-renderView5.CameraParallelScale = 11.743275661962203
+renderView5.CameraParallelScale = 7.845545096214063
 renderView5.UseColorPaletteForBackground = 0
 renderView5.Background = [1.0, 1.0, 1.0]
 renderView5.BackEnd = 'OSPRay raycaster'
+renderView5.Shadows = 1
+renderView5.AmbientSamples = 4
+renderView5.SamplesPerPixel = 4
 renderView5.OSPRayMaterialLibrary = materialLibrary1
 
 # Create a new 'Render View'
 renderView6 = CreateView('RenderView')
-renderView6.ViewSize = [683, 563]
+renderView6.ViewSize = [750, 564]
 renderView6.AxesGrid = 'GridAxes3DActor'
 renderView6.OrientationAxesVisibility = 0
+renderView6.CenterOfRotation = [0.7125580310821533, 0.0, 0.0]
 renderView6.StereoType = 'Crystal Eyes'
-renderView6.CameraPosition = [-0.23141696055091165, 11.655813358411772, 0.2895578809896814]
-renderView6.CameraFocalPoint = [-0.5359189544348181, 0.01715308415166948, -0.09482796784114833]
-renderView6.CameraViewUp = [0.003848458683573176, -0.03310897599412297, 0.9994443381571491]
+renderView6.CameraPosition = [1.8567215175885559, 6.49947558261868, 0.09456697029865793]
+renderView6.CameraFocalPoint = [1.0041010884536372, -0.037442552411962905, -0.030513653439580894]
+renderView6.CameraViewUp = [0.015946314931483005, -0.021207660170597074, 0.9996479131125091]
 renderView6.CameraFocalDisk = 1.0
-renderView6.CameraParallelScale = 7.820080520075376
+renderView6.CameraParallelScale = 11.743275661962203
 renderView6.UseColorPaletteForBackground = 0
 renderView6.Background = [1.0, 1.0, 1.0]
 renderView6.BackEnd = 'OSPRay raycaster'
@@ -134,14 +207,13 @@ renderView6.OSPRayMaterialLibrary = materialLibrary1
 
 # Create a new 'Render View'
 renderView7 = CreateView('RenderView')
-renderView7.ViewSize = [684, 564]
+renderView7.ViewSize = [750, 563]
 renderView7.AxesGrid = 'GridAxes3DActor'
 renderView7.OrientationAxesVisibility = 0
-renderView7.CenterOfRotation = [0.0, -1e-20, 0.0]
 renderView7.StereoType = 'Crystal Eyes'
-renderView7.CameraPosition = [-0.48610571363436184, 21.14156439337225, 5.938616165787505]
-renderView7.CameraFocalPoint = [-0.02574804975648673, -2.7045705873596004, -1.4561547569497613]
-renderView7.CameraViewUp = [-0.0029610111817006558, -0.2962398448439609, 0.9551089920734742]
+renderView7.CameraPosition = [-0.23141696055091165, 11.655813358411772, 0.2895578809896814]
+renderView7.CameraFocalPoint = [-0.5359189544348181, 0.01715308415166948, -0.09482796784114833]
+renderView7.CameraViewUp = [0.003848458683573176, -0.03310897599412297, 0.9994443381571491]
 renderView7.CameraFocalDisk = 1.0
 renderView7.CameraParallelScale = 7.820080520075376
 renderView7.UseColorPaletteForBackground = 0
@@ -151,15 +223,16 @@ renderView7.OSPRayMaterialLibrary = materialLibrary1
 
 # Create a new 'Render View'
 renderView8 = CreateView('RenderView')
-renderView8.ViewSize = [683, 564]
+renderView8.ViewSize = [750, 564]
 renderView8.AxesGrid = 'GridAxes3DActor'
 renderView8.OrientationAxesVisibility = 0
-renderView8.CenterOfRotation = [0.49936618737029903, 0.5000009768371569, 0.0]
+renderView8.CenterOfRotation = [0.0, -1e-20, 0.0]
 renderView8.StereoType = 'Crystal Eyes'
-renderView8.CameraPosition = [0.49936618737029903, 0.5000009768371569, 2.2564602931646442]
-renderView8.CameraFocalPoint = [0.49936618737029903, 0.5000009768371569, 0.0]
+renderView8.CameraPosition = [-0.48610571363436184, 21.14156439337225, 5.938616165787505]
+renderView8.CameraFocalPoint = [-0.02574804975648673, -2.7045705873596004, -1.4561547569497613]
+renderView8.CameraViewUp = [-0.0029610111817006558, -0.2962398448439609, 0.9551089920734742]
 renderView8.CameraFocalDisk = 1.0
-renderView8.CameraParallelScale = 0.7066580270502391
+renderView8.CameraParallelScale = 7.820080520075376
 renderView8.UseColorPaletteForBackground = 0
 renderView8.Background = [1.0, 1.0, 1.0]
 renderView8.BackEnd = 'OSPRay raycaster'
@@ -167,16 +240,15 @@ renderView8.OSPRayMaterialLibrary = materialLibrary1
 
 # Create a new 'Render View'
 renderView9 = CreateView('RenderView')
-renderView9.ViewSize = [684, 563]
+renderView9.ViewSize = [750, 564]
 renderView9.AxesGrid = 'GridAxes3DActor'
 renderView9.OrientationAxesVisibility = 0
-renderView9.CenterOfRotation = [0.0, -1e-20, 0.0]
+renderView9.CenterOfRotation = [0.49936618737029903, 0.5000009768371569, 0.0]
 renderView9.StereoType = 'Crystal Eyes'
-renderView9.CameraPosition = [-0.48610571363436184, 21.14156439337225, 5.938616165787505]
-renderView9.CameraFocalPoint = [-0.02574804975648673, -2.7045705873596004, -1.4561547569497613]
-renderView9.CameraViewUp = [-0.0029610111817006558, -0.2962398448439609, 0.9551089920734742]
+renderView9.CameraPosition = [0.49936618737029903, 0.5000009768371569, 2.2564602931646442]
+renderView9.CameraFocalPoint = [0.49936618737029903, 0.5000009768371569, 0.0]
 renderView9.CameraFocalDisk = 1.0
-renderView9.CameraParallelScale = 7.820080520075376
+renderView9.CameraParallelScale = 0.7066580270502391
 renderView9.UseColorPaletteForBackground = 0
 renderView9.Background = [1.0, 1.0, 1.0]
 renderView9.BackEnd = 'OSPRay raycaster'
@@ -191,35 +263,52 @@ SetActiveView(None)
 # create new layout object 'Input Data'
 inputData = CreateLayout(name='Input Data')
 inputData.SplitHorizontal(0, 0.500000)
-inputData.AssignView(1, renderView4)
+inputData.SplitVertical(1, 0.500000)
+inputData.AssignView(3, renderView5)
+inputData.AssignView(4, renderView11)
 inputData.SplitVertical(2, 0.500000)
-inputData.AssignView(5, renderView5)
-inputData.AssignView(6, renderView6)
-inputData.SetSize(1368, 1172)
+inputData.AssignView(5, renderView6)
+inputData.AssignView(6, renderView7)
+inputData.SetSize(1501, 1128)
+
+# create new layout object 'LIC Texture Back'
+lICTextureBack = CreateLayout(name='LIC Texture Back')
+lICTextureBack.AssignView(0, renderView14)
+lICTextureBack.SetSize(1510, 1172)
+
+# create new layout object 'LIC Texture Bottom'
+lICTextureBottom = CreateLayout(name='LIC Texture Bottom')
+lICTextureBottom.AssignView(0, renderView12)
+lICTextureBottom.SetSize(1510, 1172)
+
+# create new layout object 'LIC Texture Side'
+lICTextureSide = CreateLayout(name='LIC Texture Side')
+lICTextureSide.AssignView(0, renderView13)
+lICTextureSide.SetSize(1510, 1172)
 
 # create new layout object 'Layout #1'
 layout1 = CreateLayout(name='Layout #1')
 layout1.SplitVertical(0, 0.500000)
 layout1.AssignView(1, renderView1)
 layout1.SplitHorizontal(2, 0.500000)
-layout1.AssignView(5, renderView2)
-layout1.AssignView(6, renderView3)
-layout1.SetSize(1377, 1128)
+layout1.AssignView(5, renderView3)
+layout1.AssignView(6, renderView4)
+layout1.SetSize(1373, 1128)
 
 # create new layout object 'Topological Analysis'
 topologicalAnalysis = CreateLayout(name='Topological Analysis')
 topologicalAnalysis.SplitHorizontal(0, 0.500000)
 topologicalAnalysis.SplitVertical(1, 0.500000)
-topologicalAnalysis.AssignView(3, renderView7)
-topologicalAnalysis.AssignView(4, renderView9)
+topologicalAnalysis.AssignView(3, renderView8)
+topologicalAnalysis.AssignView(4, renderView10)
 topologicalAnalysis.SplitVertical(2, 0.500000)
-topologicalAnalysis.AssignView(5, renderView8)
-topologicalAnalysis.AssignView(6, renderView10)
-topologicalAnalysis.SetSize(1368, 1128)
+topologicalAnalysis.AssignView(5, renderView9)
+topologicalAnalysis.AssignView(6, renderView2)
+topologicalAnalysis.SetSize(1501, 1128)
 
 # ----------------------------------------------------------------
 # restore active view
-SetActiveView(renderView8)
+SetActiveView(renderView9)
 # ----------------------------------------------------------------
 
 # ----------------------------------------------------------------
@@ -227,21 +316,21 @@ SetActiveView(renderView8)
 # ----------------------------------------------------------------
 
 # create a new 'XML Image Data Reader'
+start_data_bzvti = XMLImageDataReader(registrationName='start_data_bz.vti', FileName=['/data/julien/Pro/git/collaborations/gosia/tda-qchem/tda-qchem-explorations/data/LiH_MICD/vti/start_data_bz.vti'])
+start_data_bzvti.PointArrayStatus = ['bz_jx', 'bz_jy', 'bz_jz']
+start_data_bzvti.TimeArray = 'None'
+
+# create a new 'XML Image Data Reader'
 start_data_omega_bzvti = XMLImageDataReader(registrationName='start_data_omega_bz.vti', FileName=['data/LiH_MICD/vti/start_data_omega_bz.vti'])
 start_data_omega_bzvti.CellArrayStatus = ['vtkGhostType']
 start_data_omega_bzvti.PointArrayStatus = ['bz_wz', 'omega_bz', 'vtkValidPointMask', 'vtkGhostType']
 start_data_omega_bzvti.TimeArray = 'None'
 
-# create a new 'TTK DiscreteGradient'
-tTKDiscreteGradient1 = TTKDiscreteGradient(registrationName='TTKDiscreteGradient1', Input=start_data_omega_bzvti)
-tTKDiscreteGradient1.ScalarField = ['POINTS', 'omega_bz']
-tTKDiscreteGradient1.OffsetField = ['POINTS', 'bz_wz']
-tTKDiscreteGradient1.ComputeGradientGlyphs = 0
-
-# create a new 'Calculator'
-calculator1 = Calculator(registrationName='Calculator1', Input=start_data_omega_bzvti)
-calculator1.ResultArrayName = 'oppositeOmega'
-calculator1.Function = '-omega_bz'
+# create a new 'Contour'
+contour4 = Contour(registrationName='Contour4', Input=start_data_omega_bzvti)
+contour4.ContourBy = ['POINTS', 'omega_bz']
+contour4.Isosurfaces = [0.996]
+contour4.PointMergeMethod = 'Uniform Binning'
 
 # create a new 'Contour'
 contour2 = Contour(registrationName='Contour2', Input=start_data_omega_bzvti)
@@ -252,35 +341,202 @@ contour2.PointMergeMethod = 'Uniform Binning'
 # create a new 'Connectivity'
 connectivity2 = Connectivity(registrationName='Connectivity2', Input=contour2)
 
+# create a new 'Append Attributes'
+appendAttributes1 = AppendAttributes(registrationName='AppendAttributes1', Input=[start_data_bzvti, start_data_omega_bzvti])
+
+# create a new 'Calculator'
+calculator2 = Calculator(registrationName='Calculator2', Input=appendAttributes1)
+calculator2.ResultArrayName = 'Bz'
+calculator2.Function = 'bz_jx*iHat+bz_jy*jHat+bz_jz*kHat'
+
+# create a new 'Slice'
+slice3 = Slice(registrationName='Slice3', Input=calculator2)
+slice3.SliceType = 'Plane'
+slice3.HyperTreeGridSlicer = 'Plane'
+slice3.SliceOffsetValues = [0.0]
+
+# init the 'Plane' selected for 'SliceType'
+slice3.SliceType.Origin = [0.0, -3.0421146784507793, 0.0]
+slice3.SliceType.Normal = [0.0, 1.0, 0.0]
+
+# create a new 'Calculator'
+calculator7 = Calculator(registrationName='Calculator7', Input=slice3)
+calculator7.ResultArrayName = 'v'
+calculator7.Function = 'coordsX'
+
+# create a new 'Calculator'
+calculator8 = Calculator(registrationName='Calculator8', Input=calculator7)
+calculator8.ResultArrayName = 'u'
+calculator8.Function = 'coordsZ'
+
+# create a new 'TTK TextureMapFromField'
+tTKTextureMapFromField3 = TTKTextureMapFromField(registrationName='TTKTextureMapFromField3', Input=calculator8)
+tTKTextureMapFromField3.OnlyUComponent = 0
+tTKTextureMapFromField3.UComponent = ['POINTS', 'u']
+tTKTextureMapFromField3.VComponent = ['POINTS', 'v']
+
+# create a new 'Stream Tracer'
+streamTracer2 = StreamTracer(registrationName='StreamTracer2', Input=calculator2,
+    SeedType='Line')
+streamTracer2.Vectors = ['POINTS', 'Bz']
+streamTracer2.MaximumStreamlineLength = 10.061825318164619
+
+# init the 'Line' selected for 'SeedType'
+streamTracer2.SeedType.Point1 = [-3.8535974531291313, -0.2632180773499126, -4.601697315219196]
+streamTracer2.SeedType.Point2 = [-3.8535974531291313, -0.2632180773499126, 3.8651295979454225]
+streamTracer2.SeedType.Resolution = 25
+
+# create a new 'Tube'
+tube5 = Tube(registrationName='Tube5', Input=streamTracer2)
+tube5.Scalars = ['POINTS', 'AngularVelocity']
+tube5.Vectors = ['POINTS', 'Normals']
+tube5.Radius = 0.01
+
+# create a new 'Slice'
+slice1 = Slice(registrationName='Slice1', Input=calculator2)
+slice1.SliceType = 'Plane'
+slice1.HyperTreeGridSlicer = 'Plane'
+slice1.SliceOffsetValues = [0.0]
+
+# init the 'Plane' selected for 'SliceType'
+slice1.SliceType.Origin = [0.0, 0.0, -2.9248158671542552]
+slice1.SliceType.Normal = [0.0, 0.0, 1.0]
+
+# create a new 'Slice'
+slice2 = Slice(registrationName='Slice2', Input=calculator2)
+slice2.SliceType = 'Plane'
+slice2.HyperTreeGridSlicer = 'Plane'
+slice2.SliceOffsetValues = [0.0]
+
+# init the 'Plane' selected for 'SliceType'
+slice2.SliceType.Origin = [4.044891431016442, 0.0, 0.0]
+
+# create a new 'Calculator'
+calculator3 = Calculator(registrationName='Calculator3', Input=slice1)
+calculator3.ResultArrayName = 'x'
+calculator3.Function = '-coordsX'
+
+# create a new 'Calculator'
+calculator4 = Calculator(registrationName='Calculator4', Input=calculator3)
+calculator4.ResultArrayName = 'y'
+calculator4.Function = 'coordsY'
+
+# create a new 'TTK ScalarFieldNormalizer'
+tTKScalarFieldNormalizer1 = TTKScalarFieldNormalizer(registrationName='TTKScalarFieldNormalizer1', Input=start_data_omega_bzvti)
+tTKScalarFieldNormalizer1.ScalarField = ['POINTS', 'omega_bz']
+
+# create a new 'TTK TopologicalSimplificationByPersistence'
+tTKTopologicalSimplificationByPersistence1 = TTKTopologicalSimplificationByPersistence(registrationName='TTKTopologicalSimplificationByPersistence1', Input=tTKScalarFieldNormalizer1)
+tTKTopologicalSimplificationByPersistence1.InputArray = ['POINTS', 'omega_bz']
+tTKTopologicalSimplificationByPersistence1.PersistenceThreshold = 0.3
+
+# create a new 'TTK PersistenceDiagram'
+tTKPersistenceDiagram1 = TTKPersistenceDiagram(registrationName='TTKPersistenceDiagram1', Input=tTKScalarFieldNormalizer1)
+tTKPersistenceDiagram1.ScalarField = ['POINTS', 'omega_bz']
+tTKPersistenceDiagram1.InputOffsetField = ['POINTS', 'bz_wz']
+
+# create a new 'Threshold'
+threshold12 = Threshold(registrationName='Threshold12', Input=tTKPersistenceDiagram1)
+threshold12.Scalars = ['CELLS', 'PairIdentifier']
+threshold12.LowerThreshold = -0.1
+threshold12.UpperThreshold = 99999.0
+
+# create a new 'Threshold'
+threshold10 = Threshold(registrationName='Threshold10', Input=threshold12)
+threshold10.Scalars = ['CELLS', 'Persistence']
+threshold10.LowerThreshold = 0.3
+threshold10.UpperThreshold = 1.9999999999999998
+
+# create a new 'Extract Surface'
+extractSurface3 = ExtractSurface(registrationName='ExtractSurface3', Input=threshold10)
+
+# create a new 'Tube'
+tube3 = Tube(registrationName='Tube3', Input=extractSurface3)
+tube3.Scalars = ['POINTS', '']
+tube3.Vectors = ['POINTS', 'Coordinates']
+tube3.Radius = 0.01
+
+# create a new 'TTK IcospheresFromPoints'
+tTKIcospheresFromPoints3 = TTKIcospheresFromPoints(registrationName='TTKIcospheresFromPoints3', Input=threshold10)
+tTKIcospheresFromPoints3.Radius = 0.025
+
+# create a new 'TTK IcospheresFromPoints'
+tTKIcospheresFromPoints4 = TTKIcospheresFromPoints(registrationName='TTKIcospheresFromPoints4', Input=tTKPersistenceDiagram1)
+tTKIcospheresFromPoints4.Radius = 0.015
+
 # create a new 'Threshold'
 threshold6 = Threshold(registrationName='Threshold6', Input=connectivity2)
 threshold6.Scalars = ['POINTS', 'RegionId']
 threshold6.LowerThreshold = 1.0
 threshold6.UpperThreshold = 1.0
 
-# create a new 'Contour'
-contour4 = Contour(registrationName='Contour4', Input=start_data_omega_bzvti)
-contour4.ContourBy = ['POINTS', 'omega_bz']
-contour4.Isosurfaces = [0.996]
-contour4.PointMergeMethod = 'Uniform Binning'
+# create a new 'Stream Tracer'
+streamTracer1 = StreamTracer(registrationName='StreamTracer1', Input=calculator2,
+    SeedType='Line')
+streamTracer1.Vectors = ['POINTS', 'Bz']
+streamTracer1.MaximumStreamlineLength = 10.061825318164619
+
+# init the 'Line' selected for 'SeedType'
+streamTracer1.SeedType.Point1 = [-1.9534905127557192, -0.04254856215702371, -4.218094425531314]
+streamTracer1.SeedType.Point2 = [-1.9534905127557192, -0.04254856215702371, 4.248732487633305]
+streamTracer1.SeedType.Resolution = 100
 
 # create a new 'Threshold'
-threshold8 = Threshold(registrationName='Threshold8', Input=connectivity2)
-threshold8.Scalars = ['POINTS', 'RegionId']
+threshold11 = Threshold(registrationName='Threshold11', Input=tube3)
+threshold11.Scalars = ['CELLS', 'PairIdentifier']
+threshold11.LowerThreshold = -0.1
+threshold11.UpperThreshold = 190.0
+
+# create a new 'Extract Surface'
+extractSurface4 = ExtractSurface(registrationName='ExtractSurface4', Input=tTKPersistenceDiagram1)
+
+# create a new 'Tube'
+tube8 = Tube(registrationName='Tube8', Input=extractSurface4)
+tube8.Scalars = ['POINTS', 'CriticalType']
+tube8.Vectors = ['POINTS', 'Coordinates']
+tube8.Radius = 0.0075
+
+# create a new 'Calculator'
+calculator1 = Calculator(registrationName='Calculator1', Input=start_data_omega_bzvti)
+calculator1.ResultArrayName = 'oppositeOmega'
+calculator1.Function = '-omega_bz'
 
 # create a new 'TTK PersistentGenerators'
 tTKPersistentGenerators1 = TTKPersistentGenerators(registrationName='TTKPersistentGenerators1', Input=calculator1)
 tTKPersistentGenerators1.ScalarField = ['POINTS', 'oppositeOmega']
 tTKPersistentGenerators1.InputOffsetField = ['POINTS', 'oppositeOmega']
 
-# create a new 'TTK ScalarFieldNormalizer'
-tTKScalarFieldNormalizer1 = TTKScalarFieldNormalizer(registrationName='TTKScalarFieldNormalizer1', Input=start_data_omega_bzvti)
-tTKScalarFieldNormalizer1.ScalarField = ['POINTS', 'omega_bz']
+# create a new 'Threshold'
+threshold1 = Threshold(registrationName='Threshold1', Input=tTKPersistentGenerators1)
+threshold1.Scalars = ['CELLS', 'Persistence']
+threshold1.LowerThreshold = 0.5
+threshold1.UpperThreshold = 0.8493308367608376
 
-# create a new 'TTK PersistenceDiagram'
-tTKPersistenceDiagram1 = TTKPersistenceDiagram(registrationName='TTKPersistenceDiagram1', Input=tTKScalarFieldNormalizer1)
-tTKPersistenceDiagram1.ScalarField = ['POINTS', 'omega_bz']
-tTKPersistenceDiagram1.InputOffsetField = ['POINTS', 'bz_wz']
+# create a new 'TTK GeometrySmoother'
+tTKGeometrySmoother2 = TTKGeometrySmoother(registrationName='TTKGeometrySmoother2', Input=threshold1)
+tTKGeometrySmoother2.IterationNumber = 2
+tTKGeometrySmoother2.InputMaskField = ['POINTS', '']
+
+# create a new 'Threshold'
+threshold9 = Threshold(registrationName='Threshold9', Input=tTKPersistenceDiagram1)
+threshold9.Scalars = ['CELLS', 'PairIdentifier']
+threshold9.LowerThreshold = -1.0
+threshold9.UpperThreshold = -0.1
+
+# create a new 'Extract Surface'
+extractSurface2 = ExtractSurface(registrationName='ExtractSurface2', Input=threshold9)
+
+# create a new 'Tube'
+tube2 = Tube(registrationName='Tube2', Input=extractSurface2)
+tube2.Scalars = ['POINTS', '']
+tube2.Vectors = ['POINTS', 'Coordinates']
+tube2.Radius = 0.01
+
+# create a new 'TTK TextureMapFromField'
+tTKTextureMapFromField1 = TTKTextureMapFromField(registrationName='TTKTextureMapFromField1', Input=calculator4)
+tTKTextureMapFromField1.OnlyUComponent = 0
+tTKTextureMapFromField1.UComponent = ['POINTS', 'x']
+tTKTextureMapFromField1.VComponent = ['POINTS', 'y']
 
 # create a new 'Contour'
 contour3 = Contour(registrationName='Contour3', Input=start_data_omega_bzvti)
@@ -290,6 +546,38 @@ contour3.PointMergeMethod = 'Uniform Binning'
 
 # create a new 'Connectivity'
 connectivity3 = Connectivity(registrationName='Connectivity3', Input=contour3)
+
+# create a new 'Threshold'
+threshold7 = Threshold(registrationName='Threshold7', Input=connectivity3)
+threshold7.Scalars = ['POINTS', 'RegionId']
+threshold7.LowerThreshold = 1.0
+threshold7.UpperThreshold = 2.0
+
+# create a new 'Calculator'
+calculator5 = Calculator(registrationName='Calculator5', Input=slice2)
+calculator5.ResultArrayName = 'u'
+calculator5.Function = 'coordsY'
+
+# create a new 'Calculator'
+calculator6 = Calculator(registrationName='Calculator6', Input=calculator5)
+calculator6.ResultArrayName = 'v'
+calculator6.Function = 'coordsZ'
+
+# create a new 'TTK TextureMapFromField'
+tTKTextureMapFromField2 = TTKTextureMapFromField(registrationName='TTKTextureMapFromField2', Input=calculator6)
+tTKTextureMapFromField2.OnlyUComponent = 0
+tTKTextureMapFromField2.UComponent = ['POINTS', 'u']
+tTKTextureMapFromField2.VComponent = ['POINTS', 'v']
+
+# create a new 'Threshold'
+threshold8 = Threshold(registrationName='Threshold8', Input=connectivity2)
+threshold8.Scalars = ['POINTS', 'RegionId']
+
+# create a new 'Tube'
+tube4 = Tube(registrationName='Tube4', Input=streamTracer1)
+tube4.Scalars = ['POINTS', 'AngularVelocity']
+tube4.Vectors = ['POINTS', 'Normals']
+tube4.Radius = 0.05
 
 # create a new 'Contour'
 contour1 = Contour(registrationName='Contour1', Input=start_data_omega_bzvti)
@@ -307,58 +595,8 @@ threshold4.LowerThreshold = 2.0
 threshold4.UpperThreshold = 2.0
 
 # create a new 'Threshold'
-threshold10 = Threshold(registrationName='Threshold10', Input=tTKPersistenceDiagram1)
-threshold10.Scalars = ['CELLS', 'Persistence']
-threshold10.LowerThreshold = 0.3
-threshold10.UpperThreshold = 1.9999999999999998
-
-# create a new 'TTK IcospheresFromPoints'
-tTKIcospheresFromPoints3 = TTKIcospheresFromPoints(registrationName='TTKIcospheresFromPoints3', Input=threshold10)
-tTKIcospheresFromPoints3.Radius = 0.025
-
-# create a new 'Threshold'
-threshold7 = Threshold(registrationName='Threshold7', Input=connectivity3)
-threshold7.Scalars = ['POINTS', 'RegionId']
-threshold7.LowerThreshold = 1.0
-threshold7.UpperThreshold = 2.0
-
-# create a new 'Extract Surface'
-extractSurface3 = ExtractSurface(registrationName='ExtractSurface3', Input=threshold10)
-
-# create a new 'Threshold'
-threshold9 = Threshold(registrationName='Threshold9', Input=tTKPersistenceDiagram1)
-threshold9.Scalars = ['CELLS', 'PairIdentifier']
-threshold9.LowerThreshold = -1.0
-threshold9.UpperThreshold = -0.1
-
-# create a new 'Extract Surface'
-extractSurface2 = ExtractSurface(registrationName='ExtractSurface2', Input=threshold9)
-
-# create a new 'Tube'
-tube2 = Tube(registrationName='Tube2', Input=extractSurface2)
-tube2.Scalars = ['POINTS', 'CriticalType']
-tube2.Vectors = ['POINTS', 'Coordinates']
-tube2.Radius = 0.01
-
-# create a new 'Threshold'
-threshold1 = Threshold(registrationName='Threshold1', Input=tTKPersistentGenerators1)
-threshold1.Scalars = ['CELLS', 'Persistence']
-threshold1.LowerThreshold = 0.5
-threshold1.UpperThreshold = 0.8493308367608376
-
-# create a new 'TTK GeometrySmoother'
-tTKGeometrySmoother2 = TTKGeometrySmoother(registrationName='TTKGeometrySmoother2', Input=threshold1)
-tTKGeometrySmoother2.IterationNumber = 2
-tTKGeometrySmoother2.InputMaskField = ['POINTS', '']
-
-# create a new 'Threshold'
 threshold5 = Threshold(registrationName='Threshold5', Input=connectivity1)
 threshold5.Scalars = ['POINTS', 'RegionId']
-
-# create a new 'TTK TopologicalSimplificationByPersistence'
-tTKTopologicalSimplificationByPersistence1 = TTKTopologicalSimplificationByPersistence(registrationName='TTKTopologicalSimplificationByPersistence1', Input=tTKScalarFieldNormalizer1)
-tTKTopologicalSimplificationByPersistence1.InputArray = ['POINTS', 'omega_bz']
-tTKTopologicalSimplificationByPersistence1.PersistenceThreshold = 0.3
 
 # create a new 'TTK MorseSmaleComplex'
 tTKMorseSmaleComplex1 = TTKMorseSmaleComplex(registrationName='TTKMorseSmaleComplex1', Input=tTKTopologicalSimplificationByPersistence1)
@@ -387,7 +625,7 @@ extractSurface1 = ExtractSurface(registrationName='ExtractSurface1', Input=tTKGe
 
 # create a new 'Tube'
 tube1 = Tube(registrationName='Tube1', Input=extractSurface1)
-tube1.Scalars = ['POINTS', 'CellDimension']
+tube1.Scalars = ['POINTS', '']
 tube1.Vectors = ['POINTS', '1']
 tube1.Radius = 0.05
 
@@ -403,21 +641,71 @@ threshold3.Scalars = ['CELLS', 'NumberOfCriticalPointsOnBoundary']
 threshold3.LowerThreshold = 1.0
 threshold3.UpperThreshold = 1.0
 
-# create a new 'Tube'
-tube3 = Tube(registrationName='Tube3', Input=extractSurface3)
-tube3.Scalars = ['POINTS', 'CriticalType']
-tube3.Vectors = ['POINTS', 'Coordinates']
-tube3.Radius = 0.01
+# create a new 'Glyph'
+glyph1 = Glyph(registrationName='Glyph1', Input=streamTracer1,
+    GlyphType='Cone')
+glyph1.OrientationArray = ['POINTS', 'Bz']
+glyph1.ScaleArray = ['POINTS', 'No scale array']
+glyph1.ScaleFactor = 0.8382161617279054
+glyph1.GlyphTransform = 'Transform2'
+glyph1.GlyphMode = 'Every Nth Point'
+glyph1.MaximumNumberOfSamplePoints = 2000
+glyph1.Stride = 50
 
-# create a new 'Threshold'
-threshold11 = Threshold(registrationName='Threshold11', Input=tube3)
-threshold11.Scalars = ['CELLS', 'PairIdentifier']
-threshold11.LowerThreshold = -0.1
-threshold11.UpperThreshold = 190.0
+# init the 'Cone' selected for 'GlyphType'
+glyph1.GlyphType.Resolution = 20
+glyph1.GlyphType.Radius = 0.25
+glyph1.GlyphType.Height = 0.5
+
+# create a new 'TTK DiscreteGradient'
+tTKDiscreteGradient1 = TTKDiscreteGradient(registrationName='TTKDiscreteGradient1', Input=start_data_omega_bzvti)
+tTKDiscreteGradient1.ScalarField = ['POINTS', 'omega_bz']
+tTKDiscreteGradient1.OffsetField = ['POINTS', 'bz_wz']
+tTKDiscreteGradient1.ComputeGradientGlyphs = 0
 
 # create a new 'TTK IcospheresFromPoints'
 tTKIcospheresFromPoints1 = TTKIcospheresFromPoints(registrationName='TTKIcospheresFromPoints1', Input=tTKDiscreteGradient1)
 tTKIcospheresFromPoints1.Radius = 0.175
+
+# create a new 'Transform'
+transform1 = Transform(registrationName='Transform1', Input=tTKGeometrySmoother2)
+transform1.Transform = 'Transform'
+
+# init the 'Transform' selected for 'Transform'
+transform1.Transform.Translate = [0.05, 0.0, 0.0]
+transform1.Transform.Scale = [1.3, 1.3, 1.3]
+
+# create a new 'Stream Tracer With Custom Source'
+streamTracerWithCustomSource1 = StreamTracerWithCustomSource(registrationName='StreamTracerWithCustomSource1', Input=calculator2,
+    SeedSource=transform1)
+streamTracerWithCustomSource1.Vectors = ['POINTS', 'Bz']
+streamTracerWithCustomSource1.MaximumStreamlineLength = 10.061825318164619
+
+# create a new 'Tube'
+tube7 = Tube(registrationName='Tube7', Input=streamTracerWithCustomSource1)
+tube7.Scalars = ['POINTS', 'AngularVelocity']
+tube7.Vectors = ['POINTS', 'Normals']
+tube7.Radius = 0.05
+
+# create a new 'Transform'
+transform2 = Transform(registrationName='Transform2', Input=transform1)
+transform2.Transform = 'Transform'
+
+# init the 'Transform' selected for 'Transform'
+transform2.Transform.Translate = [-0.4, 0.0, 0.0]
+transform2.Transform.Scale = [1.9, 1.9, 1.85]
+
+# create a new 'Stream Tracer With Custom Source'
+streamTracerWithCustomSource2 = StreamTracerWithCustomSource(registrationName='StreamTracerWithCustomSource2', Input=calculator2,
+    SeedSource=transform2)
+streamTracerWithCustomSource2.Vectors = ['POINTS', 'Bz']
+streamTracerWithCustomSource2.MaximumStreamlineLength = 10.061825318164619
+
+# create a new 'Tube'
+tube6 = Tube(registrationName='Tube6', Input=streamTracerWithCustomSource2)
+tube6.Scalars = ['POINTS', 'AngularVelocity']
+tube6.Vectors = ['POINTS', 'Normals']
+tube6.Radius = 0.01
 
 # ----------------------------------------------------------------
 # setup the visualization in view 'renderView1'
@@ -428,7 +716,7 @@ contour1Display = Show(contour1, renderView1, 'GeometryRepresentation')
 
 # get color transfer function/color map for 'omega_bz'
 omega_bzLUT = GetColorTransferFunction('omega_bz')
-omega_bzLUT.RGBPoints = [0.4000000059604645, 0.0, 0.129412, 0.584314, 0.6985610276460648, 0.917647, 0.941176, 0.788235, 0.997122049331665, 0.0, 0.431373, 0.0]
+omega_bzLUT.RGBPoints = [0.49758370749999525, 0.0, 0.129412, 0.584314, 0.7307818610184227, 0.917647, 0.941176, 0.788235, 0.9639800145368502, 0.0, 0.431373, 0.0]
 omega_bzLUT.ColorSpace = 'RGB'
 omega_bzLUT.AboveRangeColor = [1.0, 1.0, 1.0]
 omega_bzLUT.NanColor = [0.0, 0.0, 0.0]
@@ -653,7 +941,7 @@ start_data_omega_bzvtiDisplay = Show(start_data_omega_bzvti, renderView10, 'Unif
 # trace defaults for the display properties.
 start_data_omega_bzvtiDisplay.Representation = 'Outline'
 start_data_omega_bzvtiDisplay.AmbientColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
-start_data_omega_bzvtiDisplay.ColorArrayName = [None, '']
+start_data_omega_bzvtiDisplay.ColorArrayName = ['POINTS', '']
 start_data_omega_bzvtiDisplay.DiffuseColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
 start_data_omega_bzvtiDisplay.SelectTCoordArray = 'None'
 start_data_omega_bzvtiDisplay.SelectNormalArray = 'None'
@@ -694,6 +982,7 @@ contour1Display_1 = Show(contour1, renderView10, 'GeometryRepresentation')
 # trace defaults for the display properties.
 contour1Display_1.Representation = 'Surface'
 contour1Display_1.ColorArrayName = ['POINTS', '']
+contour1Display_1.LookupTable = omega_bzLUT
 contour1Display_1.Opacity = 0.2
 contour1Display_1.Specular = 1.0
 contour1Display_1.SelectTCoordArray = 'None'
@@ -764,8 +1053,1506 @@ tTKIcospheresFromPoints2Display.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
 tTKIcospheresFromPoints2Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 3.0, 1.0, 0.5, 0.0]
 
+# ----------------------------------------------------------------
+# setup the visualization in view 'renderView11'
+# ----------------------------------------------------------------
+
+# show data from start_data_omega_bzvti
+start_data_omega_bzvtiDisplay_1 = Show(start_data_omega_bzvti, renderView11, 'UniformGridRepresentation')
+
+# trace defaults for the display properties.
+start_data_omega_bzvtiDisplay_1.Representation = 'Outline'
+start_data_omega_bzvtiDisplay_1.AmbientColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
+start_data_omega_bzvtiDisplay_1.ColorArrayName = [None, '']
+start_data_omega_bzvtiDisplay_1.DiffuseColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
+start_data_omega_bzvtiDisplay_1.SelectTCoordArray = 'None'
+start_data_omega_bzvtiDisplay_1.SelectNormalArray = 'None'
+start_data_omega_bzvtiDisplay_1.SelectTangentArray = 'None'
+start_data_omega_bzvtiDisplay_1.OSPRayScaleArray = 'bz_wz'
+start_data_omega_bzvtiDisplay_1.OSPRayScaleFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_1.SelectOrientationVectors = 'None'
+start_data_omega_bzvtiDisplay_1.ScaleFactor = 1.006182531816462
+start_data_omega_bzvtiDisplay_1.SelectScaleArray = 'None'
+start_data_omega_bzvtiDisplay_1.GlyphType = 'Arrow'
+start_data_omega_bzvtiDisplay_1.GlyphTableIndexArray = 'None'
+start_data_omega_bzvtiDisplay_1.GaussianRadius = 0.050309126590823094
+start_data_omega_bzvtiDisplay_1.SetScaleArray = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_1.ScaleTransferFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_1.OpacityArray = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_1.OpacityTransferFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_1.DataAxesGrid = 'GridAxesRepresentation'
+start_data_omega_bzvtiDisplay_1.PolarAxes = 'PolarAxesRepresentation'
+start_data_omega_bzvtiDisplay_1.ScalarOpacityUnitDistance = 0.12315087617612483
+start_data_omega_bzvtiDisplay_1.OpacityArrayName = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_1.SliceFunction = 'Plane'
+start_data_omega_bzvtiDisplay_1.Slice = 63
+start_data_omega_bzvtiDisplay_1.SelectInputVectors = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_1.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+start_data_omega_bzvtiDisplay_1.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+start_data_omega_bzvtiDisplay_1.ScaleTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+start_data_omega_bzvtiDisplay_1.OpacityTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+
+# show data from start_data_bzvti
+start_data_bzvtiDisplay = Show(start_data_bzvti, renderView11, 'UniformGridRepresentation')
+
+# trace defaults for the display properties.
+start_data_bzvtiDisplay.Representation = 'Outline'
+start_data_bzvtiDisplay.ColorArrayName = [None, '']
+start_data_bzvtiDisplay.SelectTCoordArray = 'None'
+start_data_bzvtiDisplay.SelectNormalArray = 'None'
+start_data_bzvtiDisplay.SelectTangentArray = 'None'
+start_data_bzvtiDisplay.OSPRayScaleArray = 'bz_jx'
+start_data_bzvtiDisplay.OSPRayScaleFunction = 'PiecewiseFunction'
+start_data_bzvtiDisplay.SelectOrientationVectors = 'None'
+start_data_bzvtiDisplay.ScaleFactor = 1.006182531816462
+start_data_bzvtiDisplay.SelectScaleArray = 'None'
+start_data_bzvtiDisplay.GlyphType = 'Arrow'
+start_data_bzvtiDisplay.GlyphTableIndexArray = 'None'
+start_data_bzvtiDisplay.GaussianRadius = 0.050309126590823094
+start_data_bzvtiDisplay.SetScaleArray = ['POINTS', 'bz_jx']
+start_data_bzvtiDisplay.ScaleTransferFunction = 'PiecewiseFunction'
+start_data_bzvtiDisplay.OpacityArray = ['POINTS', 'bz_jx']
+start_data_bzvtiDisplay.OpacityTransferFunction = 'PiecewiseFunction'
+start_data_bzvtiDisplay.DataAxesGrid = 'GridAxesRepresentation'
+start_data_bzvtiDisplay.PolarAxes = 'PolarAxesRepresentation'
+start_data_bzvtiDisplay.ScalarOpacityUnitDistance = 0.12315087617612483
+start_data_bzvtiDisplay.OpacityArrayName = ['POINTS', 'bz_jx']
+start_data_bzvtiDisplay.SliceFunction = 'Plane'
+start_data_bzvtiDisplay.Slice = 63
+start_data_bzvtiDisplay.SelectInputVectors = ['POINTS', 'bz_jx']
+start_data_bzvtiDisplay.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+start_data_bzvtiDisplay.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+start_data_bzvtiDisplay.ScaleTransferFunction.Points = [-0.4143731235557371, 0.0, 0.5, 0.0, 0.41437312355573663, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+start_data_bzvtiDisplay.OpacityTransferFunction.Points = [-0.4143731235557371, 0.0, 0.5, 0.0, 0.41437312355573663, 1.0, 0.5, 0.0]
+
+# show data from calculator2
+calculator2Display = Show(calculator2, renderView11, 'UniformGridRepresentation')
+
+# get color transfer function/color map for 'Bz'
+bzLUT = GetColorTransferFunction('Bz')
+bzLUT.RGBPoints = [7.36291008310002e-06, 0.0, 0.129412, 0.584314, 0.23463837802410126, 0.39215686274509803, 0.47843137254901963, 0.6705882352941176, 0.3288603056261099, 0.8666666666666667, 0.8980392156862745, 0.7764705882352941, 0.5782711991474931, 0.0, 0.431373, 0.0]
+bzLUT.ColorSpace = 'RGB'
+bzLUT.AboveRangeColor = [1.0, 1.0, 1.0]
+bzLUT.NanColor = [0.0, 0.0, 0.0]
+bzLUT.ScalarRangeInitialized = 1.0
+
+# get opacity transfer function/opacity map for 'Bz'
+bzPWF = GetOpacityTransferFunction('Bz')
+bzPWF.Points = [7.36291008310002e-06, 0.0, 0.5, 0.0, 0.3307077884674072, 0.6556016802787781, 0.5, 0.0, 0.5782711991474931, 1.0, 0.5, 0.0]
+bzPWF.ScalarRangeInitialized = 1
+
+# trace defaults for the display properties.
+calculator2Display.Representation = 'Volume'
+calculator2Display.ColorArrayName = ['POINTS', 'Bz']
+calculator2Display.LookupTable = bzLUT
+calculator2Display.SelectTCoordArray = 'None'
+calculator2Display.SelectNormalArray = 'None'
+calculator2Display.SelectTangentArray = 'None'
+calculator2Display.OSPRayScaleArray = 'Bz'
+calculator2Display.OSPRayScaleFunction = 'PiecewiseFunction'
+calculator2Display.SelectOrientationVectors = 'Bz'
+calculator2Display.ScaleFactor = 1.006182531816462
+calculator2Display.SelectScaleArray = 'Bz'
+calculator2Display.GlyphType = 'Arrow'
+calculator2Display.GlyphTableIndexArray = 'Bz'
+calculator2Display.GaussianRadius = 0.050309126590823094
+calculator2Display.SetScaleArray = ['POINTS', 'Bz']
+calculator2Display.ScaleTransferFunction = 'PiecewiseFunction'
+calculator2Display.OpacityArray = ['POINTS', 'Bz']
+calculator2Display.OpacityTransferFunction = 'PiecewiseFunction'
+calculator2Display.DataAxesGrid = 'GridAxesRepresentation'
+calculator2Display.PolarAxes = 'PolarAxesRepresentation'
+calculator2Display.ScalarOpacityUnitDistance = 0.12315087617612483
+calculator2Display.ScalarOpacityFunction = bzPWF
+calculator2Display.OpacityArrayName = ['POINTS', 'Bz']
+calculator2Display.SliceFunction = 'Plane'
+calculator2Display.Slice = 63
+calculator2Display.SelectInputVectors = ['POINTS', 'Bz']
+calculator2Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+calculator2Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+calculator2Display.ScaleTransferFunction.Points = [-0.4143731235557371, 0.0, 0.5, 0.0, 0.41437312355573663, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+calculator2Display.OpacityTransferFunction.Points = [-0.4143731235557371, 0.0, 0.5, 0.0, 0.41437312355573663, 1.0, 0.5, 0.0]
+
+# show data from slice1
+slice1Display = Show(slice1, renderView11, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+slice1Display.Representation = 'Surface LIC'
+slice1Display.ColorArrayName = ['POINTS', 'Bz']
+slice1Display.LookupTable = bzLUT
+slice1Display.Specular = 1.0
+slice1Display.SelectTCoordArray = 'None'
+slice1Display.SelectNormalArray = 'None'
+slice1Display.SelectTangentArray = 'None'
+slice1Display.EdgeColor = [0.0, 0.0, 0.0]
+slice1Display.OSPRayScaleArray = 'Bz'
+slice1Display.OSPRayScaleFunction = 'PiecewiseFunction'
+slice1Display.SelectOrientationVectors = 'Bz'
+slice1Display.ScaleFactor = 1.0061825752258302
+slice1Display.SelectScaleArray = 'Bz'
+slice1Display.GlyphType = 'Arrow'
+slice1Display.GlyphTableIndexArray = 'Bz'
+slice1Display.GaussianRadius = 0.050309128761291504
+slice1Display.SetScaleArray = ['POINTS', 'Bz']
+slice1Display.ScaleTransferFunction = 'PiecewiseFunction'
+slice1Display.OpacityArray = ['POINTS', 'Bz']
+slice1Display.OpacityTransferFunction = 'PiecewiseFunction'
+slice1Display.DataAxesGrid = 'GridAxesRepresentation'
+slice1Display.PolarAxes = 'PolarAxesRepresentation'
+slice1Display.SelectInputVectors = ['POINTS', 'Bz']
+slice1Display.EnhanceContrast = 'Color Only'
+slice1Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+slice1Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+slice1Display.ScaleTransferFunction.Points = [-4.99999930347883e-10, 0.0, 0.5, 0.0, 5.000000136146099e-10, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+slice1Display.OpacityTransferFunction.Points = [-4.99999930347883e-10, 0.0, 0.5, 0.0, 5.000000136146099e-10, 1.0, 0.5, 0.0]
+
+# show data from contour1
+contour1Display_2 = Show(contour1, renderView11, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+contour1Display_2.Representation = 'Surface'
+contour1Display_2.ColorArrayName = ['POINTS', 'omega_bz']
+contour1Display_2.LookupTable = omega_bzLUT
+contour1Display_2.Opacity = 0.3
+contour1Display_2.Specular = 1.0
+contour1Display_2.SelectTCoordArray = 'None'
+contour1Display_2.SelectNormalArray = 'Normals'
+contour1Display_2.SelectTangentArray = 'None'
+contour1Display_2.EdgeColor = [0.0, 0.0, 0.0]
+contour1Display_2.OSPRayScaleArray = 'omega_bz'
+contour1Display_2.OSPRayScaleFunction = 'PiecewiseFunction'
+contour1Display_2.SelectOrientationVectors = 'None'
+contour1Display_2.ScaleFactor = 0.8636709690093994
+contour1Display_2.SelectScaleArray = 'omega_bz'
+contour1Display_2.GlyphType = 'Arrow'
+contour1Display_2.GlyphTableIndexArray = 'omega_bz'
+contour1Display_2.GaussianRadius = 0.04318354845046997
+contour1Display_2.SetScaleArray = ['POINTS', 'omega_bz']
+contour1Display_2.ScaleTransferFunction = 'PiecewiseFunction'
+contour1Display_2.OpacityArray = ['POINTS', 'omega_bz']
+contour1Display_2.OpacityTransferFunction = 'PiecewiseFunction'
+contour1Display_2.DataAxesGrid = 'GridAxesRepresentation'
+contour1Display_2.PolarAxes = 'PolarAxesRepresentation'
+contour1Display_2.SelectInputVectors = ['POINTS', 'Normals']
+contour1Display_2.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+contour1Display_2.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+contour1Display_2.ScaleTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+contour1Display_2.OpacityTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
+
+# show data from streamTracer1
+streamTracer1Display = Show(streamTracer1, renderView11, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+streamTracer1Display.Representation = 'Surface'
+streamTracer1Display.ColorArrayName = [None, '']
+streamTracer1Display.Specular = 1.0
+streamTracer1Display.SelectTCoordArray = 'None'
+streamTracer1Display.SelectNormalArray = 'None'
+streamTracer1Display.SelectTangentArray = 'None'
+streamTracer1Display.EdgeColor = [0.0, 0.0, 0.0]
+streamTracer1Display.OSPRayScaleArray = 'AngularVelocity'
+streamTracer1Display.OSPRayScaleFunction = 'PiecewiseFunction'
+streamTracer1Display.SelectOrientationVectors = 'Normals'
+streamTracer1Display.ScaleFactor = 0.846682643890381
+streamTracer1Display.SelectScaleArray = 'AngularVelocity'
+streamTracer1Display.GlyphType = 'Arrow'
+streamTracer1Display.GlyphTableIndexArray = 'AngularVelocity'
+streamTracer1Display.GaussianRadius = 0.04233413219451904
+streamTracer1Display.SetScaleArray = ['POINTS', 'AngularVelocity']
+streamTracer1Display.ScaleTransferFunction = 'PiecewiseFunction'
+streamTracer1Display.OpacityArray = ['POINTS', 'AngularVelocity']
+streamTracer1Display.OpacityTransferFunction = 'PiecewiseFunction'
+streamTracer1Display.DataAxesGrid = 'GridAxesRepresentation'
+streamTracer1Display.PolarAxes = 'PolarAxesRepresentation'
+streamTracer1Display.SelectInputVectors = ['POINTS', 'Normals']
+streamTracer1Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+streamTracer1Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+streamTracer1Display.ScaleTransferFunction.Points = [-0.0023003587610899603, 0.0, 0.5, 0.0, 0.0023003587419650564, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+streamTracer1Display.OpacityTransferFunction.Points = [-0.0023003587610899603, 0.0, 0.5, 0.0, 0.0023003587419650564, 1.0, 0.5, 0.0]
+
+# show data from glyph1
+glyph1Display = Show(glyph1, renderView11, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+glyph1Display.Representation = 'Surface'
+glyph1Display.ColorArrayName = [None, '']
+glyph1Display.Specular = 1.0
+glyph1Display.SelectTCoordArray = 'None'
+glyph1Display.SelectNormalArray = 'None'
+glyph1Display.SelectTangentArray = 'None'
+glyph1Display.EdgeColor = [0.0, 0.0, 0.0]
+glyph1Display.OSPRayScaleArray = 'AngularVelocity'
+glyph1Display.OSPRayScaleFunction = 'PiecewiseFunction'
+glyph1Display.SelectOrientationVectors = 'Normals'
+glyph1Display.ScaleFactor = 0.8376380920410157
+glyph1Display.SelectScaleArray = 'AngularVelocity'
+glyph1Display.GlyphType = 'Arrow'
+glyph1Display.GlyphTableIndexArray = 'AngularVelocity'
+glyph1Display.GaussianRadius = 0.04188190460205078
+glyph1Display.SetScaleArray = ['POINTS', 'AngularVelocity']
+glyph1Display.ScaleTransferFunction = 'PiecewiseFunction'
+glyph1Display.OpacityArray = ['POINTS', 'AngularVelocity']
+glyph1Display.OpacityTransferFunction = 'PiecewiseFunction'
+glyph1Display.DataAxesGrid = 'GridAxesRepresentation'
+glyph1Display.PolarAxes = 'PolarAxesRepresentation'
+glyph1Display.SelectInputVectors = ['POINTS', 'Normals']
+glyph1Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+glyph1Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+glyph1Display.ScaleTransferFunction.Points = [-0.0020715290121826775, 0.0, 0.5, 0.0, 0.0020728366479927946, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+glyph1Display.OpacityTransferFunction.Points = [-0.0020715290121826775, 0.0, 0.5, 0.0, 0.0020728366479927946, 1.0, 0.5, 0.0]
+
+# show data from tube4
+tube4Display = Show(tube4, renderView11, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+tube4Display.Representation = 'Surface'
+tube4Display.AmbientColor = [0.0, 0.12941176470588237, 0.5843137254901961]
+tube4Display.ColorArrayName = ['POINTS', '']
+tube4Display.DiffuseColor = [0.0, 0.12941176470588237, 0.5843137254901961]
+tube4Display.Specular = 1.0
+tube4Display.SelectTCoordArray = 'None'
+tube4Display.SelectNormalArray = 'TubeNormals'
+tube4Display.SelectTangentArray = 'None'
+tube4Display.EdgeColor = [0.0, 0.0, 0.0]
+tube4Display.OSPRayScaleArray = 'AngularVelocity'
+tube4Display.OSPRayScaleFunction = 'PiecewiseFunction'
+tube4Display.SelectOrientationVectors = 'Normals'
+tube4Display.ScaleFactor = 0.8618492603302003
+tube4Display.SelectScaleArray = 'AngularVelocity'
+tube4Display.GlyphType = 'Arrow'
+tube4Display.GlyphTableIndexArray = 'AngularVelocity'
+tube4Display.GaussianRadius = 0.04309246301651001
+tube4Display.SetScaleArray = ['POINTS', 'AngularVelocity']
+tube4Display.ScaleTransferFunction = 'PiecewiseFunction'
+tube4Display.OpacityArray = ['POINTS', 'AngularVelocity']
+tube4Display.OpacityTransferFunction = 'PiecewiseFunction'
+tube4Display.DataAxesGrid = 'GridAxesRepresentation'
+tube4Display.PolarAxes = 'PolarAxesRepresentation'
+tube4Display.SelectInputVectors = ['POINTS', 'Normals']
+tube4Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+tube4Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+tube4Display.ScaleTransferFunction.Points = [-0.009947089393606477, 0.0, 0.5, 0.0, 0.009942965672137077, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+tube4Display.OpacityTransferFunction.Points = [-0.009947089393606477, 0.0, 0.5, 0.0, 0.009942965672137077, 1.0, 0.5, 0.0]
+
+# show data from appendAttributes1
+appendAttributes1Display = Show(appendAttributes1, renderView11, 'UniformGridRepresentation')
+
+# trace defaults for the display properties.
+appendAttributes1Display.Representation = 'Outline'
+appendAttributes1Display.ColorArrayName = [None, '']
+appendAttributes1Display.SelectTCoordArray = 'None'
+appendAttributes1Display.SelectNormalArray = 'None'
+appendAttributes1Display.SelectTangentArray = 'None'
+appendAttributes1Display.OSPRayScaleArray = 'bz_jx'
+appendAttributes1Display.OSPRayScaleFunction = 'PiecewiseFunction'
+appendAttributes1Display.SelectOrientationVectors = 'None'
+appendAttributes1Display.ScaleFactor = 1.006182531816462
+appendAttributes1Display.SelectScaleArray = 'None'
+appendAttributes1Display.GlyphType = 'Arrow'
+appendAttributes1Display.GlyphTableIndexArray = 'None'
+appendAttributes1Display.GaussianRadius = 0.050309126590823094
+appendAttributes1Display.SetScaleArray = ['POINTS', 'bz_jx']
+appendAttributes1Display.ScaleTransferFunction = 'PiecewiseFunction'
+appendAttributes1Display.OpacityArray = ['POINTS', 'bz_jx']
+appendAttributes1Display.OpacityTransferFunction = 'PiecewiseFunction'
+appendAttributes1Display.DataAxesGrid = 'GridAxesRepresentation'
+appendAttributes1Display.PolarAxes = 'PolarAxesRepresentation'
+appendAttributes1Display.ScalarOpacityUnitDistance = 0.12315087617612483
+appendAttributes1Display.OpacityArrayName = ['POINTS', 'bz_jx']
+appendAttributes1Display.SliceFunction = 'Plane'
+appendAttributes1Display.Slice = 63
+appendAttributes1Display.SelectInputVectors = ['POINTS', 'bz_jx']
+appendAttributes1Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+appendAttributes1Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+appendAttributes1Display.ScaleTransferFunction.Points = [-0.4143731235557371, 0.0, 0.5, 0.0, 0.41437312355573663, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+appendAttributes1Display.OpacityTransferFunction.Points = [-0.4143731235557371, 0.0, 0.5, 0.0, 0.41437312355573663, 1.0, 0.5, 0.0]
+
+# show data from tTKGeometrySmoother2
+tTKGeometrySmoother2Display = Show(tTKGeometrySmoother2, renderView11, 'UnstructuredGridRepresentation')
+
+# trace defaults for the display properties.
+tTKGeometrySmoother2Display.Representation = 'Surface'
+tTKGeometrySmoother2Display.ColorArrayName = [None, '']
+tTKGeometrySmoother2Display.Specular = 1.0
+tTKGeometrySmoother2Display.SelectTCoordArray = 'None'
+tTKGeometrySmoother2Display.SelectNormalArray = 'None'
+tTKGeometrySmoother2Display.SelectTangentArray = 'None'
+tTKGeometrySmoother2Display.OSPRayScaleArray = 'oppositeOmega'
+tTKGeometrySmoother2Display.OSPRayScaleFunction = 'PiecewiseFunction'
+tTKGeometrySmoother2Display.SelectOrientationVectors = 'None'
+tTKGeometrySmoother2Display.ScaleFactor = 0.21333734989166261
+tTKGeometrySmoother2Display.SelectScaleArray = 'None'
+tTKGeometrySmoother2Display.GlyphType = 'Arrow'
+tTKGeometrySmoother2Display.GlyphTableIndexArray = 'None'
+tTKGeometrySmoother2Display.GaussianRadius = 0.01066686749458313
+tTKGeometrySmoother2Display.SetScaleArray = ['POINTS', 'oppositeOmega']
+tTKGeometrySmoother2Display.ScaleTransferFunction = 'PiecewiseFunction'
+tTKGeometrySmoother2Display.OpacityArray = ['POINTS', 'oppositeOmega']
+tTKGeometrySmoother2Display.OpacityTransferFunction = 'PiecewiseFunction'
+tTKGeometrySmoother2Display.DataAxesGrid = 'GridAxesRepresentation'
+tTKGeometrySmoother2Display.PolarAxes = 'PolarAxesRepresentation'
+tTKGeometrySmoother2Display.ScalarOpacityUnitDistance = 0.5532457135466428
+tTKGeometrySmoother2Display.OpacityArrayName = ['POINTS', 'oppositeOmega']
+tTKGeometrySmoother2Display.SelectInputVectors = ['POINTS', 'oppositeOmega']
+tTKGeometrySmoother2Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+tTKGeometrySmoother2Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+tTKGeometrySmoother2Display.ScaleTransferFunction.Points = [-0.9751526647579255, 0.0, 0.5, 0.0, -0.9056711359213363, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+tTKGeometrySmoother2Display.OpacityTransferFunction.Points = [-0.9751526647579255, 0.0, 0.5, 0.0, -0.9056711359213363, 1.0, 0.5, 0.0]
+
+# show data from streamTracerWithCustomSource1
+streamTracerWithCustomSource1Display = Show(streamTracerWithCustomSource1, renderView11, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+streamTracerWithCustomSource1Display.Representation = 'Surface'
+streamTracerWithCustomSource1Display.ColorArrayName = [None, '']
+streamTracerWithCustomSource1Display.Specular = 1.0
+streamTracerWithCustomSource1Display.SelectTCoordArray = 'None'
+streamTracerWithCustomSource1Display.SelectNormalArray = 'None'
+streamTracerWithCustomSource1Display.SelectTangentArray = 'None'
+streamTracerWithCustomSource1Display.EdgeColor = [0.0, 0.0, 0.0]
+streamTracerWithCustomSource1Display.OSPRayScaleArray = 'AngularVelocity'
+streamTracerWithCustomSource1Display.OSPRayScaleFunction = 'PiecewiseFunction'
+streamTracerWithCustomSource1Display.SelectOrientationVectors = 'Normals'
+streamTracerWithCustomSource1Display.ScaleFactor = 0.21557332277297975
+streamTracerWithCustomSource1Display.SelectScaleArray = 'AngularVelocity'
+streamTracerWithCustomSource1Display.GlyphType = 'Arrow'
+streamTracerWithCustomSource1Display.GlyphTableIndexArray = 'AngularVelocity'
+streamTracerWithCustomSource1Display.GaussianRadius = 0.010778666138648987
+streamTracerWithCustomSource1Display.SetScaleArray = ['POINTS', 'AngularVelocity']
+streamTracerWithCustomSource1Display.ScaleTransferFunction = 'PiecewiseFunction'
+streamTracerWithCustomSource1Display.OpacityArray = ['POINTS', 'AngularVelocity']
+streamTracerWithCustomSource1Display.OpacityTransferFunction = 'PiecewiseFunction'
+streamTracerWithCustomSource1Display.DataAxesGrid = 'GridAxesRepresentation'
+streamTracerWithCustomSource1Display.PolarAxes = 'PolarAxesRepresentation'
+streamTracerWithCustomSource1Display.SelectInputVectors = ['POINTS', 'Normals']
+streamTracerWithCustomSource1Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+streamTracerWithCustomSource1Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+streamTracerWithCustomSource1Display.ScaleTransferFunction.Points = [-0.5208706210427543, 0.0, 0.5, 0.0, 0.5210735783851106, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+streamTracerWithCustomSource1Display.OpacityTransferFunction.Points = [-0.5208706210427543, 0.0, 0.5, 0.0, 0.5210735783851106, 1.0, 0.5, 0.0]
+
+# show data from transform1
+transform1Display = Show(transform1, renderView11, 'UnstructuredGridRepresentation')
+
+# trace defaults for the display properties.
+transform1Display.Representation = 'Surface'
+transform1Display.ColorArrayName = [None, '']
+transform1Display.Specular = 1.0
+transform1Display.SelectTCoordArray = 'None'
+transform1Display.SelectNormalArray = 'None'
+transform1Display.SelectTangentArray = 'None'
+transform1Display.OSPRayScaleArray = 'oppositeOmega'
+transform1Display.OSPRayScaleFunction = 'PiecewiseFunction'
+transform1Display.SelectOrientationVectors = 'None'
+transform1Display.ScaleFactor = 0.21333734989166261
+transform1Display.SelectScaleArray = 'None'
+transform1Display.GlyphType = 'Arrow'
+transform1Display.GlyphTableIndexArray = 'None'
+transform1Display.GaussianRadius = 0.01066686749458313
+transform1Display.SetScaleArray = ['POINTS', 'oppositeOmega']
+transform1Display.ScaleTransferFunction = 'PiecewiseFunction'
+transform1Display.OpacityArray = ['POINTS', 'oppositeOmega']
+transform1Display.OpacityTransferFunction = 'PiecewiseFunction'
+transform1Display.DataAxesGrid = 'GridAxesRepresentation'
+transform1Display.PolarAxes = 'PolarAxesRepresentation'
+transform1Display.ScalarOpacityUnitDistance = 0.5532457135466428
+transform1Display.OpacityArrayName = ['POINTS', 'oppositeOmega']
+transform1Display.SelectInputVectors = ['POINTS', 'oppositeOmega']
+transform1Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+transform1Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+transform1Display.ScaleTransferFunction.Points = [-0.9751526647579255, 0.0, 0.5, 0.0, -0.9056711359213363, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+transform1Display.OpacityTransferFunction.Points = [-0.9751526647579255, 0.0, 0.5, 0.0, -0.9056711359213363, 1.0, 0.5, 0.0]
+
+# show data from tube7
+tube7Display = Show(tube7, renderView11, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+tube7Display.Representation = 'Surface'
+tube7Display.AmbientColor = [0.0, 0.43137254901960786, 0.0]
+tube7Display.ColorArrayName = [None, '']
+tube7Display.DiffuseColor = [0.0, 0.43137254901960786, 0.0]
+tube7Display.Specular = 1.0
+tube7Display.SelectTCoordArray = 'None'
+tube7Display.SelectNormalArray = 'TubeNormals'
+tube7Display.SelectTangentArray = 'None'
+tube7Display.EdgeColor = [0.0, 0.0, 0.0]
+tube7Display.OSPRayScaleArray = 'AngularVelocity'
+tube7Display.OSPRayScaleFunction = 'PiecewiseFunction'
+tube7Display.SelectOrientationVectors = 'Normals'
+tube7Display.ScaleFactor = 0.24202768802642824
+tube7Display.SelectScaleArray = 'AngularVelocity'
+tube7Display.GlyphType = 'Arrow'
+tube7Display.GlyphTableIndexArray = 'AngularVelocity'
+tube7Display.GaussianRadius = 0.012101384401321412
+tube7Display.SetScaleArray = ['POINTS', 'AngularVelocity']
+tube7Display.ScaleTransferFunction = 'PiecewiseFunction'
+tube7Display.OpacityArray = ['POINTS', 'AngularVelocity']
+tube7Display.OpacityTransferFunction = 'PiecewiseFunction'
+tube7Display.DataAxesGrid = 'GridAxesRepresentation'
+tube7Display.PolarAxes = 'PolarAxesRepresentation'
+tube7Display.SelectInputVectors = ['POINTS', 'Normals']
+tube7Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+tube7Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+tube7Display.ScaleTransferFunction.Points = [-0.5524262512901966, 0.0, 0.5, 0.0, 0.5525577949615347, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+tube7Display.OpacityTransferFunction.Points = [-0.5524262512901966, 0.0, 0.5, 0.0, 0.5525577949615347, 1.0, 0.5, 0.0]
+
+# show data from calculator3
+calculator3Display = Show(calculator3, renderView11, 'GeometryRepresentation')
+
+# get color transfer function/color map for 'x'
+xLUT = GetColorTransferFunction('x')
+xLUT.RGBPoints = [-5.03091287612915, 0.0, 0.129412, 0.584314, 4.440892098500626e-15, 0.917647, 0.941176, 0.788235, 5.03091287612915, 0.0, 0.431373, 0.0]
+xLUT.ColorSpace = 'RGB'
+xLUT.AboveRangeColor = [1.0, 1.0, 1.0]
+xLUT.NanColor = [0.0, 0.0, 0.0]
+xLUT.ScalarRangeInitialized = 1.0
+
+# trace defaults for the display properties.
+calculator3Display.Representation = 'Surface'
+calculator3Display.ColorArrayName = ['POINTS', 'x']
+calculator3Display.LookupTable = xLUT
+calculator3Display.Specular = 1.0
+calculator3Display.SelectTCoordArray = 'None'
+calculator3Display.SelectNormalArray = 'None'
+calculator3Display.SelectTangentArray = 'None'
+calculator3Display.EdgeColor = [0.0, 0.0, 0.0]
+calculator3Display.OSPRayScaleArray = 'x'
+calculator3Display.OSPRayScaleFunction = 'PiecewiseFunction'
+calculator3Display.SelectOrientationVectors = 'Bz'
+calculator3Display.ScaleFactor = 1.0061825752258302
+calculator3Display.SelectScaleArray = 'x'
+calculator3Display.GlyphType = 'Arrow'
+calculator3Display.GlyphTableIndexArray = 'x'
+calculator3Display.GaussianRadius = 0.050309128761291504
+calculator3Display.SetScaleArray = ['POINTS', 'x']
+calculator3Display.ScaleTransferFunction = 'PiecewiseFunction'
+calculator3Display.OpacityArray = ['POINTS', 'x']
+calculator3Display.OpacityTransferFunction = 'PiecewiseFunction'
+calculator3Display.DataAxesGrid = 'GridAxesRepresentation'
+calculator3Display.PolarAxes = 'PolarAxesRepresentation'
+calculator3Display.SelectInputVectors = ['POINTS', 'Bz']
+calculator3Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+calculator3Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+calculator3Display.ScaleTransferFunction.Points = [-5.03091287612915, 0.0, 0.5, 0.0, 5.03091287612915, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+calculator3Display.OpacityTransferFunction.Points = [-5.03091287612915, 0.0, 0.5, 0.0, 5.03091287612915, 1.0, 0.5, 0.0]
+
+# show data from calculator4
+calculator4Display = Show(calculator4, renderView11, 'GeometryRepresentation')
+
+# get color transfer function/color map for 'y'
+yLUT = GetColorTransferFunction('y')
+yLUT.RGBPoints = [-4.233413219451904, 0.0, 0.129412, 0.584314, 3.552713678800501e-15, 0.917647, 0.941176, 0.788235, 4.233413219451904, 0.0, 0.431373, 0.0]
+yLUT.ColorSpace = 'RGB'
+yLUT.AboveRangeColor = [1.0, 1.0, 1.0]
+yLUT.NanColor = [0.0, 0.0, 0.0]
+yLUT.ScalarRangeInitialized = 1.0
+
+# trace defaults for the display properties.
+calculator4Display.Representation = 'Surface'
+calculator4Display.ColorArrayName = ['POINTS', 'y']
+calculator4Display.LookupTable = yLUT
+calculator4Display.Specular = 1.0
+calculator4Display.SelectTCoordArray = 'None'
+calculator4Display.SelectNormalArray = 'None'
+calculator4Display.SelectTangentArray = 'None'
+calculator4Display.EdgeColor = [0.0, 0.0, 0.0]
+calculator4Display.OSPRayScaleArray = 'y'
+calculator4Display.OSPRayScaleFunction = 'PiecewiseFunction'
+calculator4Display.SelectOrientationVectors = 'Bz'
+calculator4Display.ScaleFactor = 1.0061825752258302
+calculator4Display.SelectScaleArray = 'y'
+calculator4Display.GlyphType = 'Arrow'
+calculator4Display.GlyphTableIndexArray = 'y'
+calculator4Display.GaussianRadius = 0.050309128761291504
+calculator4Display.SetScaleArray = ['POINTS', 'y']
+calculator4Display.ScaleTransferFunction = 'PiecewiseFunction'
+calculator4Display.OpacityArray = ['POINTS', 'y']
+calculator4Display.OpacityTransferFunction = 'PiecewiseFunction'
+calculator4Display.DataAxesGrid = 'GridAxesRepresentation'
+calculator4Display.PolarAxes = 'PolarAxesRepresentation'
+calculator4Display.SelectInputVectors = ['POINTS', 'Bz']
+calculator4Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+calculator4Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+calculator4Display.ScaleTransferFunction.Points = [-4.233413219451904, 0.0, 0.5, 0.0, 4.233413219451904, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+calculator4Display.OpacityTransferFunction.Points = [-4.233413219451904, 0.0, 0.5, 0.0, 4.233413219451904, 1.0, 0.5, 0.0]
+
+# show data from tTKTextureMapFromField1
+tTKTextureMapFromField1Display = Show(tTKTextureMapFromField1, renderView11, 'GeometryRepresentation')
+
+# a texture
+licTextureBottom2 = CreateTexture('/data/julien/Pro/git/collaborations/gosia/tda-qchem/tda-qchem-explorations/data/LiH_MICD/png/licTextureBottom.png')
+
+# trace defaults for the display properties.
+tTKTextureMapFromField1Display.Representation = 'Surface'
+tTKTextureMapFromField1Display.ColorArrayName = ['POINTS', '']
+tTKTextureMapFromField1Display.Specular = 1.0
+tTKTextureMapFromField1Display.SelectTCoordArray = 'UV coordinates from field'
+tTKTextureMapFromField1Display.SelectNormalArray = 'None'
+tTKTextureMapFromField1Display.SelectTangentArray = 'None'
+tTKTextureMapFromField1Display.Texture = licTextureBottom2
+tTKTextureMapFromField1Display.InterpolateTextures = 1
+tTKTextureMapFromField1Display.SeamlessU = 1
+tTKTextureMapFromField1Display.SeamlessV = 1
+tTKTextureMapFromField1Display.EdgeColor = [0.0, 0.0, 0.0]
+tTKTextureMapFromField1Display.OSPRayScaleArray = 'y'
+tTKTextureMapFromField1Display.OSPRayScaleFunction = 'PiecewiseFunction'
+tTKTextureMapFromField1Display.SelectOrientationVectors = 'Bz'
+tTKTextureMapFromField1Display.ScaleFactor = 1.0061825752258302
+tTKTextureMapFromField1Display.SelectScaleArray = 'y'
+tTKTextureMapFromField1Display.GlyphType = 'Arrow'
+tTKTextureMapFromField1Display.GlyphTableIndexArray = 'y'
+tTKTextureMapFromField1Display.GaussianRadius = 0.050309128761291504
+tTKTextureMapFromField1Display.SetScaleArray = ['POINTS', 'y']
+tTKTextureMapFromField1Display.ScaleTransferFunction = 'PiecewiseFunction'
+tTKTextureMapFromField1Display.OpacityArray = ['POINTS', 'y']
+tTKTextureMapFromField1Display.OpacityTransferFunction = 'PiecewiseFunction'
+tTKTextureMapFromField1Display.DataAxesGrid = 'GridAxesRepresentation'
+tTKTextureMapFromField1Display.PolarAxes = 'PolarAxesRepresentation'
+tTKTextureMapFromField1Display.SelectInputVectors = ['POINTS', 'Bz']
+tTKTextureMapFromField1Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+tTKTextureMapFromField1Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+tTKTextureMapFromField1Display.ScaleTransferFunction.Points = [-4.233413219451904, 0.0, 0.5, 0.0, 4.233413219451904, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+tTKTextureMapFromField1Display.OpacityTransferFunction.Points = [-4.233413219451904, 0.0, 0.5, 0.0, 4.233413219451904, 1.0, 0.5, 0.0]
+
+# show data from streamTracer2
+streamTracer2Display = Show(streamTracer2, renderView11, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+streamTracer2Display.Representation = 'Surface'
+streamTracer2Display.ColorArrayName = ['POINTS', 'Bz']
+streamTracer2Display.LookupTable = bzLUT
+streamTracer2Display.Specular = 1.0
+streamTracer2Display.SelectTCoordArray = 'None'
+streamTracer2Display.SelectNormalArray = 'None'
+streamTracer2Display.SelectTangentArray = 'None'
+streamTracer2Display.EdgeColor = [0.0, 0.0, 0.0]
+streamTracer2Display.OSPRayScaleArray = 'AngularVelocity'
+streamTracer2Display.OSPRayScaleFunction = 'PiecewiseFunction'
+streamTracer2Display.SelectOrientationVectors = 'Normals'
+streamTracer2Display.ScaleFactor = 0.8469868659973145
+streamTracer2Display.SelectScaleArray = 'AngularVelocity'
+streamTracer2Display.GlyphType = 'Arrow'
+streamTracer2Display.GlyphTableIndexArray = 'AngularVelocity'
+streamTracer2Display.GaussianRadius = 0.04234934329986572
+streamTracer2Display.SetScaleArray = ['POINTS', 'AngularVelocity']
+streamTracer2Display.ScaleTransferFunction = 'PiecewiseFunction'
+streamTracer2Display.OpacityArray = ['POINTS', 'AngularVelocity']
+streamTracer2Display.OpacityTransferFunction = 'PiecewiseFunction'
+streamTracer2Display.DataAxesGrid = 'GridAxesRepresentation'
+streamTracer2Display.PolarAxes = 'PolarAxesRepresentation'
+streamTracer2Display.SelectInputVectors = ['POINTS', 'Normals']
+streamTracer2Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+streamTracer2Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+streamTracer2Display.ScaleTransferFunction.Points = [-0.002435294164725561, 0.0, 0.5, 0.0, 0.0024269388090187734, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+streamTracer2Display.OpacityTransferFunction.Points = [-0.002435294164725561, 0.0, 0.5, 0.0, 0.0024269388090187734, 1.0, 0.5, 0.0]
+
+# show data from tube5
+tube5Display = Show(tube5, renderView11, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+tube5Display.Representation = 'Surface'
+tube5Display.AmbientColor = [0.0, 0.12941176470588237, 0.5843137254901961]
+tube5Display.ColorArrayName = ['POINTS', '']
+tube5Display.DiffuseColor = [0.0, 0.12941176470588237, 0.5843137254901961]
+tube5Display.Specular = 1.0
+tube5Display.SelectTCoordArray = 'None'
+tube5Display.SelectNormalArray = 'TubeNormals'
+tube5Display.SelectTangentArray = 'None'
+tube5Display.EdgeColor = [0.0, 0.0, 0.0]
+tube5Display.OSPRayScaleArray = 'AngularVelocity'
+tube5Display.OSPRayScaleFunction = 'PiecewiseFunction'
+tube5Display.SelectOrientationVectors = 'Normals'
+tube5Display.ScaleFactor = 0.8619880199432374
+tube5Display.SelectScaleArray = 'AngularVelocity'
+tube5Display.GlyphType = 'Arrow'
+tube5Display.GlyphTableIndexArray = 'AngularVelocity'
+tube5Display.GaussianRadius = 0.04309940099716186
+tube5Display.SetScaleArray = ['POINTS', 'AngularVelocity']
+tube5Display.ScaleTransferFunction = 'PiecewiseFunction'
+tube5Display.OpacityArray = ['POINTS', 'AngularVelocity']
+tube5Display.OpacityTransferFunction = 'PiecewiseFunction'
+tube5Display.DataAxesGrid = 'GridAxesRepresentation'
+tube5Display.PolarAxes = 'PolarAxesRepresentation'
+tube5Display.SelectInputVectors = ['POINTS', 'Normals']
+tube5Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+tube5Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+tube5Display.ScaleTransferFunction.Points = [-0.002274907936430137, 0.0, 0.5, 0.0, 0.0023252478649755754, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+tube5Display.OpacityTransferFunction.Points = [-0.002274907936430137, 0.0, 0.5, 0.0, 0.0023252478649755754, 1.0, 0.5, 0.0]
+
+# show data from transform2
+transform2Display = Show(transform2, renderView11, 'UnstructuredGridRepresentation')
+
+# trace defaults for the display properties.
+transform2Display.Representation = 'Surface'
+transform2Display.AmbientColor = [0.6666666666666666, 0.21176470588235294, 0.19607843137254902]
+transform2Display.ColorArrayName = [None, '']
+transform2Display.DiffuseColor = [0.6666666666666666, 0.21176470588235294, 0.19607843137254902]
+transform2Display.Specular = 1.0
+transform2Display.SelectTCoordArray = 'None'
+transform2Display.SelectNormalArray = 'None'
+transform2Display.SelectTangentArray = 'None'
+transform2Display.OSPRayScaleArray = 'oppositeOmega'
+transform2Display.OSPRayScaleFunction = 'PiecewiseFunction'
+transform2Display.SelectOrientationVectors = 'None'
+transform2Display.ScaleFactor = 0.5546771049499511
+transform2Display.SelectScaleArray = 'None'
+transform2Display.GlyphType = 'Arrow'
+transform2Display.GlyphTableIndexArray = 'None'
+transform2Display.GaussianRadius = 0.02773385524749756
+transform2Display.SetScaleArray = ['POINTS', 'oppositeOmega']
+transform2Display.ScaleTransferFunction = 'PiecewiseFunction'
+transform2Display.OpacityArray = ['POINTS', 'oppositeOmega']
+transform2Display.OpacityTransferFunction = 'PiecewiseFunction'
+transform2Display.DataAxesGrid = 'GridAxesRepresentation'
+transform2Display.PolarAxes = 'PolarAxesRepresentation'
+transform2Display.ScalarOpacityUnitDistance = 1.4384388475814798
+transform2Display.OpacityArrayName = ['POINTS', 'oppositeOmega']
+transform2Display.SelectInputVectors = ['POINTS', 'oppositeOmega']
+transform2Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+transform2Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+transform2Display.ScaleTransferFunction.Points = [-0.9751526647579255, 0.0, 0.5, 0.0, -0.9056711359213363, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+transform2Display.OpacityTransferFunction.Points = [-0.9751526647579255, 0.0, 0.5, 0.0, -0.9056711359213363, 1.0, 0.5, 0.0]
+
+# show data from streamTracerWithCustomSource2
+streamTracerWithCustomSource2Display = Show(streamTracerWithCustomSource2, renderView11, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+streamTracerWithCustomSource2Display.Representation = 'Surface'
+streamTracerWithCustomSource2Display.ColorArrayName = ['POINTS', 'Bz']
+streamTracerWithCustomSource2Display.LookupTable = bzLUT
+streamTracerWithCustomSource2Display.Specular = 1.0
+streamTracerWithCustomSource2Display.SelectTCoordArray = 'None'
+streamTracerWithCustomSource2Display.SelectNormalArray = 'None'
+streamTracerWithCustomSource2Display.SelectTangentArray = 'None'
+streamTracerWithCustomSource2Display.EdgeColor = [0.0, 0.0, 0.0]
+streamTracerWithCustomSource2Display.OSPRayScaleArray = 'AngularVelocity'
+streamTracerWithCustomSource2Display.OSPRayScaleFunction = 'PiecewiseFunction'
+streamTracerWithCustomSource2Display.SelectOrientationVectors = 'Normals'
+streamTracerWithCustomSource2Display.ScaleFactor = 0.8468880653381348
+streamTracerWithCustomSource2Display.SelectScaleArray = 'AngularVelocity'
+streamTracerWithCustomSource2Display.GlyphType = 'Arrow'
+streamTracerWithCustomSource2Display.GlyphTableIndexArray = 'AngularVelocity'
+streamTracerWithCustomSource2Display.GaussianRadius = 0.04234440326690674
+streamTracerWithCustomSource2Display.SetScaleArray = ['POINTS', 'AngularVelocity']
+streamTracerWithCustomSource2Display.ScaleTransferFunction = 'PiecewiseFunction'
+streamTracerWithCustomSource2Display.OpacityArray = ['POINTS', 'AngularVelocity']
+streamTracerWithCustomSource2Display.OpacityTransferFunction = 'PiecewiseFunction'
+streamTracerWithCustomSource2Display.DataAxesGrid = 'GridAxesRepresentation'
+streamTracerWithCustomSource2Display.PolarAxes = 'PolarAxesRepresentation'
+streamTracerWithCustomSource2Display.SelectInputVectors = ['POINTS', 'Normals']
+streamTracerWithCustomSource2Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+streamTracerWithCustomSource2Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+streamTracerWithCustomSource2Display.ScaleTransferFunction.Points = [-0.04157313645200568, 0.0, 0.5, 0.0, 0.04161219663310649, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+streamTracerWithCustomSource2Display.OpacityTransferFunction.Points = [-0.04157313645200568, 0.0, 0.5, 0.0, 0.04161219663310649, 1.0, 0.5, 0.0]
+
+# show data from tube6
+tube6Display = Show(tube6, renderView11, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+tube6Display.Representation = 'Surface'
+tube6Display.AmbientColor = [0.0, 0.43137254901960786, 0.0]
+tube6Display.ColorArrayName = ['POINTS', '']
+tube6Display.DiffuseColor = [0.0, 0.43137254901960786, 0.0]
+tube6Display.Specular = 1.0
+tube6Display.SelectTCoordArray = 'None'
+tube6Display.SelectNormalArray = 'TubeNormals'
+tube6Display.SelectTangentArray = 'None'
+tube6Display.EdgeColor = [0.0, 0.0, 0.0]
+tube6Display.OSPRayScaleArray = 'AngularVelocity'
+tube6Display.OSPRayScaleFunction = 'PiecewiseFunction'
+tube6Display.SelectOrientationVectors = 'Normals'
+tube6Display.ScaleFactor = 0.8580793380737305
+tube6Display.SelectScaleArray = 'AngularVelocity'
+tube6Display.GlyphType = 'Arrow'
+tube6Display.GlyphTableIndexArray = 'AngularVelocity'
+tube6Display.GaussianRadius = 0.04290396690368652
+tube6Display.SetScaleArray = ['POINTS', 'AngularVelocity']
+tube6Display.ScaleTransferFunction = 'PiecewiseFunction'
+tube6Display.OpacityArray = ['POINTS', 'AngularVelocity']
+tube6Display.OpacityTransferFunction = 'PiecewiseFunction'
+tube6Display.DataAxesGrid = 'GridAxesRepresentation'
+tube6Display.PolarAxes = 'PolarAxesRepresentation'
+tube6Display.SelectInputVectors = ['POINTS', 'Normals']
+tube6Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+tube6Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+tube6Display.ScaleTransferFunction.Points = [-0.047227937488971354, 0.0, 0.5, 0.0, 0.047227942494882026, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+tube6Display.OpacityTransferFunction.Points = [-0.047227937488971354, 0.0, 0.5, 0.0, 0.047227942494882026, 1.0, 0.5, 0.0]
+
+# show data from slice2
+slice2Display = Show(slice2, renderView11, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+slice2Display.Representation = 'Surface LIC'
+slice2Display.ColorArrayName = ['POINTS', 'Bz']
+slice2Display.LookupTable = bzLUT
+slice2Display.Specular = 1.0
+slice2Display.SelectTCoordArray = 'None'
+slice2Display.SelectNormalArray = 'None'
+slice2Display.SelectTangentArray = 'None'
+slice2Display.EdgeColor = [0.0, 0.0, 0.0]
+slice2Display.OSPRayScaleArray = 'Bz'
+slice2Display.OSPRayScaleFunction = 'PiecewiseFunction'
+slice2Display.SelectOrientationVectors = 'Bz'
+slice2Display.ScaleFactor = 0.846682643890381
+slice2Display.SelectScaleArray = 'Bz'
+slice2Display.GlyphType = 'Arrow'
+slice2Display.GlyphTableIndexArray = 'Bz'
+slice2Display.GaussianRadius = 0.04233413219451904
+slice2Display.SetScaleArray = ['POINTS', 'Bz']
+slice2Display.ScaleTransferFunction = 'PiecewiseFunction'
+slice2Display.OpacityArray = ['POINTS', 'Bz']
+slice2Display.OpacityTransferFunction = 'PiecewiseFunction'
+slice2Display.DataAxesGrid = 'GridAxesRepresentation'
+slice2Display.PolarAxes = 'PolarAxesRepresentation'
+slice2Display.SelectInputVectors = ['POINTS', 'Bz']
+slice2Display.LICIntensity = 0.6
+slice2Display.EnhanceContrast = 'LIC and Color'
+slice2Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+slice2Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+slice2Display.ScaleTransferFunction.Points = [-0.0008344839921660763, 0.0, 0.5, 0.0, 0.0008344839921660763, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+slice2Display.OpacityTransferFunction.Points = [-0.0008344839921660763, 0.0, 0.5, 0.0, 0.0008344839921660763, 1.0, 0.5, 0.0]
+
+# show data from calculator5
+calculator5Display = Show(calculator5, renderView11, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+calculator5Display.Representation = 'Surface'
+calculator5Display.ColorArrayName = ['POINTS', 'x']
+calculator5Display.LookupTable = xLUT
+calculator5Display.Specular = 1.0
+calculator5Display.SelectTCoordArray = 'None'
+calculator5Display.SelectNormalArray = 'None'
+calculator5Display.SelectTangentArray = 'None'
+calculator5Display.EdgeColor = [0.0, 0.0, 0.0]
+calculator5Display.OSPRayScaleArray = 'x'
+calculator5Display.OSPRayScaleFunction = 'PiecewiseFunction'
+calculator5Display.SelectOrientationVectors = 'Bz'
+calculator5Display.ScaleFactor = 0.846682643890381
+calculator5Display.SelectScaleArray = 'x'
+calculator5Display.GlyphType = 'Arrow'
+calculator5Display.GlyphTableIndexArray = 'x'
+calculator5Display.GaussianRadius = 0.04233413219451904
+calculator5Display.SetScaleArray = ['POINTS', 'x']
+calculator5Display.ScaleTransferFunction = 'PiecewiseFunction'
+calculator5Display.OpacityArray = ['POINTS', 'x']
+calculator5Display.OpacityTransferFunction = 'PiecewiseFunction'
+calculator5Display.DataAxesGrid = 'GridAxesRepresentation'
+calculator5Display.PolarAxes = 'PolarAxesRepresentation'
+calculator5Display.SelectInputVectors = ['POINTS', 'Bz']
+calculator5Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+calculator5Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+calculator5Display.ScaleTransferFunction.Points = [4.044891357421875, 0.0, 0.5, 0.0, 4.045867919921875, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+calculator5Display.OpacityTransferFunction.Points = [4.044891357421875, 0.0, 0.5, 0.0, 4.045867919921875, 1.0, 0.5, 0.0]
+
+# show data from calculator6
+calculator6Display = Show(calculator6, renderView11, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+calculator6Display.Representation = 'Surface'
+calculator6Display.ColorArrayName = ['POINTS', 'y']
+calculator6Display.LookupTable = yLUT
+calculator6Display.Specular = 1.0
+calculator6Display.SelectTCoordArray = 'None'
+calculator6Display.SelectNormalArray = 'None'
+calculator6Display.SelectTangentArray = 'None'
+calculator6Display.EdgeColor = [0.0, 0.0, 0.0]
+calculator6Display.OSPRayScaleArray = 'y'
+calculator6Display.OSPRayScaleFunction = 'PiecewiseFunction'
+calculator6Display.SelectOrientationVectors = 'Bz'
+calculator6Display.ScaleFactor = 0.846682643890381
+calculator6Display.SelectScaleArray = 'y'
+calculator6Display.GlyphType = 'Arrow'
+calculator6Display.GlyphTableIndexArray = 'y'
+calculator6Display.GaussianRadius = 0.04233413219451904
+calculator6Display.SetScaleArray = ['POINTS', 'y']
+calculator6Display.ScaleTransferFunction = 'PiecewiseFunction'
+calculator6Display.OpacityArray = ['POINTS', 'y']
+calculator6Display.OpacityTransferFunction = 'PiecewiseFunction'
+calculator6Display.DataAxesGrid = 'GridAxesRepresentation'
+calculator6Display.PolarAxes = 'PolarAxesRepresentation'
+calculator6Display.SelectInputVectors = ['POINTS', 'Bz']
+calculator6Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+calculator6Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+calculator6Display.ScaleTransferFunction.Points = [-4.233413219451904, 0.0, 0.5, 0.0, 4.233413219451904, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+calculator6Display.OpacityTransferFunction.Points = [-4.233413219451904, 0.0, 0.5, 0.0, 4.233413219451904, 1.0, 0.5, 0.0]
+
+# show data from tTKTextureMapFromField2
+tTKTextureMapFromField2Display = Show(tTKTextureMapFromField2, renderView11, 'GeometryRepresentation')
+
+# a texture
+licTextureSide2 = CreateTexture('/data/julien/Pro/git/collaborations/gosia/tda-qchem/tda-qchem-explorations/data/LiH_MICD/png/licTextureSide.png')
+
+# trace defaults for the display properties.
+tTKTextureMapFromField2Display.Representation = 'Surface'
+tTKTextureMapFromField2Display.ColorArrayName = ['POINTS', '']
+tTKTextureMapFromField2Display.Specular = 1.0
+tTKTextureMapFromField2Display.SelectTCoordArray = 'UV coordinates from field'
+tTKTextureMapFromField2Display.SelectNormalArray = 'None'
+tTKTextureMapFromField2Display.SelectTangentArray = 'None'
+tTKTextureMapFromField2Display.Texture = licTextureSide2
+tTKTextureMapFromField2Display.InterpolateTextures = 1
+tTKTextureMapFromField2Display.SeamlessU = 1
+tTKTextureMapFromField2Display.SeamlessV = 1
+tTKTextureMapFromField2Display.EdgeColor = [0.0, 0.0, 0.0]
+tTKTextureMapFromField2Display.OSPRayScaleArray = 'y'
+tTKTextureMapFromField2Display.OSPRayScaleFunction = 'PiecewiseFunction'
+tTKTextureMapFromField2Display.SelectOrientationVectors = 'Bz'
+tTKTextureMapFromField2Display.ScaleFactor = 0.846682643890381
+tTKTextureMapFromField2Display.SelectScaleArray = 'y'
+tTKTextureMapFromField2Display.GlyphType = 'Arrow'
+tTKTextureMapFromField2Display.GlyphTableIndexArray = 'y'
+tTKTextureMapFromField2Display.GaussianRadius = 0.04233413219451904
+tTKTextureMapFromField2Display.SetScaleArray = ['POINTS', 'y']
+tTKTextureMapFromField2Display.ScaleTransferFunction = 'PiecewiseFunction'
+tTKTextureMapFromField2Display.OpacityArray = ['POINTS', 'y']
+tTKTextureMapFromField2Display.OpacityTransferFunction = 'PiecewiseFunction'
+tTKTextureMapFromField2Display.DataAxesGrid = 'GridAxesRepresentation'
+tTKTextureMapFromField2Display.PolarAxes = 'PolarAxesRepresentation'
+tTKTextureMapFromField2Display.SelectInputVectors = ['POINTS', 'Bz']
+tTKTextureMapFromField2Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+tTKTextureMapFromField2Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+tTKTextureMapFromField2Display.ScaleTransferFunction.Points = [-4.233413219451904, 0.0, 0.5, 0.0, 4.233413219451904, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+tTKTextureMapFromField2Display.OpacityTransferFunction.Points = [-4.233413219451904, 0.0, 0.5, 0.0, 4.233413219451904, 1.0, 0.5, 0.0]
+
+# show data from slice3
+slice3Display = Show(slice3, renderView11, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+slice3Display.Representation = 'Surface LIC'
+slice3Display.ColorArrayName = ['POINTS', 'Bz']
+slice3Display.LookupTable = bzLUT
+slice3Display.Specular = 1.0
+slice3Display.SelectTCoordArray = 'None'
+slice3Display.SelectNormalArray = 'None'
+slice3Display.SelectTangentArray = 'None'
+slice3Display.EdgeColor = [0.0, 0.0, 0.0]
+slice3Display.OSPRayScaleArray = 'Bz'
+slice3Display.OSPRayScaleFunction = 'PiecewiseFunction'
+slice3Display.SelectOrientationVectors = 'Bz'
+slice3Display.ScaleFactor = 1.0061825752258302
+slice3Display.SelectScaleArray = 'Bz'
+slice3Display.GlyphType = 'Arrow'
+slice3Display.GlyphTableIndexArray = 'Bz'
+slice3Display.GaussianRadius = 0.050309128761291504
+slice3Display.SetScaleArray = ['POINTS', 'Bz']
+slice3Display.ScaleTransferFunction = 'PiecewiseFunction'
+slice3Display.OpacityArray = ['POINTS', 'Bz']
+slice3Display.OpacityTransferFunction = 'PiecewiseFunction'
+slice3Display.DataAxesGrid = 'GridAxesRepresentation'
+slice3Display.PolarAxes = 'PolarAxesRepresentation'
+slice3Display.SelectInputVectors = ['POINTS', 'Bz']
+slice3Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+slice3Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+slice3Display.ScaleTransferFunction.Points = [-0.00010881522166928599, 0.0, 0.5, 0.0, 0.00368209482938846, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+slice3Display.OpacityTransferFunction.Points = [-0.00010881522166928599, 0.0, 0.5, 0.0, 0.00368209482938846, 1.0, 0.5, 0.0]
+
+# show data from calculator7
+calculator7Display = Show(calculator7, renderView11, 'GeometryRepresentation')
+
+# get color transfer function/color map for 'u'
+uLUT = GetColorTransferFunction('u')
+uLUT.RGBPoints = [-5.03091287612915, 0.0, 0.129412, 0.584314, 4.440892098500626e-15, 0.917647, 0.941176, 0.788235, 5.03091287612915, 0.0, 0.431373, 0.0]
+uLUT.ColorSpace = 'RGB'
+uLUT.AboveRangeColor = [1.0, 1.0, 1.0]
+uLUT.NanColor = [0.0, 0.0, 0.0]
+uLUT.ScalarRangeInitialized = 1.0
+
+# trace defaults for the display properties.
+calculator7Display.Representation = 'Surface'
+calculator7Display.ColorArrayName = ['POINTS', 'u']
+calculator7Display.LookupTable = uLUT
+calculator7Display.Specular = 1.0
+calculator7Display.SelectTCoordArray = 'None'
+calculator7Display.SelectNormalArray = 'None'
+calculator7Display.SelectTangentArray = 'None'
+calculator7Display.EdgeColor = [0.0, 0.0, 0.0]
+calculator7Display.OSPRayScaleArray = 'u'
+calculator7Display.OSPRayScaleFunction = 'PiecewiseFunction'
+calculator7Display.SelectOrientationVectors = 'Bz'
+calculator7Display.ScaleFactor = 1.0061825752258302
+calculator7Display.SelectScaleArray = 'u'
+calculator7Display.GlyphType = 'Arrow'
+calculator7Display.GlyphTableIndexArray = 'u'
+calculator7Display.GaussianRadius = 0.050309128761291504
+calculator7Display.SetScaleArray = ['POINTS', 'u']
+calculator7Display.ScaleTransferFunction = 'PiecewiseFunction'
+calculator7Display.OpacityArray = ['POINTS', 'u']
+calculator7Display.OpacityTransferFunction = 'PiecewiseFunction'
+calculator7Display.DataAxesGrid = 'GridAxesRepresentation'
+calculator7Display.PolarAxes = 'PolarAxesRepresentation'
+calculator7Display.SelectInputVectors = ['POINTS', 'Bz']
+calculator7Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+calculator7Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+calculator7Display.ScaleTransferFunction.Points = [-5.03091287612915, 0.0, 0.5, 0.0, 5.03091287612915, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+calculator7Display.OpacityTransferFunction.Points = [-5.03091287612915, 0.0, 0.5, 0.0, 5.03091287612915, 1.0, 0.5, 0.0]
+
+# show data from calculator8
+calculator8Display = Show(calculator8, renderView11, 'GeometryRepresentation')
+
+# get color transfer function/color map for 'v'
+vLUT = GetColorTransferFunction('v')
+vLUT.RGBPoints = [-4.233413219451904, 0.0, 0.129412, 0.584314, 3.552713678800501e-15, 0.917647, 0.941176, 0.788235, 4.233413219451904, 0.0, 0.431373, 0.0]
+vLUT.ColorSpace = 'RGB'
+vLUT.AboveRangeColor = [1.0, 1.0, 1.0]
+vLUT.NanColor = [0.0, 0.0, 0.0]
+vLUT.ScalarRangeInitialized = 1.0
+
+# trace defaults for the display properties.
+calculator8Display.Representation = 'Surface'
+calculator8Display.ColorArrayName = ['POINTS', 'v']
+calculator8Display.LookupTable = vLUT
+calculator8Display.Specular = 1.0
+calculator8Display.SelectTCoordArray = 'None'
+calculator8Display.SelectNormalArray = 'None'
+calculator8Display.SelectTangentArray = 'None'
+calculator8Display.EdgeColor = [0.0, 0.0, 0.0]
+calculator8Display.OSPRayScaleArray = 'v'
+calculator8Display.OSPRayScaleFunction = 'PiecewiseFunction'
+calculator8Display.SelectOrientationVectors = 'Bz'
+calculator8Display.ScaleFactor = 1.0061825752258302
+calculator8Display.SelectScaleArray = 'v'
+calculator8Display.GlyphType = 'Arrow'
+calculator8Display.GlyphTableIndexArray = 'v'
+calculator8Display.GaussianRadius = 0.050309128761291504
+calculator8Display.SetScaleArray = ['POINTS', 'v']
+calculator8Display.ScaleTransferFunction = 'PiecewiseFunction'
+calculator8Display.OpacityArray = ['POINTS', 'v']
+calculator8Display.OpacityTransferFunction = 'PiecewiseFunction'
+calculator8Display.DataAxesGrid = 'GridAxesRepresentation'
+calculator8Display.PolarAxes = 'PolarAxesRepresentation'
+calculator8Display.SelectInputVectors = ['POINTS', 'Bz']
+calculator8Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+calculator8Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+calculator8Display.ScaleTransferFunction.Points = [-4.233413219451904, 0.0, 0.5, 0.0, 4.233413219451904, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+calculator8Display.OpacityTransferFunction.Points = [-4.233413219451904, 0.0, 0.5, 0.0, 4.233413219451904, 1.0, 0.5, 0.0]
+
+# show data from tTKTextureMapFromField3
+tTKTextureMapFromField3Display = Show(tTKTextureMapFromField3, renderView11, 'GeometryRepresentation')
+
+# a texture
+licTextureBack2 = CreateTexture('/data/julien/Pro/git/collaborations/gosia/tda-qchem/tda-qchem-explorations/data/LiH_MICD/png/licTextureBack.png')
+
+# trace defaults for the display properties.
+tTKTextureMapFromField3Display.Representation = 'Surface'
+tTKTextureMapFromField3Display.ColorArrayName = ['POINTS', '']
+tTKTextureMapFromField3Display.Specular = 1.0
+tTKTextureMapFromField3Display.SelectTCoordArray = 'UV coordinates from field'
+tTKTextureMapFromField3Display.SelectNormalArray = 'None'
+tTKTextureMapFromField3Display.SelectTangentArray = 'None'
+tTKTextureMapFromField3Display.Texture = licTextureBack2
+tTKTextureMapFromField3Display.EdgeColor = [0.0, 0.0, 0.0]
+tTKTextureMapFromField3Display.OSPRayScaleArray = 'v'
+tTKTextureMapFromField3Display.OSPRayScaleFunction = 'PiecewiseFunction'
+tTKTextureMapFromField3Display.SelectOrientationVectors = 'Bz'
+tTKTextureMapFromField3Display.ScaleFactor = 1.0061825752258302
+tTKTextureMapFromField3Display.SelectScaleArray = 'v'
+tTKTextureMapFromField3Display.GlyphType = 'Arrow'
+tTKTextureMapFromField3Display.GlyphTableIndexArray = 'v'
+tTKTextureMapFromField3Display.GaussianRadius = 0.050309128761291504
+tTKTextureMapFromField3Display.SetScaleArray = ['POINTS', 'v']
+tTKTextureMapFromField3Display.ScaleTransferFunction = 'PiecewiseFunction'
+tTKTextureMapFromField3Display.OpacityArray = ['POINTS', 'v']
+tTKTextureMapFromField3Display.OpacityTransferFunction = 'PiecewiseFunction'
+tTKTextureMapFromField3Display.DataAxesGrid = 'GridAxesRepresentation'
+tTKTextureMapFromField3Display.PolarAxes = 'PolarAxesRepresentation'
+tTKTextureMapFromField3Display.SelectInputVectors = ['POINTS', 'Bz']
+tTKTextureMapFromField3Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+tTKTextureMapFromField3Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+tTKTextureMapFromField3Display.ScaleTransferFunction.Points = [-4.233413219451904, 0.0, 0.5, 0.0, 4.233413219451904, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+tTKTextureMapFromField3Display.OpacityTransferFunction.Points = [-4.233413219451904, 0.0, 0.5, 0.0, 4.233413219451904, 1.0, 0.5, 0.0]
+
+# hide data in view
+Hide(start_data_bzvti, renderView11)
+
+# hide data in view
+Hide(calculator2, renderView11)
+
+# hide data in view
+Hide(slice1, renderView11)
+
+# hide data in view
+Hide(contour1, renderView11)
+
+# hide data in view
+Hide(streamTracer1, renderView11)
+
+# hide data in view
+Hide(glyph1, renderView11)
+
+# hide data in view
+Hide(appendAttributes1, renderView11)
+
+# hide data in view
+Hide(tTKGeometrySmoother2, renderView11)
+
+# hide data in view
+Hide(streamTracerWithCustomSource1, renderView11)
+
+# hide data in view
+Hide(transform1, renderView11)
+
+# hide data in view
+Hide(calculator3, renderView11)
+
+# hide data in view
+Hide(calculator4, renderView11)
+
+# hide data in view
+Hide(streamTracer2, renderView11)
+
+# hide data in view
+Hide(transform2, renderView11)
+
+# hide data in view
+Hide(streamTracerWithCustomSource2, renderView11)
+
+# hide data in view
+Hide(slice2, renderView11)
+
+# hide data in view
+Hide(calculator5, renderView11)
+
+# hide data in view
+Hide(calculator6, renderView11)
+
+# hide data in view
+Hide(slice3, renderView11)
+
+# hide data in view
+Hide(calculator7, renderView11)
+
+# hide data in view
+Hide(calculator8, renderView11)
+
+# ----------------------------------------------------------------
+# setup the visualization in view 'renderView12'
+# ----------------------------------------------------------------
+
+# show data from slice1
+slice1Display_1 = Show(slice1, renderView12, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+slice1Display_1.Representation = 'Surface LIC'
+slice1Display_1.ColorArrayName = ['POINTS', 'Bz']
+slice1Display_1.LookupTable = bzLUT
+slice1Display_1.Specular = 1.0
+slice1Display_1.SelectTCoordArray = 'None'
+slice1Display_1.SelectNormalArray = 'None'
+slice1Display_1.SelectTangentArray = 'None'
+slice1Display_1.EdgeColor = [0.0, 0.0, 0.0]
+slice1Display_1.OSPRayScaleArray = 'Bz'
+slice1Display_1.OSPRayScaleFunction = 'PiecewiseFunction'
+slice1Display_1.SelectOrientationVectors = 'Bz'
+slice1Display_1.ScaleFactor = 1.0061825752258302
+slice1Display_1.SelectScaleArray = 'Bz'
+slice1Display_1.GlyphType = 'Arrow'
+slice1Display_1.GlyphTableIndexArray = 'Bz'
+slice1Display_1.GaussianRadius = 0.050309128761291504
+slice1Display_1.SetScaleArray = ['POINTS', 'Bz']
+slice1Display_1.ScaleTransferFunction = 'PiecewiseFunction'
+slice1Display_1.OpacityArray = ['POINTS', 'Bz']
+slice1Display_1.OpacityTransferFunction = 'PiecewiseFunction'
+slice1Display_1.DataAxesGrid = 'GridAxesRepresentation'
+slice1Display_1.PolarAxes = 'PolarAxesRepresentation'
+slice1Display_1.SelectInputVectors = ['POINTS', 'Bz']
+slice1Display_1.LICIntensity = 0.6
+slice1Display_1.EnhanceContrast = 'LIC and Color'
+slice1Display_1.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+slice1Display_1.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+slice1Display_1.ScaleTransferFunction.Points = [-0.4143731230557486, 0.0, 0.5, 0.0, 0.41437312305574814, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+slice1Display_1.OpacityTransferFunction.Points = [-0.4143731230557486, 0.0, 0.5, 0.0, 0.41437312305574814, 1.0, 0.5, 0.0]
+
+# ----------------------------------------------------------------
+# setup the visualization in view 'renderView13'
+# ----------------------------------------------------------------
+
+# show data from slice2
+slice2Display_1 = Show(slice2, renderView13, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+slice2Display_1.Representation = 'Surface LIC'
+slice2Display_1.ColorArrayName = ['POINTS', 'Bz']
+slice2Display_1.LookupTable = bzLUT
+slice2Display_1.Specular = 1.0
+slice2Display_1.SelectTCoordArray = 'None'
+slice2Display_1.SelectNormalArray = 'None'
+slice2Display_1.SelectTangentArray = 'None'
+slice2Display_1.EdgeColor = [0.0, 0.0, 0.0]
+slice2Display_1.OSPRayScaleArray = 'Bz'
+slice2Display_1.OSPRayScaleFunction = 'PiecewiseFunction'
+slice2Display_1.SelectOrientationVectors = 'Bz'
+slice2Display_1.ScaleFactor = 0.846682643890381
+slice2Display_1.SelectScaleArray = 'Bz'
+slice2Display_1.GlyphType = 'Arrow'
+slice2Display_1.GlyphTableIndexArray = 'Bz'
+slice2Display_1.GaussianRadius = 0.04233413219451904
+slice2Display_1.SetScaleArray = ['POINTS', 'Bz']
+slice2Display_1.ScaleTransferFunction = 'PiecewiseFunction'
+slice2Display_1.OpacityArray = ['POINTS', 'Bz']
+slice2Display_1.OpacityTransferFunction = 'PiecewiseFunction'
+slice2Display_1.DataAxesGrid = 'GridAxesRepresentation'
+slice2Display_1.PolarAxes = 'PolarAxesRepresentation'
+slice2Display_1.SelectInputVectors = ['POINTS', 'Bz']
+slice2Display_1.LICIntensity = 0.6
+slice2Display_1.EnhanceContrast = 'LIC and Color'
+slice2Display_1.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+slice2Display_1.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+slice2Display_1.ScaleTransferFunction.Points = [-0.00042519138157758436, 0.0, 0.5, 0.0, 0.0004251913815775849, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+slice2Display_1.OpacityTransferFunction.Points = [-0.00042519138157758436, 0.0, 0.5, 0.0, 0.0004251913815775849, 1.0, 0.5, 0.0]
+
+# ----------------------------------------------------------------
+# setup the visualization in view 'renderView14'
+# ----------------------------------------------------------------
+
+# show data from slice3
+slice3Display_1 = Show(slice3, renderView14, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+slice3Display_1.Representation = 'Surface LIC'
+slice3Display_1.ColorArrayName = ['POINTS', 'Bz']
+slice3Display_1.LookupTable = bzLUT
+slice3Display_1.Specular = 1.0
+slice3Display_1.SelectTCoordArray = 'None'
+slice3Display_1.SelectNormalArray = 'None'
+slice3Display_1.SelectTangentArray = 'None'
+slice3Display_1.EdgeColor = [0.0, 0.0, 0.0]
+slice3Display_1.OSPRayScaleArray = 'Bz'
+slice3Display_1.OSPRayScaleFunction = 'PiecewiseFunction'
+slice3Display_1.SelectOrientationVectors = 'Bz'
+slice3Display_1.ScaleFactor = 1.0061825752258302
+slice3Display_1.SelectScaleArray = 'Bz'
+slice3Display_1.GlyphType = 'Arrow'
+slice3Display_1.GlyphTableIndexArray = 'Bz'
+slice3Display_1.GaussianRadius = 0.050309128761291504
+slice3Display_1.SetScaleArray = ['POINTS', 'Bz']
+slice3Display_1.ScaleTransferFunction = 'PiecewiseFunction'
+slice3Display_1.OpacityArray = ['POINTS', 'Bz']
+slice3Display_1.OpacityTransferFunction = 'PiecewiseFunction'
+slice3Display_1.DataAxesGrid = 'GridAxesRepresentation'
+slice3Display_1.PolarAxes = 'PolarAxesRepresentation'
+slice3Display_1.SelectInputVectors = ['POINTS', 'Bz']
+slice3Display_1.LICIntensity = 0.6
+slice3Display_1.EnhanceContrast = 'LIC and Color'
+slice3Display_1.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+slice3Display_1.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+slice3Display_1.ScaleTransferFunction.Points = [-0.00010881522166928599, 0.0, 0.5, 0.0, 0.00368209482938846, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+slice3Display_1.OpacityTransferFunction.Points = [-0.00010881522166928599, 0.0, 0.5, 0.0, 0.00368209482938846, 1.0, 0.5, 0.0]
+
+# ----------------------------------------------------------------
+# setup the visualization in view 'renderView2'
+# ----------------------------------------------------------------
+
+# show data from start_data_omega_bzvti
+start_data_omega_bzvtiDisplay_2 = Show(start_data_omega_bzvti, renderView2, 'UniformGridRepresentation')
+
+# trace defaults for the display properties.
+start_data_omega_bzvtiDisplay_2.Representation = 'Outline'
+start_data_omega_bzvtiDisplay_2.AmbientColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
+start_data_omega_bzvtiDisplay_2.ColorArrayName = ['POINTS', '']
+start_data_omega_bzvtiDisplay_2.DiffuseColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
+start_data_omega_bzvtiDisplay_2.SelectTCoordArray = 'None'
+start_data_omega_bzvtiDisplay_2.SelectNormalArray = 'None'
+start_data_omega_bzvtiDisplay_2.SelectTangentArray = 'None'
+start_data_omega_bzvtiDisplay_2.OSPRayScaleArray = 'bz_wz'
+start_data_omega_bzvtiDisplay_2.OSPRayScaleFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_2.SelectOrientationVectors = 'None'
+start_data_omega_bzvtiDisplay_2.ScaleFactor = 1.006182531816462
+start_data_omega_bzvtiDisplay_2.SelectScaleArray = 'None'
+start_data_omega_bzvtiDisplay_2.GlyphType = 'Arrow'
+start_data_omega_bzvtiDisplay_2.GlyphTableIndexArray = 'None'
+start_data_omega_bzvtiDisplay_2.GaussianRadius = 0.050309126590823094
+start_data_omega_bzvtiDisplay_2.SetScaleArray = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_2.ScaleTransferFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_2.OpacityArray = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_2.OpacityTransferFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_2.DataAxesGrid = 'GridAxesRepresentation'
+start_data_omega_bzvtiDisplay_2.PolarAxes = 'PolarAxesRepresentation'
+start_data_omega_bzvtiDisplay_2.ScalarOpacityUnitDistance = 0.12315087617612483
+start_data_omega_bzvtiDisplay_2.OpacityArrayName = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_2.SliceFunction = 'Plane'
+start_data_omega_bzvtiDisplay_2.Slice = 63
+start_data_omega_bzvtiDisplay_2.SelectInputVectors = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_2.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+start_data_omega_bzvtiDisplay_2.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+start_data_omega_bzvtiDisplay_2.ScaleTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+start_data_omega_bzvtiDisplay_2.OpacityTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+
+# show data from contour1
+contour1Display_3 = Show(contour1, renderView2, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+contour1Display_3.Representation = 'Surface'
+contour1Display_3.ColorArrayName = ['POINTS', '']
+contour1Display_3.LookupTable = omega_bzLUT
+contour1Display_3.Opacity = 0.2
+contour1Display_3.Specular = 1.0
+contour1Display_3.SelectTCoordArray = 'None'
+contour1Display_3.SelectNormalArray = 'Normals'
+contour1Display_3.SelectTangentArray = 'None'
+contour1Display_3.EdgeColor = [0.0, 0.0, 0.0]
+contour1Display_3.OSPRayScaleArray = 'omega_bz'
+contour1Display_3.OSPRayScaleFunction = 'PiecewiseFunction'
+contour1Display_3.SelectOrientationVectors = 'None'
+contour1Display_3.ScaleFactor = 0.8636709690093994
+contour1Display_3.SelectScaleArray = 'omega_bz'
+contour1Display_3.GlyphType = 'Arrow'
+contour1Display_3.GlyphTableIndexArray = 'omega_bz'
+contour1Display_3.GaussianRadius = 0.04318354845046997
+contour1Display_3.SetScaleArray = ['POINTS', 'omega_bz']
+contour1Display_3.ScaleTransferFunction = 'PiecewiseFunction'
+contour1Display_3.OpacityArray = ['POINTS', 'omega_bz']
+contour1Display_3.OpacityTransferFunction = 'PiecewiseFunction'
+contour1Display_3.DataAxesGrid = 'GridAxesRepresentation'
+contour1Display_3.PolarAxes = 'PolarAxesRepresentation'
+contour1Display_3.SelectInputVectors = ['POINTS', 'Normals']
+contour1Display_3.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+contour1Display_3.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+contour1Display_3.ScaleTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+contour1Display_3.OpacityTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
+
+# show data from tTKIcospheresFromPoints2
+tTKIcospheresFromPoints2Display_1 = Show(tTKIcospheresFromPoints2, renderView2, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+tTKIcospheresFromPoints2Display_1.Representation = 'Surface'
+tTKIcospheresFromPoints2Display_1.ColorArrayName = ['POINTS', 'CellDimension']
+tTKIcospheresFromPoints2Display_1.LookupTable = cellDimensionLUT
+tTKIcospheresFromPoints2Display_1.Specular = 1.0
+tTKIcospheresFromPoints2Display_1.SelectTCoordArray = 'None'
+tTKIcospheresFromPoints2Display_1.SelectNormalArray = 'Normals'
+tTKIcospheresFromPoints2Display_1.SelectTangentArray = 'None'
+tTKIcospheresFromPoints2Display_1.EdgeColor = [0.0, 0.0, 0.0]
+tTKIcospheresFromPoints2Display_1.OSPRayScaleArray = 'CellDimension'
+tTKIcospheresFromPoints2Display_1.OSPRayScaleFunction = 'PiecewiseFunction'
+tTKIcospheresFromPoints2Display_1.SelectOrientationVectors = 'None'
+tTKIcospheresFromPoints2Display_1.ScaleFactor = 0.866682767868042
+tTKIcospheresFromPoints2Display_1.SelectScaleArray = 'CellDimension'
+tTKIcospheresFromPoints2Display_1.GlyphType = 'Arrow'
+tTKIcospheresFromPoints2Display_1.GlyphTableIndexArray = 'CellDimension'
+tTKIcospheresFromPoints2Display_1.GaussianRadius = 0.043334138393402104
+tTKIcospheresFromPoints2Display_1.SetScaleArray = ['POINTS', 'CellDimension']
+tTKIcospheresFromPoints2Display_1.ScaleTransferFunction = 'PiecewiseFunction'
+tTKIcospheresFromPoints2Display_1.OpacityArray = ['POINTS', 'CellDimension']
+tTKIcospheresFromPoints2Display_1.OpacityTransferFunction = 'PiecewiseFunction'
+tTKIcospheresFromPoints2Display_1.DataAxesGrid = 'GridAxesRepresentation'
+tTKIcospheresFromPoints2Display_1.PolarAxes = 'PolarAxesRepresentation'
+tTKIcospheresFromPoints2Display_1.SelectInputVectors = ['POINTS', 'CellDimension']
+tTKIcospheresFromPoints2Display_1.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+tTKIcospheresFromPoints2Display_1.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+tTKIcospheresFromPoints2Display_1.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 3.0, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+tTKIcospheresFromPoints2Display_1.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 3.0, 1.0, 0.5, 0.0]
+
 # show data from tube1
-tube1Display = Show(tube1, renderView10, 'GeometryRepresentation')
+tube1Display = Show(tube1, renderView2, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
 tube1Display.Representation = 'Surface'
@@ -803,89 +2590,89 @@ tube1Display.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 3.0, 1.0, 0.5, 
 tube1Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 3.0, 1.0, 0.5, 0.0]
 
 # ----------------------------------------------------------------
-# setup the visualization in view 'renderView2'
+# setup the visualization in view 'renderView3'
 # ----------------------------------------------------------------
 
 # show data from start_data_omega_bzvti
-start_data_omega_bzvtiDisplay_1 = Show(start_data_omega_bzvti, renderView2, 'UniformGridRepresentation')
+start_data_omega_bzvtiDisplay_3 = Show(start_data_omega_bzvti, renderView3, 'UniformGridRepresentation')
 
 # trace defaults for the display properties.
-start_data_omega_bzvtiDisplay_1.Representation = 'Outline'
-start_data_omega_bzvtiDisplay_1.ColorArrayName = ['POINTS', '']
-start_data_omega_bzvtiDisplay_1.SelectTCoordArray = 'None'
-start_data_omega_bzvtiDisplay_1.SelectNormalArray = 'None'
-start_data_omega_bzvtiDisplay_1.SelectTangentArray = 'None'
-start_data_omega_bzvtiDisplay_1.OSPRayScaleArray = 'bz_wz'
-start_data_omega_bzvtiDisplay_1.OSPRayScaleFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_1.SelectOrientationVectors = 'None'
-start_data_omega_bzvtiDisplay_1.ScaleFactor = 1.006182531816462
-start_data_omega_bzvtiDisplay_1.SelectScaleArray = 'None'
-start_data_omega_bzvtiDisplay_1.GlyphType = 'Arrow'
-start_data_omega_bzvtiDisplay_1.GlyphTableIndexArray = 'None'
-start_data_omega_bzvtiDisplay_1.GaussianRadius = 0.050309126590823094
-start_data_omega_bzvtiDisplay_1.SetScaleArray = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_1.ScaleTransferFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_1.OpacityArray = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_1.OpacityTransferFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_1.DataAxesGrid = 'GridAxesRepresentation'
-start_data_omega_bzvtiDisplay_1.PolarAxes = 'PolarAxesRepresentation'
-start_data_omega_bzvtiDisplay_1.ScalarOpacityUnitDistance = 0.12315087617612483
-start_data_omega_bzvtiDisplay_1.OpacityArrayName = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_1.SliceFunction = 'Plane'
-start_data_omega_bzvtiDisplay_1.Slice = 63
-start_data_omega_bzvtiDisplay_1.SelectInputVectors = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_1.WriteLog = ''
+start_data_omega_bzvtiDisplay_3.Representation = 'Outline'
+start_data_omega_bzvtiDisplay_3.ColorArrayName = ['POINTS', '']
+start_data_omega_bzvtiDisplay_3.SelectTCoordArray = 'None'
+start_data_omega_bzvtiDisplay_3.SelectNormalArray = 'None'
+start_data_omega_bzvtiDisplay_3.SelectTangentArray = 'None'
+start_data_omega_bzvtiDisplay_3.OSPRayScaleArray = 'bz_wz'
+start_data_omega_bzvtiDisplay_3.OSPRayScaleFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_3.SelectOrientationVectors = 'None'
+start_data_omega_bzvtiDisplay_3.ScaleFactor = 1.006182531816462
+start_data_omega_bzvtiDisplay_3.SelectScaleArray = 'None'
+start_data_omega_bzvtiDisplay_3.GlyphType = 'Arrow'
+start_data_omega_bzvtiDisplay_3.GlyphTableIndexArray = 'None'
+start_data_omega_bzvtiDisplay_3.GaussianRadius = 0.050309126590823094
+start_data_omega_bzvtiDisplay_3.SetScaleArray = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_3.ScaleTransferFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_3.OpacityArray = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_3.OpacityTransferFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_3.DataAxesGrid = 'GridAxesRepresentation'
+start_data_omega_bzvtiDisplay_3.PolarAxes = 'PolarAxesRepresentation'
+start_data_omega_bzvtiDisplay_3.ScalarOpacityUnitDistance = 0.12315087617612483
+start_data_omega_bzvtiDisplay_3.OpacityArrayName = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_3.SliceFunction = 'Plane'
+start_data_omega_bzvtiDisplay_3.Slice = 63
+start_data_omega_bzvtiDisplay_3.SelectInputVectors = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_3.WriteLog = ''
 
 # init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
-start_data_omega_bzvtiDisplay_1.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_3.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-start_data_omega_bzvtiDisplay_1.ScaleTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_3.ScaleTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-start_data_omega_bzvtiDisplay_1.OpacityTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_3.OpacityTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
 
 # show data from contour1
-contour1Display_2 = Show(contour1, renderView2, 'GeometryRepresentation')
+contour1Display_4 = Show(contour1, renderView3, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
-contour1Display_2.Representation = 'Surface'
-contour1Display_2.ColorArrayName = ['POINTS', '']
-contour1Display_2.LookupTable = omega_bzLUT
-contour1Display_2.Opacity = 0.2
-contour1Display_2.Specular = 1.0
-contour1Display_2.SelectTCoordArray = 'None'
-contour1Display_2.SelectNormalArray = 'Normals'
-contour1Display_2.SelectTangentArray = 'None'
-contour1Display_2.EdgeColor = [0.0, 0.0, 0.0]
-contour1Display_2.OSPRayScaleArray = 'omega_bz'
-contour1Display_2.OSPRayScaleFunction = 'PiecewiseFunction'
-contour1Display_2.SelectOrientationVectors = 'None'
-contour1Display_2.ScaleFactor = 0.8636709690093994
-contour1Display_2.SelectScaleArray = 'omega_bz'
-contour1Display_2.GlyphType = 'Arrow'
-contour1Display_2.GlyphTableIndexArray = 'omega_bz'
-contour1Display_2.GaussianRadius = 0.04318354845046997
-contour1Display_2.SetScaleArray = ['POINTS', 'omega_bz']
-contour1Display_2.ScaleTransferFunction = 'PiecewiseFunction'
-contour1Display_2.OpacityArray = ['POINTS', 'omega_bz']
-contour1Display_2.OpacityTransferFunction = 'PiecewiseFunction'
-contour1Display_2.DataAxesGrid = 'GridAxesRepresentation'
-contour1Display_2.PolarAxes = 'PolarAxesRepresentation'
-contour1Display_2.SelectInputVectors = ['POINTS', 'Normals']
-contour1Display_2.WriteLog = ''
+contour1Display_4.Representation = 'Surface'
+contour1Display_4.ColorArrayName = ['POINTS', '']
+contour1Display_4.LookupTable = omega_bzLUT
+contour1Display_4.Opacity = 0.2
+contour1Display_4.Specular = 1.0
+contour1Display_4.SelectTCoordArray = 'None'
+contour1Display_4.SelectNormalArray = 'Normals'
+contour1Display_4.SelectTangentArray = 'None'
+contour1Display_4.EdgeColor = [0.0, 0.0, 0.0]
+contour1Display_4.OSPRayScaleArray = 'omega_bz'
+contour1Display_4.OSPRayScaleFunction = 'PiecewiseFunction'
+contour1Display_4.SelectOrientationVectors = 'None'
+contour1Display_4.ScaleFactor = 0.8636709690093994
+contour1Display_4.SelectScaleArray = 'omega_bz'
+contour1Display_4.GlyphType = 'Arrow'
+contour1Display_4.GlyphTableIndexArray = 'omega_bz'
+contour1Display_4.GaussianRadius = 0.04318354845046997
+contour1Display_4.SetScaleArray = ['POINTS', 'omega_bz']
+contour1Display_4.ScaleTransferFunction = 'PiecewiseFunction'
+contour1Display_4.OpacityArray = ['POINTS', 'omega_bz']
+contour1Display_4.OpacityTransferFunction = 'PiecewiseFunction'
+contour1Display_4.DataAxesGrid = 'GridAxesRepresentation'
+contour1Display_4.PolarAxes = 'PolarAxesRepresentation'
+contour1Display_4.SelectInputVectors = ['POINTS', 'Normals']
+contour1Display_4.WriteLog = ''
 
 # init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
-contour1Display_2.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+contour1Display_4.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-contour1Display_2.ScaleTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
+contour1Display_4.ScaleTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-contour1Display_2.OpacityTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
+contour1Display_4.OpacityTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
 
 # show data from tTKGeometrySmoother2
-tTKGeometrySmoother2Display = Show(tTKGeometrySmoother2, renderView2, 'UnstructuredGridRepresentation')
+tTKGeometrySmoother2Display_1 = Show(tTKGeometrySmoother2, renderView3, 'UnstructuredGridRepresentation')
 
 # get color transfer function/color map for 'Persistence'
 persistenceLUT = GetColorTransferFunction('Persistence')
@@ -901,50 +2688,50 @@ persistencePWF.Points = [7.237523249419703e-06, 0.0, 0.5, 0.0, 0.849452912807464
 persistencePWF.ScalarRangeInitialized = 1
 
 # trace defaults for the display properties.
-tTKGeometrySmoother2Display.Representation = 'Surface'
-tTKGeometrySmoother2Display.ColorArrayName = ['CELLS', 'Persistence']
-tTKGeometrySmoother2Display.LookupTable = persistenceLUT
-tTKGeometrySmoother2Display.LineWidth = 10.0
-tTKGeometrySmoother2Display.RenderLinesAsTubes = 1
-tTKGeometrySmoother2Display.Specular = 1.0
-tTKGeometrySmoother2Display.SelectTCoordArray = 'None'
-tTKGeometrySmoother2Display.SelectNormalArray = 'None'
-tTKGeometrySmoother2Display.SelectTangentArray = 'None'
-tTKGeometrySmoother2Display.OSPRayScaleArray = 'oppositeOmega'
-tTKGeometrySmoother2Display.OSPRayScaleFunction = 'PiecewiseFunction'
-tTKGeometrySmoother2Display.SelectOrientationVectors = 'None'
-tTKGeometrySmoother2Display.ScaleFactor = 0.07141872048377991
-tTKGeometrySmoother2Display.SelectScaleArray = 'None'
-tTKGeometrySmoother2Display.GlyphType = 'Arrow'
-tTKGeometrySmoother2Display.GlyphTableIndexArray = 'None'
-tTKGeometrySmoother2Display.GaussianRadius = 0.0035709360241889952
-tTKGeometrySmoother2Display.SetScaleArray = ['POINTS', 'oppositeOmega']
-tTKGeometrySmoother2Display.ScaleTransferFunction = 'PiecewiseFunction'
-tTKGeometrySmoother2Display.OpacityArray = ['POINTS', 'oppositeOmega']
-tTKGeometrySmoother2Display.OpacityTransferFunction = 'PiecewiseFunction'
-tTKGeometrySmoother2Display.DataAxesGrid = 'GridAxesRepresentation'
-tTKGeometrySmoother2Display.PolarAxes = 'PolarAxesRepresentation'
-tTKGeometrySmoother2Display.ScalarOpacityFunction = persistencePWF
-tTKGeometrySmoother2Display.ScalarOpacityUnitDistance = 0.21744076418518754
-tTKGeometrySmoother2Display.OpacityArrayName = ['POINTS', 'oppositeOmega']
-tTKGeometrySmoother2Display.SelectInputVectors = ['POINTS', 'oppositeOmega']
-tTKGeometrySmoother2Display.WriteLog = ''
+tTKGeometrySmoother2Display_1.Representation = 'Surface'
+tTKGeometrySmoother2Display_1.ColorArrayName = ['CELLS', 'Persistence']
+tTKGeometrySmoother2Display_1.LookupTable = persistenceLUT
+tTKGeometrySmoother2Display_1.LineWidth = 10.0
+tTKGeometrySmoother2Display_1.RenderLinesAsTubes = 1
+tTKGeometrySmoother2Display_1.Specular = 1.0
+tTKGeometrySmoother2Display_1.SelectTCoordArray = 'None'
+tTKGeometrySmoother2Display_1.SelectNormalArray = 'None'
+tTKGeometrySmoother2Display_1.SelectTangentArray = 'None'
+tTKGeometrySmoother2Display_1.OSPRayScaleArray = 'oppositeOmega'
+tTKGeometrySmoother2Display_1.OSPRayScaleFunction = 'PiecewiseFunction'
+tTKGeometrySmoother2Display_1.SelectOrientationVectors = 'None'
+tTKGeometrySmoother2Display_1.ScaleFactor = 0.07141872048377991
+tTKGeometrySmoother2Display_1.SelectScaleArray = 'None'
+tTKGeometrySmoother2Display_1.GlyphType = 'Arrow'
+tTKGeometrySmoother2Display_1.GlyphTableIndexArray = 'None'
+tTKGeometrySmoother2Display_1.GaussianRadius = 0.0035709360241889952
+tTKGeometrySmoother2Display_1.SetScaleArray = ['POINTS', 'oppositeOmega']
+tTKGeometrySmoother2Display_1.ScaleTransferFunction = 'PiecewiseFunction'
+tTKGeometrySmoother2Display_1.OpacityArray = ['POINTS', 'oppositeOmega']
+tTKGeometrySmoother2Display_1.OpacityTransferFunction = 'PiecewiseFunction'
+tTKGeometrySmoother2Display_1.DataAxesGrid = 'GridAxesRepresentation'
+tTKGeometrySmoother2Display_1.PolarAxes = 'PolarAxesRepresentation'
+tTKGeometrySmoother2Display_1.ScalarOpacityFunction = persistencePWF
+tTKGeometrySmoother2Display_1.ScalarOpacityUnitDistance = 0.21744076418518754
+tTKGeometrySmoother2Display_1.OpacityArrayName = ['POINTS', 'oppositeOmega']
+tTKGeometrySmoother2Display_1.SelectInputVectors = ['POINTS', 'oppositeOmega']
+tTKGeometrySmoother2Display_1.WriteLog = ''
 
 # init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
-tTKGeometrySmoother2Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+tTKGeometrySmoother2Display_1.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-tTKGeometrySmoother2Display.ScaleTransferFunction.Points = [-0.9751526647579255, 0.0, 0.5, 0.0, -0.9056711359213363, 1.0, 0.5, 0.0]
+tTKGeometrySmoother2Display_1.ScaleTransferFunction.Points = [-0.9751526647579255, 0.0, 0.5, 0.0, -0.9056711359213363, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-tTKGeometrySmoother2Display.OpacityTransferFunction.Points = [-0.9751526647579255, 0.0, 0.5, 0.0, -0.9056711359213363, 1.0, 0.5, 0.0]
+tTKGeometrySmoother2Display_1.OpacityTransferFunction.Points = [-0.9751526647579255, 0.0, 0.5, 0.0, -0.9056711359213363, 1.0, 0.5, 0.0]
 
 # show data from tTKPersistentGenerators1
-tTKPersistentGenerators1Display = Show(tTKPersistentGenerators1, renderView2, 'GeometryRepresentation')
+tTKPersistentGenerators1Display = Show(tTKPersistentGenerators1, renderView3, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
 tTKPersistentGenerators1Display.Representation = 'Surface'
-tTKPersistentGenerators1Display.ColorArrayName = [None, '']
+tTKPersistentGenerators1Display.ColorArrayName = ['POINTS', '']
 tTKPersistentGenerators1Display.Specular = 1.0
 tTKPersistentGenerators1Display.SelectTCoordArray = 'None'
 tTKPersistentGenerators1Display.SelectNormalArray = 'None'
@@ -977,92 +2764,92 @@ tTKPersistentGenerators1Display.ScaleTransferFunction.Points = [-0.9949202085539
 tTKPersistentGenerators1Display.OpacityTransferFunction.Points = [-0.9949202085539145, 0.0, 0.5, 0.0, -0.0064376340156840905, 1.0, 0.5, 0.0]
 
 # hide data in view
-Hide(tTKPersistentGenerators1, renderView2)
+Hide(tTKPersistentGenerators1, renderView3)
 
 # ----------------------------------------------------------------
-# setup the visualization in view 'renderView3'
+# setup the visualization in view 'renderView4'
 # ----------------------------------------------------------------
 
 # show data from start_data_omega_bzvti
-start_data_omega_bzvtiDisplay_2 = Show(start_data_omega_bzvti, renderView3, 'UniformGridRepresentation')
+start_data_omega_bzvtiDisplay_4 = Show(start_data_omega_bzvti, renderView4, 'UniformGridRepresentation')
 
 # trace defaults for the display properties.
-start_data_omega_bzvtiDisplay_2.Representation = 'Outline'
-start_data_omega_bzvtiDisplay_2.ColorArrayName = ['POINTS', '']
-start_data_omega_bzvtiDisplay_2.SelectTCoordArray = 'None'
-start_data_omega_bzvtiDisplay_2.SelectNormalArray = 'None'
-start_data_omega_bzvtiDisplay_2.SelectTangentArray = 'None'
-start_data_omega_bzvtiDisplay_2.OSPRayScaleArray = 'bz_wz'
-start_data_omega_bzvtiDisplay_2.OSPRayScaleFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_2.SelectOrientationVectors = 'None'
-start_data_omega_bzvtiDisplay_2.ScaleFactor = 1.006182531816462
-start_data_omega_bzvtiDisplay_2.SelectScaleArray = 'None'
-start_data_omega_bzvtiDisplay_2.GlyphType = 'Arrow'
-start_data_omega_bzvtiDisplay_2.GlyphTableIndexArray = 'None'
-start_data_omega_bzvtiDisplay_2.GaussianRadius = 0.050309126590823094
-start_data_omega_bzvtiDisplay_2.SetScaleArray = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_2.ScaleTransferFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_2.OpacityArray = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_2.OpacityTransferFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_2.DataAxesGrid = 'GridAxesRepresentation'
-start_data_omega_bzvtiDisplay_2.PolarAxes = 'PolarAxesRepresentation'
-start_data_omega_bzvtiDisplay_2.ScalarOpacityUnitDistance = 0.12315087617612483
-start_data_omega_bzvtiDisplay_2.OpacityArrayName = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_2.SliceFunction = 'Plane'
-start_data_omega_bzvtiDisplay_2.Slice = 63
-start_data_omega_bzvtiDisplay_2.SelectInputVectors = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_2.WriteLog = ''
+start_data_omega_bzvtiDisplay_4.Representation = 'Outline'
+start_data_omega_bzvtiDisplay_4.ColorArrayName = ['POINTS', '']
+start_data_omega_bzvtiDisplay_4.SelectTCoordArray = 'None'
+start_data_omega_bzvtiDisplay_4.SelectNormalArray = 'None'
+start_data_omega_bzvtiDisplay_4.SelectTangentArray = 'None'
+start_data_omega_bzvtiDisplay_4.OSPRayScaleArray = 'bz_wz'
+start_data_omega_bzvtiDisplay_4.OSPRayScaleFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_4.SelectOrientationVectors = 'None'
+start_data_omega_bzvtiDisplay_4.ScaleFactor = 1.006182531816462
+start_data_omega_bzvtiDisplay_4.SelectScaleArray = 'None'
+start_data_omega_bzvtiDisplay_4.GlyphType = 'Arrow'
+start_data_omega_bzvtiDisplay_4.GlyphTableIndexArray = 'None'
+start_data_omega_bzvtiDisplay_4.GaussianRadius = 0.050309126590823094
+start_data_omega_bzvtiDisplay_4.SetScaleArray = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_4.ScaleTransferFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_4.OpacityArray = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_4.OpacityTransferFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_4.DataAxesGrid = 'GridAxesRepresentation'
+start_data_omega_bzvtiDisplay_4.PolarAxes = 'PolarAxesRepresentation'
+start_data_omega_bzvtiDisplay_4.ScalarOpacityUnitDistance = 0.12315087617612483
+start_data_omega_bzvtiDisplay_4.OpacityArrayName = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_4.SliceFunction = 'Plane'
+start_data_omega_bzvtiDisplay_4.Slice = 63
+start_data_omega_bzvtiDisplay_4.SelectInputVectors = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_4.WriteLog = ''
 
 # init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
-start_data_omega_bzvtiDisplay_2.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_4.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-start_data_omega_bzvtiDisplay_2.ScaleTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_4.ScaleTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-start_data_omega_bzvtiDisplay_2.OpacityTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_4.OpacityTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
 
 # show data from contour1
-contour1Display_3 = Show(contour1, renderView3, 'GeometryRepresentation')
+contour1Display_5 = Show(contour1, renderView4, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
-contour1Display_3.Representation = 'Surface'
-contour1Display_3.ColorArrayName = ['POINTS', '']
-contour1Display_3.LookupTable = omega_bzLUT
-contour1Display_3.Opacity = 0.1
-contour1Display_3.Specular = 1.0
-contour1Display_3.SelectTCoordArray = 'None'
-contour1Display_3.SelectNormalArray = 'Normals'
-contour1Display_3.SelectTangentArray = 'None'
-contour1Display_3.EdgeColor = [0.0, 0.0, 0.0]
-contour1Display_3.OSPRayScaleArray = 'omega_bz'
-contour1Display_3.OSPRayScaleFunction = 'PiecewiseFunction'
-contour1Display_3.SelectOrientationVectors = 'None'
-contour1Display_3.ScaleFactor = 0.8636709690093994
-contour1Display_3.SelectScaleArray = 'omega_bz'
-contour1Display_3.GlyphType = 'Arrow'
-contour1Display_3.GlyphTableIndexArray = 'omega_bz'
-contour1Display_3.GaussianRadius = 0.04318354845046997
-contour1Display_3.SetScaleArray = ['POINTS', 'omega_bz']
-contour1Display_3.ScaleTransferFunction = 'PiecewiseFunction'
-contour1Display_3.OpacityArray = ['POINTS', 'omega_bz']
-contour1Display_3.OpacityTransferFunction = 'PiecewiseFunction'
-contour1Display_3.DataAxesGrid = 'GridAxesRepresentation'
-contour1Display_3.PolarAxes = 'PolarAxesRepresentation'
-contour1Display_3.SelectInputVectors = ['POINTS', 'Normals']
-contour1Display_3.WriteLog = ''
+contour1Display_5.Representation = 'Surface'
+contour1Display_5.ColorArrayName = ['POINTS', '']
+contour1Display_5.LookupTable = omega_bzLUT
+contour1Display_5.Opacity = 0.1
+contour1Display_5.Specular = 1.0
+contour1Display_5.SelectTCoordArray = 'None'
+contour1Display_5.SelectNormalArray = 'Normals'
+contour1Display_5.SelectTangentArray = 'None'
+contour1Display_5.EdgeColor = [0.0, 0.0, 0.0]
+contour1Display_5.OSPRayScaleArray = 'omega_bz'
+contour1Display_5.OSPRayScaleFunction = 'PiecewiseFunction'
+contour1Display_5.SelectOrientationVectors = 'None'
+contour1Display_5.ScaleFactor = 0.8636709690093994
+contour1Display_5.SelectScaleArray = 'omega_bz'
+contour1Display_5.GlyphType = 'Arrow'
+contour1Display_5.GlyphTableIndexArray = 'omega_bz'
+contour1Display_5.GaussianRadius = 0.04318354845046997
+contour1Display_5.SetScaleArray = ['POINTS', 'omega_bz']
+contour1Display_5.ScaleTransferFunction = 'PiecewiseFunction'
+contour1Display_5.OpacityArray = ['POINTS', 'omega_bz']
+contour1Display_5.OpacityTransferFunction = 'PiecewiseFunction'
+contour1Display_5.DataAxesGrid = 'GridAxesRepresentation'
+contour1Display_5.PolarAxes = 'PolarAxesRepresentation'
+contour1Display_5.SelectInputVectors = ['POINTS', 'Normals']
+contour1Display_5.WriteLog = ''
 
 # init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
-contour1Display_3.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+contour1Display_5.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-contour1Display_3.ScaleTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
+contour1Display_5.ScaleTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-contour1Display_3.OpacityTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
+contour1Display_5.OpacityTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
 
 # show data from threshold3
-threshold3Display = Show(threshold3, renderView3, 'UnstructuredGridRepresentation')
+threshold3Display = Show(threshold3, renderView4, 'UnstructuredGridRepresentation')
 
 # get opacity transfer function/opacity map for 'SeparatrixType'
 separatrixTypePWF = GetOpacityTransferFunction('SeparatrixType')
@@ -1109,52 +2896,52 @@ threshold3Display.ScaleTransferFunction.Points = [2.0, 0.0, 0.5, 0.0, 3.0, 1.0, 
 threshold3Display.OpacityTransferFunction.Points = [2.0, 0.0, 0.5, 0.0, 3.0, 1.0, 0.5, 0.0]
 
 # ----------------------------------------------------------------
-# setup the visualization in view 'renderView4'
+# setup the visualization in view 'renderView5'
 # ----------------------------------------------------------------
 
 # show data from start_data_omega_bzvti
-start_data_omega_bzvtiDisplay_3 = Show(start_data_omega_bzvti, renderView4, 'UniformGridRepresentation')
+start_data_omega_bzvtiDisplay_5 = Show(start_data_omega_bzvti, renderView5, 'UniformGridRepresentation')
 
 # trace defaults for the display properties.
-start_data_omega_bzvtiDisplay_3.Representation = 'Outline'
-start_data_omega_bzvtiDisplay_3.AmbientColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
-start_data_omega_bzvtiDisplay_3.ColorArrayName = [None, '']
-start_data_omega_bzvtiDisplay_3.DiffuseColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
-start_data_omega_bzvtiDisplay_3.SelectTCoordArray = 'None'
-start_data_omega_bzvtiDisplay_3.SelectNormalArray = 'None'
-start_data_omega_bzvtiDisplay_3.SelectTangentArray = 'None'
-start_data_omega_bzvtiDisplay_3.OSPRayScaleArray = 'bz_wz'
-start_data_omega_bzvtiDisplay_3.OSPRayScaleFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_3.SelectOrientationVectors = 'None'
-start_data_omega_bzvtiDisplay_3.ScaleFactor = 1.006182531816462
-start_data_omega_bzvtiDisplay_3.SelectScaleArray = 'None'
-start_data_omega_bzvtiDisplay_3.GlyphType = 'Arrow'
-start_data_omega_bzvtiDisplay_3.GlyphTableIndexArray = 'None'
-start_data_omega_bzvtiDisplay_3.GaussianRadius = 0.050309126590823094
-start_data_omega_bzvtiDisplay_3.SetScaleArray = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_3.ScaleTransferFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_3.OpacityArray = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_3.OpacityTransferFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_3.DataAxesGrid = 'GridAxesRepresentation'
-start_data_omega_bzvtiDisplay_3.PolarAxes = 'PolarAxesRepresentation'
-start_data_omega_bzvtiDisplay_3.ScalarOpacityUnitDistance = 0.12315087617612483
-start_data_omega_bzvtiDisplay_3.OpacityArrayName = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_3.SliceFunction = 'Plane'
-start_data_omega_bzvtiDisplay_3.Slice = 63
-start_data_omega_bzvtiDisplay_3.SelectInputVectors = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_3.WriteLog = ''
+start_data_omega_bzvtiDisplay_5.Representation = 'Outline'
+start_data_omega_bzvtiDisplay_5.AmbientColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
+start_data_omega_bzvtiDisplay_5.ColorArrayName = ['POINTS', '']
+start_data_omega_bzvtiDisplay_5.DiffuseColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
+start_data_omega_bzvtiDisplay_5.SelectTCoordArray = 'None'
+start_data_omega_bzvtiDisplay_5.SelectNormalArray = 'None'
+start_data_omega_bzvtiDisplay_5.SelectTangentArray = 'None'
+start_data_omega_bzvtiDisplay_5.OSPRayScaleArray = 'bz_wz'
+start_data_omega_bzvtiDisplay_5.OSPRayScaleFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_5.SelectOrientationVectors = 'None'
+start_data_omega_bzvtiDisplay_5.ScaleFactor = 1.006182531816462
+start_data_omega_bzvtiDisplay_5.SelectScaleArray = 'None'
+start_data_omega_bzvtiDisplay_5.GlyphType = 'Arrow'
+start_data_omega_bzvtiDisplay_5.GlyphTableIndexArray = 'None'
+start_data_omega_bzvtiDisplay_5.GaussianRadius = 0.050309126590823094
+start_data_omega_bzvtiDisplay_5.SetScaleArray = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_5.ScaleTransferFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_5.OpacityArray = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_5.OpacityTransferFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_5.DataAxesGrid = 'GridAxesRepresentation'
+start_data_omega_bzvtiDisplay_5.PolarAxes = 'PolarAxesRepresentation'
+start_data_omega_bzvtiDisplay_5.ScalarOpacityUnitDistance = 0.12315087617612483
+start_data_omega_bzvtiDisplay_5.OpacityArrayName = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_5.SliceFunction = 'Plane'
+start_data_omega_bzvtiDisplay_5.Slice = 63
+start_data_omega_bzvtiDisplay_5.SelectInputVectors = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_5.WriteLog = ''
 
 # init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
-start_data_omega_bzvtiDisplay_3.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_5.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-start_data_omega_bzvtiDisplay_3.ScaleTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_5.ScaleTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-start_data_omega_bzvtiDisplay_3.OpacityTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_5.OpacityTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
 
 # show data from contour1
-contour1Display_4 = Show(contour1, renderView4, 'GeometryRepresentation')
+contour1Display_6 = Show(contour1, renderView5, 'GeometryRepresentation')
 
 # get color transfer function/color map for 'bz_wz'
 bz_wzLUT = GetColorTransferFunction('bz_wz')
@@ -1165,125 +2952,166 @@ bz_wzLUT.NanColor = [0.0, 0.0, 0.0]
 bz_wzLUT.ScalarRangeInitialized = 1.0
 
 # trace defaults for the display properties.
-contour1Display_4.Representation = 'Surface'
-contour1Display_4.ColorArrayName = ['POINTS', 'bz_wz']
-contour1Display_4.LookupTable = bz_wzLUT
-contour1Display_4.Specular = 1.0
-contour1Display_4.SelectTCoordArray = 'None'
-contour1Display_4.SelectNormalArray = 'Normals'
-contour1Display_4.SelectTangentArray = 'None'
-contour1Display_4.EdgeColor = [0.0, 0.0, 0.0]
-contour1Display_4.OSPRayScaleArray = 'omega_bz'
-contour1Display_4.OSPRayScaleFunction = 'PiecewiseFunction'
-contour1Display_4.SelectOrientationVectors = 'None'
-contour1Display_4.ScaleFactor = 0.8636709690093994
-contour1Display_4.SelectScaleArray = 'omega_bz'
-contour1Display_4.GlyphType = 'Arrow'
-contour1Display_4.GlyphTableIndexArray = 'omega_bz'
-contour1Display_4.GaussianRadius = 0.04318354845046997
-contour1Display_4.SetScaleArray = ['POINTS', 'omega_bz']
-contour1Display_4.ScaleTransferFunction = 'PiecewiseFunction'
-contour1Display_4.OpacityArray = ['POINTS', 'omega_bz']
-contour1Display_4.OpacityTransferFunction = 'PiecewiseFunction'
-contour1Display_4.DataAxesGrid = 'GridAxesRepresentation'
-contour1Display_4.PolarAxes = 'PolarAxesRepresentation'
-contour1Display_4.SelectInputVectors = ['POINTS', 'Normals']
-contour1Display_4.WriteLog = ''
+contour1Display_6.Representation = 'Surface'
+contour1Display_6.ColorArrayName = ['POINTS', 'bz_wz']
+contour1Display_6.LookupTable = bz_wzLUT
+contour1Display_6.Specular = 1.0
+contour1Display_6.SelectTCoordArray = 'None'
+contour1Display_6.SelectNormalArray = 'Normals'
+contour1Display_6.SelectTangentArray = 'None'
+contour1Display_6.EdgeColor = [0.0, 0.0, 0.0]
+contour1Display_6.OSPRayScaleArray = 'omega_bz'
+contour1Display_6.OSPRayScaleFunction = 'PiecewiseFunction'
+contour1Display_6.SelectOrientationVectors = 'None'
+contour1Display_6.ScaleFactor = 0.8636709690093994
+contour1Display_6.SelectScaleArray = 'omega_bz'
+contour1Display_6.GlyphType = 'Arrow'
+contour1Display_6.GlyphTableIndexArray = 'omega_bz'
+contour1Display_6.GaussianRadius = 0.04318354845046997
+contour1Display_6.SetScaleArray = ['POINTS', 'omega_bz']
+contour1Display_6.ScaleTransferFunction = 'PiecewiseFunction'
+contour1Display_6.OpacityArray = ['POINTS', 'omega_bz']
+contour1Display_6.OpacityTransferFunction = 'PiecewiseFunction'
+contour1Display_6.DataAxesGrid = 'GridAxesRepresentation'
+contour1Display_6.PolarAxes = 'PolarAxesRepresentation'
+contour1Display_6.SelectInputVectors = ['POINTS', 'Normals']
+contour1Display_6.WriteLog = ''
 
 # init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
-contour1Display_4.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+contour1Display_6.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-contour1Display_4.ScaleTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
+contour1Display_6.ScaleTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-contour1Display_4.OpacityTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
+contour1Display_6.OpacityTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
+
+# show data from slice1
+slice1Display_2 = Show(slice1, renderView5, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+slice1Display_2.Representation = 'Surface'
+slice1Display_2.ColorArrayName = ['POINTS', 'Bz']
+slice1Display_2.LookupTable = bzLUT
+slice1Display_2.Specular = 1.0
+slice1Display_2.SelectTCoordArray = 'None'
+slice1Display_2.SelectNormalArray = 'None'
+slice1Display_2.SelectTangentArray = 'None'
+slice1Display_2.EdgeColor = [0.0, 0.0, 0.0]
+slice1Display_2.OSPRayScaleArray = 'Bz'
+slice1Display_2.OSPRayScaleFunction = 'PiecewiseFunction'
+slice1Display_2.SelectOrientationVectors = 'Bz'
+slice1Display_2.ScaleFactor = 1.0061825752258302
+slice1Display_2.SelectScaleArray = 'Bz'
+slice1Display_2.GlyphType = 'Arrow'
+slice1Display_2.GlyphTableIndexArray = 'Bz'
+slice1Display_2.GaussianRadius = 0.050309128761291504
+slice1Display_2.SetScaleArray = ['POINTS', 'Bz']
+slice1Display_2.ScaleTransferFunction = 'PiecewiseFunction'
+slice1Display_2.OpacityArray = ['POINTS', 'Bz']
+slice1Display_2.OpacityTransferFunction = 'PiecewiseFunction'
+slice1Display_2.DataAxesGrid = 'GridAxesRepresentation'
+slice1Display_2.PolarAxes = 'PolarAxesRepresentation'
+slice1Display_2.SelectInputVectors = ['POINTS', 'Bz']
+slice1Display_2.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+slice1Display_2.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+slice1Display_2.ScaleTransferFunction.Points = [-0.4143731230557486, 0.0, 0.5, 0.0, 0.41437312305574814, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+slice1Display_2.OpacityTransferFunction.Points = [-0.4143731230557486, 0.0, 0.5, 0.0, 0.41437312305574814, 1.0, 0.5, 0.0]
+
+# hide data in view
+Hide(slice1, renderView5)
 
 # ----------------------------------------------------------------
-# setup the visualization in view 'renderView5'
+# setup the visualization in view 'renderView6'
 # ----------------------------------------------------------------
 
 # show data from contour1
-contour1Display_5 = Show(contour1, renderView5, 'GeometryRepresentation')
+contour1Display_7 = Show(contour1, renderView6, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
-contour1Display_5.Representation = 'Surface'
-contour1Display_5.ColorArrayName = ['POINTS', 'bz_wz']
-contour1Display_5.LookupTable = bz_wzLUT
-contour1Display_5.Specular = 1.0
-contour1Display_5.SelectTCoordArray = 'None'
-contour1Display_5.SelectNormalArray = 'Normals'
-contour1Display_5.SelectTangentArray = 'None'
-contour1Display_5.EdgeColor = [0.0, 0.0, 0.0]
-contour1Display_5.OSPRayScaleArray = 'omega_bz'
-contour1Display_5.OSPRayScaleFunction = 'PiecewiseFunction'
-contour1Display_5.SelectOrientationVectors = 'None'
-contour1Display_5.ScaleFactor = 0.8636709690093994
-contour1Display_5.SelectScaleArray = 'omega_bz'
-contour1Display_5.GlyphType = 'Arrow'
-contour1Display_5.GlyphTableIndexArray = 'omega_bz'
-contour1Display_5.GaussianRadius = 0.04318354845046997
-contour1Display_5.SetScaleArray = ['POINTS', 'omega_bz']
-contour1Display_5.ScaleTransferFunction = 'PiecewiseFunction'
-contour1Display_5.OpacityArray = ['POINTS', 'omega_bz']
-contour1Display_5.OpacityTransferFunction = 'PiecewiseFunction'
-contour1Display_5.DataAxesGrid = 'GridAxesRepresentation'
-contour1Display_5.PolarAxes = 'PolarAxesRepresentation'
-contour1Display_5.SelectInputVectors = ['POINTS', 'Normals']
-contour1Display_5.WriteLog = ''
+contour1Display_7.Representation = 'Surface'
+contour1Display_7.ColorArrayName = ['POINTS', 'bz_wz']
+contour1Display_7.LookupTable = bz_wzLUT
+contour1Display_7.Specular = 1.0
+contour1Display_7.SelectTCoordArray = 'None'
+contour1Display_7.SelectNormalArray = 'Normals'
+contour1Display_7.SelectTangentArray = 'None'
+contour1Display_7.EdgeColor = [0.0, 0.0, 0.0]
+contour1Display_7.OSPRayScaleArray = 'omega_bz'
+contour1Display_7.OSPRayScaleFunction = 'PiecewiseFunction'
+contour1Display_7.SelectOrientationVectors = 'None'
+contour1Display_7.ScaleFactor = 0.8636709690093994
+contour1Display_7.SelectScaleArray = 'omega_bz'
+contour1Display_7.GlyphType = 'Arrow'
+contour1Display_7.GlyphTableIndexArray = 'omega_bz'
+contour1Display_7.GaussianRadius = 0.04318354845046997
+contour1Display_7.SetScaleArray = ['POINTS', 'omega_bz']
+contour1Display_7.ScaleTransferFunction = 'PiecewiseFunction'
+contour1Display_7.OpacityArray = ['POINTS', 'omega_bz']
+contour1Display_7.OpacityTransferFunction = 'PiecewiseFunction'
+contour1Display_7.DataAxesGrid = 'GridAxesRepresentation'
+contour1Display_7.PolarAxes = 'PolarAxesRepresentation'
+contour1Display_7.SelectInputVectors = ['POINTS', 'Normals']
+contour1Display_7.WriteLog = ''
 
 # init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
-contour1Display_5.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+contour1Display_7.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-contour1Display_5.ScaleTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
+contour1Display_7.ScaleTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-contour1Display_5.OpacityTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
+contour1Display_7.OpacityTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
 
 # show data from start_data_omega_bzvti
-start_data_omega_bzvtiDisplay_4 = Show(start_data_omega_bzvti, renderView5, 'UniformGridRepresentation')
+start_data_omega_bzvtiDisplay_6 = Show(start_data_omega_bzvti, renderView6, 'UniformGridRepresentation')
 
 # trace defaults for the display properties.
-start_data_omega_bzvtiDisplay_4.Representation = 'Outline'
-start_data_omega_bzvtiDisplay_4.AmbientColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
-start_data_omega_bzvtiDisplay_4.ColorArrayName = [None, '']
-start_data_omega_bzvtiDisplay_4.DiffuseColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
-start_data_omega_bzvtiDisplay_4.SelectTCoordArray = 'None'
-start_data_omega_bzvtiDisplay_4.SelectNormalArray = 'None'
-start_data_omega_bzvtiDisplay_4.SelectTangentArray = 'None'
-start_data_omega_bzvtiDisplay_4.OSPRayScaleArray = 'bz_wz'
-start_data_omega_bzvtiDisplay_4.OSPRayScaleFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_4.SelectOrientationVectors = 'None'
-start_data_omega_bzvtiDisplay_4.ScaleFactor = 1.006182531816462
-start_data_omega_bzvtiDisplay_4.SelectScaleArray = 'None'
-start_data_omega_bzvtiDisplay_4.GlyphType = 'Arrow'
-start_data_omega_bzvtiDisplay_4.GlyphTableIndexArray = 'None'
-start_data_omega_bzvtiDisplay_4.GaussianRadius = 0.050309126590823094
-start_data_omega_bzvtiDisplay_4.SetScaleArray = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_4.ScaleTransferFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_4.OpacityArray = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_4.OpacityTransferFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_4.DataAxesGrid = 'GridAxesRepresentation'
-start_data_omega_bzvtiDisplay_4.PolarAxes = 'PolarAxesRepresentation'
-start_data_omega_bzvtiDisplay_4.ScalarOpacityUnitDistance = 0.12315087617612483
-start_data_omega_bzvtiDisplay_4.OpacityArrayName = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_4.SliceFunction = 'Plane'
-start_data_omega_bzvtiDisplay_4.Slice = 63
-start_data_omega_bzvtiDisplay_4.SelectInputVectors = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_4.WriteLog = ''
+start_data_omega_bzvtiDisplay_6.Representation = 'Outline'
+start_data_omega_bzvtiDisplay_6.AmbientColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
+start_data_omega_bzvtiDisplay_6.ColorArrayName = ['POINTS', '']
+start_data_omega_bzvtiDisplay_6.DiffuseColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
+start_data_omega_bzvtiDisplay_6.SelectTCoordArray = 'None'
+start_data_omega_bzvtiDisplay_6.SelectNormalArray = 'None'
+start_data_omega_bzvtiDisplay_6.SelectTangentArray = 'None'
+start_data_omega_bzvtiDisplay_6.OSPRayScaleArray = 'bz_wz'
+start_data_omega_bzvtiDisplay_6.OSPRayScaleFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_6.SelectOrientationVectors = 'None'
+start_data_omega_bzvtiDisplay_6.ScaleFactor = 1.006182531816462
+start_data_omega_bzvtiDisplay_6.SelectScaleArray = 'None'
+start_data_omega_bzvtiDisplay_6.GlyphType = 'Arrow'
+start_data_omega_bzvtiDisplay_6.GlyphTableIndexArray = 'None'
+start_data_omega_bzvtiDisplay_6.GaussianRadius = 0.050309126590823094
+start_data_omega_bzvtiDisplay_6.SetScaleArray = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_6.ScaleTransferFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_6.OpacityArray = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_6.OpacityTransferFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_6.DataAxesGrid = 'GridAxesRepresentation'
+start_data_omega_bzvtiDisplay_6.PolarAxes = 'PolarAxesRepresentation'
+start_data_omega_bzvtiDisplay_6.ScalarOpacityUnitDistance = 0.12315087617612483
+start_data_omega_bzvtiDisplay_6.OpacityArrayName = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_6.SliceFunction = 'Plane'
+start_data_omega_bzvtiDisplay_6.Slice = 63
+start_data_omega_bzvtiDisplay_6.SelectInputVectors = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_6.WriteLog = ''
 
 # init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
-start_data_omega_bzvtiDisplay_4.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_6.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-start_data_omega_bzvtiDisplay_4.ScaleTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_6.ScaleTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-start_data_omega_bzvtiDisplay_4.OpacityTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_6.OpacityTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
 
 # show data from connectivity1
-connectivity1Display = Show(connectivity1, renderView5, 'GeometryRepresentation')
+connectivity1Display = Show(connectivity1, renderView6, 'GeometryRepresentation')
 
 # get color transfer function/color map for 'RegionId'
 regionIdLUT = GetColorTransferFunction('RegionId')
@@ -1329,7 +3157,7 @@ connectivity1Display.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 3.0, 1.
 connectivity1Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 3.0, 1.0, 0.5, 0.0]
 
 # show data from threshold4
-threshold4Display = Show(threshold4, renderView5, 'UnstructuredGridRepresentation')
+threshold4Display = Show(threshold4, renderView6, 'UnstructuredGridRepresentation')
 
 # get opacity transfer function/opacity map for 'bz_wz'
 bz_wzPWF = GetOpacityTransferFunction('bz_wz')
@@ -1375,7 +3203,7 @@ threshold4Display.ScaleTransferFunction.Points = [2.0, 0.0, 0.5, 0.0, 2.00048828
 threshold4Display.OpacityTransferFunction.Points = [2.0, 0.0, 0.5, 0.0, 2.00048828125, 1.0, 0.5, 0.0]
 
 # show data from contour2
-contour2Display = Show(contour2, renderView5, 'GeometryRepresentation')
+contour2Display = Show(contour2, renderView6, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
 contour2Display.Representation = 'Surface'
@@ -1413,7 +3241,7 @@ contour2Display.ScaleTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703
 contour2Display.OpacityTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
 
 # show data from connectivity2
-connectivity2Display = Show(connectivity2, renderView5, 'GeometryRepresentation')
+connectivity2Display = Show(connectivity2, renderView6, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
 connectivity2Display.Representation = 'Surface'
@@ -1445,7 +3273,7 @@ connectivity2Display.WriteLog = ''
 connectivity2Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
 # show data from threshold6
-threshold6Display = Show(threshold6, renderView5, 'UnstructuredGridRepresentation')
+threshold6Display = Show(threshold6, renderView6, 'UnstructuredGridRepresentation')
 
 # trace defaults for the display properties.
 threshold6Display.Representation = 'Surface'
@@ -1486,7 +3314,7 @@ threshold6Display.ScaleTransferFunction.Points = [1.0, 0.0, 0.5, 0.0, 1.00024414
 threshold6Display.OpacityTransferFunction.Points = [1.0, 0.0, 0.5, 0.0, 1.000244140625, 1.0, 0.5, 0.0]
 
 # show data from contour3
-contour3Display = Show(contour3, renderView5, 'GeometryRepresentation')
+contour3Display = Show(contour3, renderView6, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
 contour3Display.Representation = 'Surface'
@@ -1524,7 +3352,7 @@ contour3Display.ScaleTransferFunction.Points = [0.949999988079071, 0.0, 0.5, 0.0
 contour3Display.OpacityTransferFunction.Points = [0.949999988079071, 0.0, 0.5, 0.0, 0.950122058391571, 1.0, 0.5, 0.0]
 
 # show data from connectivity3
-connectivity3Display = Show(connectivity3, renderView5, 'GeometryRepresentation')
+connectivity3Display = Show(connectivity3, renderView6, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
 connectivity3Display.Representation = 'Surface'
@@ -1562,7 +3390,7 @@ connectivity3Display.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 2.0, 1.
 connectivity3Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 2.0, 1.0, 0.5, 0.0]
 
 # show data from threshold7
-threshold7Display = Show(threshold7, renderView5, 'UnstructuredGridRepresentation')
+threshold7Display = Show(threshold7, renderView6, 'UnstructuredGridRepresentation')
 
 # trace defaults for the display properties.
 threshold7Display.Representation = 'Surface'
@@ -1601,71 +3429,152 @@ threshold7Display.ScaleTransferFunction.Points = [1.0, 0.0, 0.5, 0.0, 2.0, 1.0, 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
 threshold7Display.OpacityTransferFunction.Points = [1.0, 0.0, 0.5, 0.0, 2.0, 1.0, 0.5, 0.0]
 
-# hide data in view
-Hide(contour1, renderView5)
+# show data from tube7
+tube7Display_1 = Show(tube7, renderView6, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+tube7Display_1.Representation = 'Surface'
+tube7Display_1.ColorArrayName = [None, '']
+tube7Display_1.Specular = 1.0
+tube7Display_1.SelectTCoordArray = 'None'
+tube7Display_1.SelectNormalArray = 'TubeNormals'
+tube7Display_1.SelectTangentArray = 'None'
+tube7Display_1.EdgeColor = [0.0, 0.0, 0.0]
+tube7Display_1.OSPRayScaleArray = 'AngularVelocity'
+tube7Display_1.OSPRayScaleFunction = 'PiecewiseFunction'
+tube7Display_1.SelectOrientationVectors = 'Normals'
+tube7Display_1.ScaleFactor = 0.28432756662368774
+tube7Display_1.SelectScaleArray = 'AngularVelocity'
+tube7Display_1.GlyphType = 'Arrow'
+tube7Display_1.GlyphTableIndexArray = 'AngularVelocity'
+tube7Display_1.GaussianRadius = 0.014216378331184387
+tube7Display_1.SetScaleArray = ['POINTS', 'AngularVelocity']
+tube7Display_1.ScaleTransferFunction = 'PiecewiseFunction'
+tube7Display_1.OpacityArray = ['POINTS', 'AngularVelocity']
+tube7Display_1.OpacityTransferFunction = 'PiecewiseFunction'
+tube7Display_1.DataAxesGrid = 'GridAxesRepresentation'
+tube7Display_1.PolarAxes = 'PolarAxesRepresentation'
+tube7Display_1.SelectInputVectors = ['POINTS', 'Normals']
+tube7Display_1.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+tube7Display_1.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+tube7Display_1.ScaleTransferFunction.Points = [-0.2159722444686844, 0.0, 0.5, 0.0, 0.21612244707438494, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+tube7Display_1.OpacityTransferFunction.Points = [-0.2159722444686844, 0.0, 0.5, 0.0, 0.21612244707438494, 1.0, 0.5, 0.0]
+
+# show data from tTKTextureMapFromField1
+tTKTextureMapFromField1Display_1 = Show(tTKTextureMapFromField1, renderView6, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+tTKTextureMapFromField1Display_1.Representation = 'Surface'
+tTKTextureMapFromField1Display_1.ColorArrayName = ['POINTS', 'y']
+tTKTextureMapFromField1Display_1.LookupTable = yLUT
+tTKTextureMapFromField1Display_1.Specular = 1.0
+tTKTextureMapFromField1Display_1.SelectTCoordArray = 'UV coordinates from field'
+tTKTextureMapFromField1Display_1.SelectNormalArray = 'None'
+tTKTextureMapFromField1Display_1.SelectTangentArray = 'None'
+tTKTextureMapFromField1Display_1.EdgeColor = [0.0, 0.0, 0.0]
+tTKTextureMapFromField1Display_1.OSPRayScaleArray = 'y'
+tTKTextureMapFromField1Display_1.OSPRayScaleFunction = 'PiecewiseFunction'
+tTKTextureMapFromField1Display_1.SelectOrientationVectors = 'Bz'
+tTKTextureMapFromField1Display_1.ScaleFactor = 1.0061825752258302
+tTKTextureMapFromField1Display_1.SelectScaleArray = 'y'
+tTKTextureMapFromField1Display_1.GlyphType = 'Arrow'
+tTKTextureMapFromField1Display_1.GlyphTableIndexArray = 'y'
+tTKTextureMapFromField1Display_1.GaussianRadius = 0.050309128761291504
+tTKTextureMapFromField1Display_1.SetScaleArray = ['POINTS', 'y']
+tTKTextureMapFromField1Display_1.ScaleTransferFunction = 'PiecewiseFunction'
+tTKTextureMapFromField1Display_1.OpacityArray = ['POINTS', 'y']
+tTKTextureMapFromField1Display_1.OpacityTransferFunction = 'PiecewiseFunction'
+tTKTextureMapFromField1Display_1.DataAxesGrid = 'GridAxesRepresentation'
+tTKTextureMapFromField1Display_1.PolarAxes = 'PolarAxesRepresentation'
+tTKTextureMapFromField1Display_1.SelectInputVectors = ['POINTS', 'Bz']
+tTKTextureMapFromField1Display_1.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+tTKTextureMapFromField1Display_1.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+tTKTextureMapFromField1Display_1.ScaleTransferFunction.Points = [-4.233413219451904, 0.0, 0.5, 0.0, 4.233413219451904, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+tTKTextureMapFromField1Display_1.OpacityTransferFunction.Points = [-4.233413219451904, 0.0, 0.5, 0.0, 4.233413219451904, 1.0, 0.5, 0.0]
 
 # hide data in view
-Hide(connectivity1, renderView5)
+Hide(contour1, renderView6)
 
 # hide data in view
-Hide(contour2, renderView5)
+Hide(connectivity1, renderView6)
 
 # hide data in view
-Hide(connectivity2, renderView5)
+Hide(contour2, renderView6)
 
 # hide data in view
-Hide(contour3, renderView5)
+Hide(connectivity2, renderView6)
 
 # hide data in view
-Hide(connectivity3, renderView5)
+Hide(contour3, renderView6)
+
+# hide data in view
+Hide(connectivity3, renderView6)
+
+# hide data in view
+Hide(tube7, renderView6)
+
+# hide data in view
+Hide(tTKTextureMapFromField1, renderView6)
 
 # ----------------------------------------------------------------
-# setup the visualization in view 'renderView6'
+# setup the visualization in view 'renderView7'
 # ----------------------------------------------------------------
 
 # show data from start_data_omega_bzvti
-start_data_omega_bzvtiDisplay_5 = Show(start_data_omega_bzvti, renderView6, 'UniformGridRepresentation')
+start_data_omega_bzvtiDisplay_7 = Show(start_data_omega_bzvti, renderView7, 'UniformGridRepresentation')
 
 # trace defaults for the display properties.
-start_data_omega_bzvtiDisplay_5.Representation = 'Outline'
-start_data_omega_bzvtiDisplay_5.AmbientColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
-start_data_omega_bzvtiDisplay_5.ColorArrayName = [None, '']
-start_data_omega_bzvtiDisplay_5.DiffuseColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
-start_data_omega_bzvtiDisplay_5.SelectTCoordArray = 'None'
-start_data_omega_bzvtiDisplay_5.SelectNormalArray = 'None'
-start_data_omega_bzvtiDisplay_5.SelectTangentArray = 'None'
-start_data_omega_bzvtiDisplay_5.OSPRayScaleArray = 'bz_wz'
-start_data_omega_bzvtiDisplay_5.OSPRayScaleFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_5.SelectOrientationVectors = 'None'
-start_data_omega_bzvtiDisplay_5.ScaleFactor = 1.006182531816462
-start_data_omega_bzvtiDisplay_5.SelectScaleArray = 'None'
-start_data_omega_bzvtiDisplay_5.GlyphType = 'Arrow'
-start_data_omega_bzvtiDisplay_5.GlyphTableIndexArray = 'None'
-start_data_omega_bzvtiDisplay_5.GaussianRadius = 0.050309126590823094
-start_data_omega_bzvtiDisplay_5.SetScaleArray = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_5.ScaleTransferFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_5.OpacityArray = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_5.OpacityTransferFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_5.DataAxesGrid = 'GridAxesRepresentation'
-start_data_omega_bzvtiDisplay_5.PolarAxes = 'PolarAxesRepresentation'
-start_data_omega_bzvtiDisplay_5.ScalarOpacityUnitDistance = 0.12315087617612483
-start_data_omega_bzvtiDisplay_5.OpacityArrayName = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_5.SliceFunction = 'Plane'
-start_data_omega_bzvtiDisplay_5.Slice = 63
-start_data_omega_bzvtiDisplay_5.SelectInputVectors = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_5.WriteLog = ''
+start_data_omega_bzvtiDisplay_7.Representation = 'Outline'
+start_data_omega_bzvtiDisplay_7.AmbientColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
+start_data_omega_bzvtiDisplay_7.ColorArrayName = ['POINTS', '']
+start_data_omega_bzvtiDisplay_7.DiffuseColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
+start_data_omega_bzvtiDisplay_7.SelectTCoordArray = 'None'
+start_data_omega_bzvtiDisplay_7.SelectNormalArray = 'None'
+start_data_omega_bzvtiDisplay_7.SelectTangentArray = 'None'
+start_data_omega_bzvtiDisplay_7.OSPRayScaleArray = 'bz_wz'
+start_data_omega_bzvtiDisplay_7.OSPRayScaleFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_7.SelectOrientationVectors = 'None'
+start_data_omega_bzvtiDisplay_7.ScaleFactor = 1.006182531816462
+start_data_omega_bzvtiDisplay_7.SelectScaleArray = 'None'
+start_data_omega_bzvtiDisplay_7.GlyphType = 'Arrow'
+start_data_omega_bzvtiDisplay_7.GlyphTableIndexArray = 'None'
+start_data_omega_bzvtiDisplay_7.GaussianRadius = 0.050309126590823094
+start_data_omega_bzvtiDisplay_7.SetScaleArray = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_7.ScaleTransferFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_7.OpacityArray = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_7.OpacityTransferFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_7.DataAxesGrid = 'GridAxesRepresentation'
+start_data_omega_bzvtiDisplay_7.PolarAxes = 'PolarAxesRepresentation'
+start_data_omega_bzvtiDisplay_7.ScalarOpacityUnitDistance = 0.12315087617612483
+start_data_omega_bzvtiDisplay_7.OpacityArrayName = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_7.SliceFunction = 'Plane'
+start_data_omega_bzvtiDisplay_7.Slice = 63
+start_data_omega_bzvtiDisplay_7.SelectInputVectors = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_7.WriteLog = ''
 
 # init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
-start_data_omega_bzvtiDisplay_5.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_7.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-start_data_omega_bzvtiDisplay_5.ScaleTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_7.ScaleTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-start_data_omega_bzvtiDisplay_5.OpacityTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_7.OpacityTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
 
 # show data from threshold5
-threshold5Display = Show(threshold5, renderView6, 'UnstructuredGridRepresentation')
+threshold5Display = Show(threshold5, renderView7, 'UnstructuredGridRepresentation')
 
 # trace defaults for the display properties.
 threshold5Display.Representation = 'Surface'
@@ -1706,7 +3615,7 @@ threshold5Display.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 1.17578133
 threshold5Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 1.1757813367477812e-38, 1.0, 0.5, 0.0]
 
 # show data from threshold8
-threshold8Display = Show(threshold8, renderView6, 'UnstructuredGridRepresentation')
+threshold8Display = Show(threshold8, renderView7, 'UnstructuredGridRepresentation')
 
 # get opacity transfer function/opacity map for 'RegionId'
 regionIdPWF = GetOpacityTransferFunction('RegionId')
@@ -1745,8 +3654,14 @@ threshold8Display.WriteLog = ''
 # init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
 threshold8Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+threshold8Display.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 1.1757813367477812e-38, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+threshold8Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 1.1757813367477812e-38, 1.0, 0.5, 0.0]
+
 # show data from contour4
-contour4Display = Show(contour4, renderView6, 'GeometryRepresentation')
+contour4Display = Show(contour4, renderView7, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
 contour4Display.Representation = 'Surface'
@@ -1784,93 +3699,94 @@ contour4Display.ScaleTransferFunction.Points = [0.9900000095367432, 0.0, 0.5, 0.
 contour4Display.OpacityTransferFunction.Points = [0.9900000095367432, 0.0, 0.5, 0.0, 0.9901220798492432, 1.0, 0.5, 0.0]
 
 # hide data in view
-Hide(start_data_omega_bzvti, renderView6)
+Hide(start_data_omega_bzvti, renderView7)
 
 # ----------------------------------------------------------------
-# setup the visualization in view 'renderView7'
+# setup the visualization in view 'renderView8'
 # ----------------------------------------------------------------
 
 # show data from start_data_omega_bzvti
-start_data_omega_bzvtiDisplay_6 = Show(start_data_omega_bzvti, renderView7, 'UniformGridRepresentation')
+start_data_omega_bzvtiDisplay_8 = Show(start_data_omega_bzvti, renderView8, 'UniformGridRepresentation')
 
 # trace defaults for the display properties.
-start_data_omega_bzvtiDisplay_6.Representation = 'Outline'
-start_data_omega_bzvtiDisplay_6.AmbientColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
-start_data_omega_bzvtiDisplay_6.ColorArrayName = [None, '']
-start_data_omega_bzvtiDisplay_6.DiffuseColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
-start_data_omega_bzvtiDisplay_6.SelectTCoordArray = 'None'
-start_data_omega_bzvtiDisplay_6.SelectNormalArray = 'None'
-start_data_omega_bzvtiDisplay_6.SelectTangentArray = 'None'
-start_data_omega_bzvtiDisplay_6.OSPRayScaleArray = 'bz_wz'
-start_data_omega_bzvtiDisplay_6.OSPRayScaleFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_6.SelectOrientationVectors = 'None'
-start_data_omega_bzvtiDisplay_6.ScaleFactor = 1.006182531816462
-start_data_omega_bzvtiDisplay_6.SelectScaleArray = 'None'
-start_data_omega_bzvtiDisplay_6.GlyphType = 'Arrow'
-start_data_omega_bzvtiDisplay_6.GlyphTableIndexArray = 'None'
-start_data_omega_bzvtiDisplay_6.GaussianRadius = 0.050309126590823094
-start_data_omega_bzvtiDisplay_6.SetScaleArray = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_6.ScaleTransferFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_6.OpacityArray = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_6.OpacityTransferFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_6.DataAxesGrid = 'GridAxesRepresentation'
-start_data_omega_bzvtiDisplay_6.PolarAxes = 'PolarAxesRepresentation'
-start_data_omega_bzvtiDisplay_6.ScalarOpacityUnitDistance = 0.12315087617612483
-start_data_omega_bzvtiDisplay_6.OpacityArrayName = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_6.SliceFunction = 'Plane'
-start_data_omega_bzvtiDisplay_6.Slice = 63
-start_data_omega_bzvtiDisplay_6.SelectInputVectors = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_6.WriteLog = ''
+start_data_omega_bzvtiDisplay_8.Representation = 'Outline'
+start_data_omega_bzvtiDisplay_8.AmbientColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
+start_data_omega_bzvtiDisplay_8.ColorArrayName = ['POINTS', '']
+start_data_omega_bzvtiDisplay_8.DiffuseColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
+start_data_omega_bzvtiDisplay_8.SelectTCoordArray = 'None'
+start_data_omega_bzvtiDisplay_8.SelectNormalArray = 'None'
+start_data_omega_bzvtiDisplay_8.SelectTangentArray = 'None'
+start_data_omega_bzvtiDisplay_8.OSPRayScaleArray = 'bz_wz'
+start_data_omega_bzvtiDisplay_8.OSPRayScaleFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_8.SelectOrientationVectors = 'None'
+start_data_omega_bzvtiDisplay_8.ScaleFactor = 1.006182531816462
+start_data_omega_bzvtiDisplay_8.SelectScaleArray = 'None'
+start_data_omega_bzvtiDisplay_8.GlyphType = 'Arrow'
+start_data_omega_bzvtiDisplay_8.GlyphTableIndexArray = 'None'
+start_data_omega_bzvtiDisplay_8.GaussianRadius = 0.050309126590823094
+start_data_omega_bzvtiDisplay_8.SetScaleArray = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_8.ScaleTransferFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_8.OpacityArray = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_8.OpacityTransferFunction = 'PiecewiseFunction'
+start_data_omega_bzvtiDisplay_8.DataAxesGrid = 'GridAxesRepresentation'
+start_data_omega_bzvtiDisplay_8.PolarAxes = 'PolarAxesRepresentation'
+start_data_omega_bzvtiDisplay_8.ScalarOpacityUnitDistance = 0.12315087617612483
+start_data_omega_bzvtiDisplay_8.OpacityArrayName = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_8.SliceFunction = 'Plane'
+start_data_omega_bzvtiDisplay_8.Slice = 63
+start_data_omega_bzvtiDisplay_8.SelectInputVectors = ['POINTS', 'bz_wz']
+start_data_omega_bzvtiDisplay_8.WriteLog = ''
 
 # init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
-start_data_omega_bzvtiDisplay_6.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_8.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-start_data_omega_bzvtiDisplay_6.ScaleTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_8.ScaleTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-start_data_omega_bzvtiDisplay_6.OpacityTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+start_data_omega_bzvtiDisplay_8.OpacityTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
 
 # show data from contour1
-contour1Display_6 = Show(contour1, renderView7, 'GeometryRepresentation')
+contour1Display_8 = Show(contour1, renderView8, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
-contour1Display_6.Representation = 'Surface'
-contour1Display_6.ColorArrayName = ['POINTS', '']
-contour1Display_6.Opacity = 0.2
-contour1Display_6.Specular = 1.0
-contour1Display_6.SelectTCoordArray = 'None'
-contour1Display_6.SelectNormalArray = 'Normals'
-contour1Display_6.SelectTangentArray = 'None'
-contour1Display_6.EdgeColor = [0.0, 0.0, 0.0]
-contour1Display_6.OSPRayScaleArray = 'omega_bz'
-contour1Display_6.OSPRayScaleFunction = 'PiecewiseFunction'
-contour1Display_6.SelectOrientationVectors = 'None'
-contour1Display_6.ScaleFactor = 0.8636709690093994
-contour1Display_6.SelectScaleArray = 'omega_bz'
-contour1Display_6.GlyphType = 'Arrow'
-contour1Display_6.GlyphTableIndexArray = 'omega_bz'
-contour1Display_6.GaussianRadius = 0.04318354845046997
-contour1Display_6.SetScaleArray = ['POINTS', 'omega_bz']
-contour1Display_6.ScaleTransferFunction = 'PiecewiseFunction'
-contour1Display_6.OpacityArray = ['POINTS', 'omega_bz']
-contour1Display_6.OpacityTransferFunction = 'PiecewiseFunction'
-contour1Display_6.DataAxesGrid = 'GridAxesRepresentation'
-contour1Display_6.PolarAxes = 'PolarAxesRepresentation'
-contour1Display_6.SelectInputVectors = ['POINTS', 'Normals']
-contour1Display_6.WriteLog = ''
+contour1Display_8.Representation = 'Surface'
+contour1Display_8.ColorArrayName = ['POINTS', '']
+contour1Display_8.LookupTable = omega_bzLUT
+contour1Display_8.Opacity = 0.2
+contour1Display_8.Specular = 1.0
+contour1Display_8.SelectTCoordArray = 'None'
+contour1Display_8.SelectNormalArray = 'Normals'
+contour1Display_8.SelectTangentArray = 'None'
+contour1Display_8.EdgeColor = [0.0, 0.0, 0.0]
+contour1Display_8.OSPRayScaleArray = 'omega_bz'
+contour1Display_8.OSPRayScaleFunction = 'PiecewiseFunction'
+contour1Display_8.SelectOrientationVectors = 'None'
+contour1Display_8.ScaleFactor = 0.8636709690093994
+contour1Display_8.SelectScaleArray = 'omega_bz'
+contour1Display_8.GlyphType = 'Arrow'
+contour1Display_8.GlyphTableIndexArray = 'omega_bz'
+contour1Display_8.GaussianRadius = 0.04318354845046997
+contour1Display_8.SetScaleArray = ['POINTS', 'omega_bz']
+contour1Display_8.ScaleTransferFunction = 'PiecewiseFunction'
+contour1Display_8.OpacityArray = ['POINTS', 'omega_bz']
+contour1Display_8.OpacityTransferFunction = 'PiecewiseFunction'
+contour1Display_8.DataAxesGrid = 'GridAxesRepresentation'
+contour1Display_8.PolarAxes = 'PolarAxesRepresentation'
+contour1Display_8.SelectInputVectors = ['POINTS', 'Normals']
+contour1Display_8.WriteLog = ''
 
 # init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
-contour1Display_6.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+contour1Display_8.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-contour1Display_6.ScaleTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
+contour1Display_8.ScaleTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-contour1Display_6.OpacityTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
+contour1Display_8.OpacityTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
 
 # show data from tTKDiscreteGradient1
-tTKDiscreteGradient1Display = Show(tTKDiscreteGradient1, renderView7, 'GeometryRepresentation')
+tTKDiscreteGradient1Display = Show(tTKDiscreteGradient1, renderView8, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
 tTKDiscreteGradient1Display.Representation = 'Surface'
@@ -1911,11 +3827,11 @@ tTKDiscreteGradient1Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0
 tTKDiscreteGradient1_1 = FindSource('TTKDiscreteGradient1')
 
 # show data from tTKDiscreteGradient1_1
-tTKDiscreteGradient1_1Display = Show(OutputPort(tTKDiscreteGradient1_1, 1), renderView7, 'GeometryRepresentation')
+tTKDiscreteGradient1_1Display = Show(OutputPort(tTKDiscreteGradient1_1, 1), renderView8, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
 tTKDiscreteGradient1_1Display.Representation = 'Surface'
-tTKDiscreteGradient1_1Display.ColorArrayName = [None, '']
+tTKDiscreteGradient1_1Display.ColorArrayName = ['POINTS', '']
 tTKDiscreteGradient1_1Display.Specular = 1.0
 tTKDiscreteGradient1_1Display.SelectTCoordArray = 'None'
 tTKDiscreteGradient1_1Display.SelectNormalArray = 'None'
@@ -1928,20 +3844,20 @@ tTKDiscreteGradient1_1Display.SelectScaleArray = 'None'
 tTKDiscreteGradient1_1Display.GlyphType = 'Arrow'
 tTKDiscreteGradient1_1Display.GlyphTableIndexArray = 'None'
 tTKDiscreteGradient1_1Display.GaussianRadius = -0.01
-tTKDiscreteGradient1_1Display.SetScaleArray = [None, '']
+tTKDiscreteGradient1_1Display.SetScaleArray = ['POINTS', '']
 tTKDiscreteGradient1_1Display.ScaleTransferFunction = 'PiecewiseFunction'
-tTKDiscreteGradient1_1Display.OpacityArray = [None, '']
+tTKDiscreteGradient1_1Display.OpacityArray = ['POINTS', '']
 tTKDiscreteGradient1_1Display.OpacityTransferFunction = 'PiecewiseFunction'
 tTKDiscreteGradient1_1Display.DataAxesGrid = 'GridAxesRepresentation'
 tTKDiscreteGradient1_1Display.PolarAxes = 'PolarAxesRepresentation'
-tTKDiscreteGradient1_1Display.SelectInputVectors = [None, '']
+tTKDiscreteGradient1_1Display.SelectInputVectors = ['POINTS', '']
 tTKDiscreteGradient1_1Display.WriteLog = ''
 
 # init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
 tTKDiscreteGradient1_1Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
 # show data from tTKIcospheresFromPoints1
-tTKIcospheresFromPoints1Display = Show(tTKIcospheresFromPoints1, renderView7, 'GeometryRepresentation')
+tTKIcospheresFromPoints1Display = Show(tTKIcospheresFromPoints1, renderView8, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
 tTKIcospheresFromPoints1Display.Representation = 'Surface'
@@ -1979,7 +3895,7 @@ tTKIcospheresFromPoints1Display.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0
 tTKIcospheresFromPoints1Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 3.0, 1.0, 0.5, 0.0]
 
 # show data from extractSurface1
-extractSurface1Display = Show(extractSurface1, renderView7, 'GeometryRepresentation')
+extractSurface1Display = Show(extractSurface1, renderView8, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
 extractSurface1Display.Representation = 'Surface'
@@ -2017,18 +3933,18 @@ extractSurface1Display.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 3.0, 
 extractSurface1Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 3.0, 1.0, 0.5, 0.0]
 
 # hide data in view
-Hide(extractSurface1, renderView7)
+Hide(extractSurface1, renderView8)
 
 # ----------------------------------------------------------------
-# setup the visualization in view 'renderView8'
+# setup the visualization in view 'renderView9'
 # ----------------------------------------------------------------
 
 # show data from tTKScalarFieldNormalizer1
-tTKScalarFieldNormalizer1Display = Show(tTKScalarFieldNormalizer1, renderView8, 'UniformGridRepresentation')
+tTKScalarFieldNormalizer1Display = Show(tTKScalarFieldNormalizer1, renderView9, 'UniformGridRepresentation')
 
 # trace defaults for the display properties.
 tTKScalarFieldNormalizer1Display.Representation = 'Outline'
-tTKScalarFieldNormalizer1Display.ColorArrayName = [None, '']
+tTKScalarFieldNormalizer1Display.ColorArrayName = ['POINTS', '']
 tTKScalarFieldNormalizer1Display.SelectTCoordArray = 'None'
 tTKScalarFieldNormalizer1Display.SelectNormalArray = 'None'
 tTKScalarFieldNormalizer1Display.SelectTangentArray = 'None'
@@ -2063,12 +3979,12 @@ tTKScalarFieldNormalizer1Display.ScaleTransferFunction.Points = [-0.703862084561
 tTKScalarFieldNormalizer1Display.OpacityTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
 
 # show data from tTKPersistenceDiagram1
-tTKPersistenceDiagram1Display = Show(tTKPersistenceDiagram1, renderView8, 'UnstructuredGridRepresentation')
+tTKPersistenceDiagram1Display = Show(tTKPersistenceDiagram1, renderView9, 'UnstructuredGridRepresentation')
 
 # trace defaults for the display properties.
 tTKPersistenceDiagram1Display.Representation = 'Surface'
 tTKPersistenceDiagram1Display.AmbientColor = [0.6666666666666666, 0.21176470588235294, 0.19607843137254902]
-tTKPersistenceDiagram1Display.ColorArrayName = [None, '']
+tTKPersistenceDiagram1Display.ColorArrayName = ['POINTS', '']
 tTKPersistenceDiagram1Display.DiffuseColor = [0.6666666666666666, 0.21176470588235294, 0.19607843137254902]
 tTKPersistenceDiagram1Display.Specular = 1.0
 tTKPersistenceDiagram1Display.SelectTCoordArray = 'None'
@@ -2103,7 +4019,7 @@ tTKPersistenceDiagram1Display.ScaleTransferFunction.Points = [-2.416422843933105
 tTKPersistenceDiagram1Display.OpacityTransferFunction.Points = [-2.4164228439331055, 0.0, 0.5, 0.0, 5.030911922454834, 1.0, 0.5, 0.0]
 
 # show data from threshold9
-threshold9Display = Show(threshold9, renderView8, 'UnstructuredGridRepresentation')
+threshold9Display = Show(threshold9, renderView9, 'UnstructuredGridRepresentation')
 
 # get color transfer function/color map for 'Coordinates'
 coordinatesLUT = GetColorTransferFunction('Coordinates')
@@ -2156,7 +4072,7 @@ threshold9Display.ScaleTransferFunction.Points = [-1.386472225189209, 0.0, 0.5, 
 threshold9Display.OpacityTransferFunction.Points = [-1.386472225189209, 0.0, 0.5, 0.0, 4.080188274383545, 1.0, 0.5, 0.0]
 
 # show data from extractSurface2
-extractSurface2Display = Show(extractSurface2, renderView8, 'GeometryRepresentation')
+extractSurface2Display = Show(extractSurface2, renderView9, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
 extractSurface2Display.Representation = 'Surface'
@@ -2194,13 +4110,14 @@ extractSurface2Display.ScaleTransferFunction.Points = [-1.386472225189209, 0.0, 
 extractSurface2Display.OpacityTransferFunction.Points = [-1.386472225189209, 0.0, 0.5, 0.0, 4.080188274383545, 1.0, 0.5, 0.0]
 
 # show data from tube2
-tube2Display = Show(tube2, renderView8, 'GeometryRepresentation')
+tube2Display = Show(tube2, renderView9, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
 tube2Display.Representation = 'Surface'
 tube2Display.AmbientColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
 tube2Display.ColorArrayName = ['POINTS', '']
 tube2Display.DiffuseColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
+tube2Display.LookupTable = coordinatesLUT
 tube2Display.Specular = 1.0
 tube2Display.SelectTCoordArray = 'None'
 tube2Display.SelectNormalArray = 'TubeNormals'
@@ -2233,12 +4150,12 @@ tube2Display.ScaleTransferFunction.Points = [-1.386472225189209, 0.0, 0.5, 0.0, 
 tube2Display.OpacityTransferFunction.Points = [-1.386472225189209, 0.0, 0.5, 0.0, 4.080188274383545, 1.0, 0.5, 0.0]
 
 # show data from threshold10
-threshold10Display = Show(threshold10, renderView8, 'UnstructuredGridRepresentation')
+threshold10Display = Show(threshold10, renderView9, 'UnstructuredGridRepresentation')
 
 # trace defaults for the display properties.
 threshold10Display.Representation = 'Surface'
 threshold10Display.AmbientColor = [0.6666666666666666, 0.21176470588235294, 0.19607843137254902]
-threshold10Display.ColorArrayName = [None, '']
+threshold10Display.ColorArrayName = ['POINTS', '']
 threshold10Display.DiffuseColor = [0.6666666666666666, 0.21176470588235294, 0.19607843137254902]
 threshold10Display.Specular = 1.0
 threshold10Display.SelectTCoordArray = 'None'
@@ -2273,7 +4190,7 @@ threshold10Display.ScaleTransferFunction.Points = [-1.5449261665344238, 0.0, 0.5
 threshold10Display.OpacityTransferFunction.Points = [-1.5449261665344238, 0.0, 0.5, 0.0, 4.47632360458374, 1.0, 0.5, 0.0]
 
 # show data from tTKIcospheresFromPoints3
-tTKIcospheresFromPoints3Display = Show(tTKIcospheresFromPoints3, renderView8, 'GeometryRepresentation')
+tTKIcospheresFromPoints3Display = Show(tTKIcospheresFromPoints3, renderView9, 'GeometryRepresentation')
 
 # get color transfer function/color map for 'CriticalType'
 criticalTypeLUT = GetColorTransferFunction('CriticalType')
@@ -2319,11 +4236,11 @@ tTKIcospheresFromPoints3Display.ScaleTransferFunction.Points = [-1.5449261665344
 tTKIcospheresFromPoints3Display.OpacityTransferFunction.Points = [-1.5449261665344238, 0.0, 0.5, 0.0, 4.47632360458374, 1.0, 0.5, 0.0]
 
 # show data from extractSurface3
-extractSurface3Display = Show(extractSurface3, renderView8, 'GeometryRepresentation')
+extractSurface3Display = Show(extractSurface3, renderView9, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
 extractSurface3Display.Representation = 'Surface'
-extractSurface3Display.ColorArrayName = [None, '']
+extractSurface3Display.ColorArrayName = ['POINTS', '']
 extractSurface3Display.Specular = 1.0
 extractSurface3Display.SelectTCoordArray = 'None'
 extractSurface3Display.SelectNormalArray = 'None'
@@ -2356,11 +4273,11 @@ extractSurface3Display.ScaleTransferFunction.Points = [-1.5449261665344238, 0.0,
 extractSurface3Display.OpacityTransferFunction.Points = [-1.5449261665344238, 0.0, 0.5, 0.0, 4.47632360458374, 1.0, 0.5, 0.0]
 
 # show data from tube3
-tube3Display = Show(tube3, renderView8, 'GeometryRepresentation')
+tube3Display = Show(tube3, renderView9, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
 tube3Display.Representation = 'Surface'
-tube3Display.ColorArrayName = [None, '']
+tube3Display.ColorArrayName = ['POINTS', '']
 tube3Display.Specular = 1.0
 tube3Display.SelectTCoordArray = 'None'
 tube3Display.SelectNormalArray = 'TubeNormals'
@@ -2393,11 +4310,11 @@ tube3Display.ScaleTransferFunction.Points = [-1.5449261665344238, 0.0, 0.5, 0.0,
 tube3Display.OpacityTransferFunction.Points = [-1.5449261665344238, 0.0, 0.5, 0.0, 4.47632360458374, 1.0, 0.5, 0.0]
 
 # show data from threshold11
-threshold11Display = Show(threshold11, renderView8, 'UnstructuredGridRepresentation')
+threshold11Display = Show(threshold11, renderView9, 'UnstructuredGridRepresentation')
 
 # trace defaults for the display properties.
 threshold11Display.Representation = 'Surface'
-threshold11Display.ColorArrayName = [None, '']
+threshold11Display.ColorArrayName = ['POINTS', '']
 threshold11Display.Specular = 1.0
 threshold11Display.SelectTCoordArray = 'None'
 threshold11Display.SelectNormalArray = 'TubeNormals'
@@ -2430,159 +4347,213 @@ threshold11Display.ScaleTransferFunction.Points = [-1.5449261665344238, 0.0, 0.5
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
 threshold11Display.OpacityTransferFunction.Points = [-1.5449261665344238, 0.0, 0.5, 0.0, 4.47632360458374, 1.0, 0.5, 0.0]
 
-# hide data in view
-Hide(tTKScalarFieldNormalizer1, renderView8)
-
-# hide data in view
-Hide(threshold9, renderView8)
-
-# hide data in view
-Hide(extractSurface2, renderView8)
-
-# hide data in view
-Hide(threshold10, renderView8)
-
-# hide data in view
-Hide(extractSurface3, renderView8)
-
-# hide data in view
-Hide(tube3, renderView8)
-
-# ----------------------------------------------------------------
-# setup the visualization in view 'renderView9'
-# ----------------------------------------------------------------
-
-# show data from start_data_omega_bzvti
-start_data_omega_bzvtiDisplay_7 = Show(start_data_omega_bzvti, renderView9, 'UniformGridRepresentation')
+# show data from threshold12
+threshold12Display = Show(threshold12, renderView9, 'UnstructuredGridRepresentation')
 
 # trace defaults for the display properties.
-start_data_omega_bzvtiDisplay_7.Representation = 'Outline'
-start_data_omega_bzvtiDisplay_7.AmbientColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
-start_data_omega_bzvtiDisplay_7.ColorArrayName = [None, '']
-start_data_omega_bzvtiDisplay_7.DiffuseColor = [0.1803921568627451, 0.17647058823529413, 0.17647058823529413]
-start_data_omega_bzvtiDisplay_7.SelectTCoordArray = 'None'
-start_data_omega_bzvtiDisplay_7.SelectNormalArray = 'None'
-start_data_omega_bzvtiDisplay_7.SelectTangentArray = 'None'
-start_data_omega_bzvtiDisplay_7.OSPRayScaleArray = 'bz_wz'
-start_data_omega_bzvtiDisplay_7.OSPRayScaleFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_7.SelectOrientationVectors = 'None'
-start_data_omega_bzvtiDisplay_7.ScaleFactor = 1.006182531816462
-start_data_omega_bzvtiDisplay_7.SelectScaleArray = 'None'
-start_data_omega_bzvtiDisplay_7.GlyphType = 'Arrow'
-start_data_omega_bzvtiDisplay_7.GlyphTableIndexArray = 'None'
-start_data_omega_bzvtiDisplay_7.GaussianRadius = 0.050309126590823094
-start_data_omega_bzvtiDisplay_7.SetScaleArray = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_7.ScaleTransferFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_7.OpacityArray = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_7.OpacityTransferFunction = 'PiecewiseFunction'
-start_data_omega_bzvtiDisplay_7.DataAxesGrid = 'GridAxesRepresentation'
-start_data_omega_bzvtiDisplay_7.PolarAxes = 'PolarAxesRepresentation'
-start_data_omega_bzvtiDisplay_7.ScalarOpacityUnitDistance = 0.12315087617612483
-start_data_omega_bzvtiDisplay_7.OpacityArrayName = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_7.SliceFunction = 'Plane'
-start_data_omega_bzvtiDisplay_7.Slice = 63
-start_data_omega_bzvtiDisplay_7.SelectInputVectors = ['POINTS', 'bz_wz']
-start_data_omega_bzvtiDisplay_7.WriteLog = ''
+threshold12Display.Representation = 'Surface'
+threshold12Display.ColorArrayName = [None, '']
+threshold12Display.Specular = 1.0
+threshold12Display.SelectTCoordArray = 'None'
+threshold12Display.SelectNormalArray = 'None'
+threshold12Display.SelectTangentArray = 'None'
+threshold12Display.OSPRayScaleArray = 'Coordinates'
+threshold12Display.OSPRayScaleFunction = 'PiecewiseFunction'
+threshold12Display.SelectOrientationVectors = 'Coordinates'
+threshold12Display.ScaleFactor = 0.0999999953674319
+threshold12Display.SelectScaleArray = 'Coordinates'
+threshold12Display.GlyphType = 'Arrow'
+threshold12Display.GlyphTableIndexArray = 'Coordinates'
+threshold12Display.GaussianRadius = 0.004999999768371594
+threshold12Display.SetScaleArray = ['POINTS', 'Coordinates']
+threshold12Display.ScaleTransferFunction = 'PiecewiseFunction'
+threshold12Display.OpacityArray = ['POINTS', 'Coordinates']
+threshold12Display.OpacityTransferFunction = 'PiecewiseFunction'
+threshold12Display.DataAxesGrid = 'GridAxesRepresentation'
+threshold12Display.PolarAxes = 'PolarAxesRepresentation'
+threshold12Display.ScalarOpacityUnitDistance = 0.2183984383247799
+threshold12Display.OpacityArrayName = ['POINTS', 'Coordinates']
+threshold12Display.SelectInputVectors = ['POINTS', 'Coordinates']
+threshold12Display.WriteLog = ''
 
 # init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
-start_data_omega_bzvtiDisplay_7.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+threshold12Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-start_data_omega_bzvtiDisplay_7.ScaleTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+threshold12Display.ScaleTransferFunction.Points = [-2.4164228439331055, 0.0, 0.5, 0.0, 5.030911922454834, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-start_data_omega_bzvtiDisplay_7.OpacityTransferFunction.Points = [-0.7038620845610734, 0.0, 0.5, 0.0, 9.253598515594783, 1.0, 0.5, 0.0]
+threshold12Display.OpacityTransferFunction.Points = [-2.4164228439331055, 0.0, 0.5, 0.0, 5.030911922454834, 1.0, 0.5, 0.0]
 
-# show data from contour1
-contour1Display_7 = Show(contour1, renderView9, 'GeometryRepresentation')
+# show data from tTKIcospheresFromPoints4
+tTKIcospheresFromPoints4Display = Show(tTKIcospheresFromPoints4, renderView9, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
-contour1Display_7.Representation = 'Surface'
-contour1Display_7.ColorArrayName = ['POINTS', '']
-contour1Display_7.Opacity = 0.2
-contour1Display_7.Specular = 1.0
-contour1Display_7.SelectTCoordArray = 'None'
-contour1Display_7.SelectNormalArray = 'Normals'
-contour1Display_7.SelectTangentArray = 'None'
-contour1Display_7.EdgeColor = [0.0, 0.0, 0.0]
-contour1Display_7.OSPRayScaleArray = 'omega_bz'
-contour1Display_7.OSPRayScaleFunction = 'PiecewiseFunction'
-contour1Display_7.SelectOrientationVectors = 'None'
-contour1Display_7.ScaleFactor = 0.8636709690093994
-contour1Display_7.SelectScaleArray = 'omega_bz'
-contour1Display_7.GlyphType = 'Arrow'
-contour1Display_7.GlyphTableIndexArray = 'omega_bz'
-contour1Display_7.GaussianRadius = 0.04318354845046997
-contour1Display_7.SetScaleArray = ['POINTS', 'omega_bz']
-contour1Display_7.ScaleTransferFunction = 'PiecewiseFunction'
-contour1Display_7.OpacityArray = ['POINTS', 'omega_bz']
-contour1Display_7.OpacityTransferFunction = 'PiecewiseFunction'
-contour1Display_7.DataAxesGrid = 'GridAxesRepresentation'
-contour1Display_7.PolarAxes = 'PolarAxesRepresentation'
-contour1Display_7.SelectInputVectors = ['POINTS', 'Normals']
-contour1Display_7.WriteLog = ''
+tTKIcospheresFromPoints4Display.Representation = 'Surface'
+tTKIcospheresFromPoints4Display.ColorArrayName = [None, '']
+tTKIcospheresFromPoints4Display.Specular = 1.0
+tTKIcospheresFromPoints4Display.SelectTCoordArray = 'None'
+tTKIcospheresFromPoints4Display.SelectNormalArray = 'Normals'
+tTKIcospheresFromPoints4Display.SelectTangentArray = 'None'
+tTKIcospheresFromPoints4Display.EdgeColor = [0.0, 0.0, 0.0]
+tTKIcospheresFromPoints4Display.OSPRayScaleArray = 'Coordinates'
+tTKIcospheresFromPoints4Display.OSPRayScaleFunction = 'PiecewiseFunction'
+tTKIcospheresFromPoints4Display.SelectOrientationVectors = 'Coordinates'
+tTKIcospheresFromPoints4Display.ScaleFactor = 0.29999999403953553
+tTKIcospheresFromPoints4Display.SelectScaleArray = 'Coordinates'
+tTKIcospheresFromPoints4Display.GlyphType = 'Arrow'
+tTKIcospheresFromPoints4Display.GlyphTableIndexArray = 'Coordinates'
+tTKIcospheresFromPoints4Display.GaussianRadius = 0.014999999701976777
+tTKIcospheresFromPoints4Display.SetScaleArray = ['POINTS', 'Coordinates']
+tTKIcospheresFromPoints4Display.ScaleTransferFunction = 'PiecewiseFunction'
+tTKIcospheresFromPoints4Display.OpacityArray = ['POINTS', 'Coordinates']
+tTKIcospheresFromPoints4Display.OpacityTransferFunction = 'PiecewiseFunction'
+tTKIcospheresFromPoints4Display.DataAxesGrid = 'GridAxesRepresentation'
+tTKIcospheresFromPoints4Display.PolarAxes = 'PolarAxesRepresentation'
+tTKIcospheresFromPoints4Display.SelectInputVectors = ['POINTS', 'Coordinates']
+tTKIcospheresFromPoints4Display.WriteLog = ''
 
 # init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
-contour1Display_7.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+tTKIcospheresFromPoints4Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-contour1Display_7.ScaleTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
+tTKIcospheresFromPoints4Display.ScaleTransferFunction.Points = [-2.4164228439331055, 0.0, 0.5, 0.0, 5.030911922454834, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-contour1Display_7.OpacityTransferFunction.Points = [0.5, 0.0, 0.5, 0.0, 0.5001220703125, 1.0, 0.5, 0.0]
+tTKIcospheresFromPoints4Display.OpacityTransferFunction.Points = [-2.4164228439331055, 0.0, 0.5, 0.0, 5.030911922454834, 1.0, 0.5, 0.0]
 
-# show data from tTKIcospheresFromPoints2
-tTKIcospheresFromPoints2Display_1 = Show(tTKIcospheresFromPoints2, renderView9, 'GeometryRepresentation')
+# show data from extractSurface4
+extractSurface4Display = Show(extractSurface4, renderView9, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
-tTKIcospheresFromPoints2Display_1.Representation = 'Surface'
-tTKIcospheresFromPoints2Display_1.ColorArrayName = ['POINTS', 'CellDimension']
-tTKIcospheresFromPoints2Display_1.LookupTable = cellDimensionLUT
-tTKIcospheresFromPoints2Display_1.Specular = 1.0
-tTKIcospheresFromPoints2Display_1.SelectTCoordArray = 'None'
-tTKIcospheresFromPoints2Display_1.SelectNormalArray = 'Normals'
-tTKIcospheresFromPoints2Display_1.SelectTangentArray = 'None'
-tTKIcospheresFromPoints2Display_1.EdgeColor = [0.0, 0.0, 0.0]
-tTKIcospheresFromPoints2Display_1.OSPRayScaleArray = 'CellDimension'
-tTKIcospheresFromPoints2Display_1.OSPRayScaleFunction = 'PiecewiseFunction'
-tTKIcospheresFromPoints2Display_1.SelectOrientationVectors = 'None'
-tTKIcospheresFromPoints2Display_1.ScaleFactor = 0.866682767868042
-tTKIcospheresFromPoints2Display_1.SelectScaleArray = 'CellDimension'
-tTKIcospheresFromPoints2Display_1.GlyphType = 'Arrow'
-tTKIcospheresFromPoints2Display_1.GlyphTableIndexArray = 'CellDimension'
-tTKIcospheresFromPoints2Display_1.GaussianRadius = 0.043334138393402104
-tTKIcospheresFromPoints2Display_1.SetScaleArray = ['POINTS', 'CellDimension']
-tTKIcospheresFromPoints2Display_1.ScaleTransferFunction = 'PiecewiseFunction'
-tTKIcospheresFromPoints2Display_1.OpacityArray = ['POINTS', 'CellDimension']
-tTKIcospheresFromPoints2Display_1.OpacityTransferFunction = 'PiecewiseFunction'
-tTKIcospheresFromPoints2Display_1.DataAxesGrid = 'GridAxesRepresentation'
-tTKIcospheresFromPoints2Display_1.PolarAxes = 'PolarAxesRepresentation'
-tTKIcospheresFromPoints2Display_1.SelectInputVectors = ['POINTS', 'CellDimension']
-tTKIcospheresFromPoints2Display_1.WriteLog = ''
+extractSurface4Display.Representation = 'Surface'
+extractSurface4Display.ColorArrayName = [None, '']
+extractSurface4Display.Specular = 1.0
+extractSurface4Display.SelectTCoordArray = 'None'
+extractSurface4Display.SelectNormalArray = 'None'
+extractSurface4Display.SelectTangentArray = 'None'
+extractSurface4Display.EdgeColor = [0.0, 0.0, 0.0]
+extractSurface4Display.OSPRayScaleArray = 'Coordinates'
+extractSurface4Display.OSPRayScaleFunction = 'PiecewiseFunction'
+extractSurface4Display.SelectOrientationVectors = 'Coordinates'
+extractSurface4Display.ScaleFactor = 0.0999999953674319
+extractSurface4Display.SelectScaleArray = 'Coordinates'
+extractSurface4Display.GlyphType = 'Arrow'
+extractSurface4Display.GlyphTableIndexArray = 'Coordinates'
+extractSurface4Display.GaussianRadius = 0.004999999768371594
+extractSurface4Display.SetScaleArray = ['POINTS', 'Coordinates']
+extractSurface4Display.ScaleTransferFunction = 'PiecewiseFunction'
+extractSurface4Display.OpacityArray = ['POINTS', 'Coordinates']
+extractSurface4Display.OpacityTransferFunction = 'PiecewiseFunction'
+extractSurface4Display.DataAxesGrid = 'GridAxesRepresentation'
+extractSurface4Display.PolarAxes = 'PolarAxesRepresentation'
+extractSurface4Display.SelectInputVectors = ['POINTS', 'Coordinates']
+extractSurface4Display.WriteLog = ''
 
 # init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
-tTKIcospheresFromPoints2Display_1.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+extractSurface4Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-tTKIcospheresFromPoints2Display_1.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 3.0, 1.0, 0.5, 0.0]
+extractSurface4Display.ScaleTransferFunction.Points = [-2.4164228439331055, 0.0, 0.5, 0.0, 5.030911922454834, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-tTKIcospheresFromPoints2Display_1.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 3.0, 1.0, 0.5, 0.0]
+extractSurface4Display.OpacityTransferFunction.Points = [-2.4164228439331055, 0.0, 0.5, 0.0, 5.030911922454834, 1.0, 0.5, 0.0]
+
+# show data from tube8
+tube8Display = Show(tube8, renderView9, 'GeometryRepresentation')
+
+# trace defaults for the display properties.
+tube8Display.Representation = 'Surface'
+tube8Display.ColorArrayName = [None, '']
+tube8Display.Specular = 1.0
+tube8Display.SelectTCoordArray = 'None'
+tube8Display.SelectNormalArray = 'TubeNormals'
+tube8Display.SelectTangentArray = 'None'
+tube8Display.EdgeColor = [0.0, 0.0, 0.0]
+tube8Display.OSPRayScaleArray = 'Coordinates'
+tube8Display.OSPRayScaleFunction = 'PiecewiseFunction'
+tube8Display.SelectOrientationVectors = 'Coordinates'
+tube8Display.ScaleFactor = 0.10187303647398949
+tube8Display.SelectScaleArray = 'Coordinates'
+tube8Display.GlyphType = 'Arrow'
+tube8Display.GlyphTableIndexArray = 'Coordinates'
+tube8Display.GaussianRadius = 0.005093651823699474
+tube8Display.SetScaleArray = ['POINTS', 'Coordinates']
+tube8Display.ScaleTransferFunction = 'PiecewiseFunction'
+tube8Display.OpacityArray = ['POINTS', 'Coordinates']
+tube8Display.OpacityTransferFunction = 'PiecewiseFunction'
+tube8Display.DataAxesGrid = 'GridAxesRepresentation'
+tube8Display.PolarAxes = 'PolarAxesRepresentation'
+tube8Display.SelectInputVectors = ['POINTS', 'Coordinates']
+tube8Display.WriteLog = ''
+
+# init the 'PiecewiseFunction' selected for 'OSPRayScaleFunction'
+tube8Display.OSPRayScaleFunction.Points = [-41.2251014709473, 0.0, 0.5, 0.0, 48.8776016235352, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
+tube8Display.ScaleTransferFunction.Points = [-2.4164228439331055, 0.0, 0.5, 0.0, 5.030911922454834, 1.0, 0.5, 0.0]
+
+# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
+tube8Display.OpacityTransferFunction.Points = [-2.4164228439331055, 0.0, 0.5, 0.0, 5.030911922454834, 1.0, 0.5, 0.0]
+
+# hide data in view
+Hide(tTKScalarFieldNormalizer1, renderView9)
+
+# hide data in view
+Hide(tTKPersistenceDiagram1, renderView9)
+
+# hide data in view
+Hide(threshold9, renderView9)
+
+# hide data in view
+Hide(extractSurface2, renderView9)
+
+# hide data in view
+Hide(threshold10, renderView9)
+
+# hide data in view
+Hide(extractSurface3, renderView9)
+
+# hide data in view
+Hide(tube3, renderView9)
+
+# hide data in view
+Hide(extractSurface4, renderView9)
 
 # ----------------------------------------------------------------
 # setup color maps and opacity mapes used in the visualization
 # note: the Get..() functions create a new object, if needed
 # ----------------------------------------------------------------
 
-# get opacity transfer function/opacity map for 'omega_bz'
-omega_bzPWF = GetOpacityTransferFunction('omega_bz')
-omega_bzPWF.Points = [0.4000000059604645, 0.0, 0.5, 0.0, 0.997122049331665, 1.0, 0.5, 0.0]
-omega_bzPWF.ScalarRangeInitialized = 1
+# get opacity transfer function/opacity map for 'y'
+yPWF = GetOpacityTransferFunction('y')
+yPWF.Points = [-4.233413219451904, 0.0, 0.5, 0.0, 4.233413219451904, 1.0, 0.5, 0.0]
+yPWF.ScalarRangeInitialized = 1
+
+# get opacity transfer function/opacity map for 'x'
+xPWF = GetOpacityTransferFunction('x')
+xPWF.Points = [-5.03091287612915, 0.0, 0.5, 0.0, 5.03091287612915, 1.0, 0.5, 0.0]
+xPWF.ScalarRangeInitialized = 1
 
 # get opacity transfer function/opacity map for 'CellDimension'
 cellDimensionPWF = GetOpacityTransferFunction('CellDimension')
 cellDimensionPWF.Points = [0.0, 0.0, 0.5, 0.0, 3.0, 1.0, 0.5, 0.0]
 cellDimensionPWF.ScalarRangeInitialized = 1
+
+# get opacity transfer function/opacity map for 'u'
+uPWF = GetOpacityTransferFunction('u')
+uPWF.Points = [-5.03091287612915, 0.0, 0.5, 0.0, 5.03091287612915, 1.0, 0.5, 0.0]
+uPWF.ScalarRangeInitialized = 1
+
+# get opacity transfer function/opacity map for 'v'
+vPWF = GetOpacityTransferFunction('v')
+vPWF.Points = [-4.233413219451904, 0.0, 0.5, 0.0, 4.233413219451904, 1.0, 0.5, 0.0]
+vPWF.ScalarRangeInitialized = 1
+
+# get opacity transfer function/opacity map for 'omega_bz'
+omega_bzPWF = GetOpacityTransferFunction('omega_bz')
+omega_bzPWF.Points = [0.49758370749999525, 0.0, 0.5, 0.0, 0.9639800145368502, 1.0, 0.5, 0.0]
+omega_bzPWF.ScalarRangeInitialized = 1
 
 # get opacity transfer function/opacity map for 'CriticalType'
 criticalTypePWF = GetOpacityTransferFunction('CriticalType')
@@ -2591,7 +4562,7 @@ criticalTypePWF.ScalarRangeInitialized = 1
 
 # ----------------------------------------------------------------
 # restore active source
-SetActiveSource(tTKIcospheresFromPoints3)
+SetActiveSource(tTKIcospheresFromPoints4)
 # ----------------------------------------------------------------
 
 
