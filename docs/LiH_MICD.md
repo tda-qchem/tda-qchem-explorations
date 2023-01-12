@@ -23,7 +23,8 @@ Details of this work can be found in the relevant publication [on arXiv](https:/
 ### Inputs and run scripts
 
 <!--- * Molecular geometry of LiH molecule in CSV format (in atomic units): [LiH.csv](../data/LiH_MICD/LiH.csv) --->
-* Molecular geometry of LiH molecule in CSV format (in atomic units): [LiH.csv](https://github.com/tda-qchem/tda-qchem-explorations/blob/main/data/LiH_MICD/LiH.csv)
+* Molecular geometry of LiH molecule in CSV format (in atomic units): [LiH.csv](../data/LiH_MICD/LiH.csv) --->
+* Molecular geometry of LiH molecule in CSV format (in atomic units): [LiH.csv](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/LiH.csv)
     * This is the experimental geometry from [NIST database](https://cccbdb.nist.gov/exp2x.asp?casno=7580678&charge=0#NISTdiatomic and https://www.nist.gov/pml/diatomic-spectral-database).
 * Input(s) for a wave function optimization: [scf.inp](LINK.csv)
 * Input(s) for calculations of the magnetic-field response (uses NMR shielding calculations): : [rsp.inp](LINK.csv)
