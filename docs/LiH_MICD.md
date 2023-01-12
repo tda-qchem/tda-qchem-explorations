@@ -1,22 +1,22 @@
-# The magnetically-induced current density in LiH molecule studied with the Omega function
+# Vortices in the magnetically-induced current density in LiH molecule studied through the lens of the Omega function
 
-| ![Omega_bz.png](screenshots/LiH_MICD/Omega_bz.png) |
+| ![Omega_bz.png](screenshots/LiH_MICD/repImageGray.png){width=300} |
 |:--:|
-| Contour of omega_bz colored by bz_wz. Isovalue: omega_bz=0.75, bz_wz scale: restricted to [-0.1, 0.1]|
+| An automatic approach based on Topological Data Analysis extracts axial (blue) and toroidal (green) vortices in magnetically-induced current density as specific sub-sets of the separatrices (gray curves) of the Morse-Smale complex of the Omega index. |
 
 
 # Pipeline description
 
 This example illustrates the calculation of the magnetically-induced current density (MICD) tensor in LiH molecule in the DIRAC software, followed by the calculation of the Omega index with the QCTEN script and its subsequent topological analysis in the TTK software.
 
-The first step involving quantum chemistry calculations aims to export the MICD tensor and its gradient on a regular 3D grid. The setup chosen for these calculations involves the Dirac-Coulomb Hamiltonian, the Density Functional Theory method with the B3LYP functional, the basis set of triple-zeta quality (Def-TZVP), and the simple magnetic balance for the generation of a small component set in the presence of a magnetic perturbation. The magnetic field perturbation is applied perpendicularly to the Li-H bond ("z"). The cube grid has 128 points in each Cartesian direction.
+The first step involving quantum chemistry calculations aims to export the MICD tensor and its gradient on a regular 3D grid. The setup chosen for these calculations involves the Dirac-Coulomb Hamiltonian, the Density Functional Theory method with the B3LYP functional, the basis set of triple-zeta quality (def-TZVP), the London atomic orbitals and the simple magnetic balance scheme for the generation of a small component set in the presence of a magnetic perturbation. The magnetic field perturbation is applied perpendicularly to the Li-H bond ("Bz"). The cube grid has 128 points in each Cartesian direction and is built with a 4 a.u. of additional space around the molecule (default DIRAC setup).
 
-The purpose of the second step is a pointwise derivation of a scalar function from these tensor fields. In this case, the studied scalar field represent the so-called Omega index, which is used as an indicator of vortices in the first-order current density field. This step also involves translating data exported from DIRAC in CSV format to the VTI format favored by the TTK and ParaView codes. At the same time, it applies the resampling filter ("ResampleToImage") without changing the number of grid points or grid bounds.
+The purpose of the second step is a pointwise derivation of a scalar function from these tensor fields. In this case, the studied scalar field represent the so-called Omega index, which is used as an indicator of vortices in the first-order current density field. This step also involves translating data exported from DIRAC in CSV format to the VTI format favored by the TTK code. At the same time, it applies the resampling filter ("ResampleToImage") without changing the number of grid points or grid bounds.
 
-The final step involves analyzing the pre-processed Omega scalar field in the TTK software (one isosurface of this field is plotted in Figure XXX). This step starts with the calculation of the Morse-Smale complex ("XXX" filter) of the simplified data ("XXX" filter), which outputs elements of dimension 0 (critical points), dimension 1 (edges), and dimension 2 (surfaces)...{TODO}
+The final step involves analyzing the topologically-simplified Omega scalar field in the TTK software. The calculation of its Morse-Smale complex allows to extract the axial vortex as a separatrix connecting a maximum to 2-saddles on the grid boundaries. The calculation of persistent 1-cycle in the super-level sets of Omega allows to extract the toroidal vortex. 
 
+Details of this work can be found in the relevant publication [on arXiv](https://arxiv.org/abs/2212.08690).
 
-The ultimate goal of this analysis is to extract vortices in the MICD field and verify the usefulness of the Omega index for this purpose. The analysis reveals two types of saddle-maximum separatrices: (i) forming lines that connect the boundaries of the domain and capturing the centers of axial vortices, and (ii) corresponding to a persistent one-dimensional generator capturing the center of toroidal vortices. Figure XXX demonstrates the snapshot of this analysis.
 
 ## Quantum chemistry calculations
 
@@ -85,6 +85,11 @@ pam --inp=$inp_vis --mol=$mol --put="DFCOEF.smb TBMO PAMXVC" --get="plot.3d.vect
 
 
 ### ParaView
+
+To reproduce the above screenshot, go to the root directory of [this repository](https://github.com/tda-qchem/tda-qchem-explorations) and enter the following command:
+``` bash
+paraview --state=pvsm/lih.pvsm
+```
 
 ### Python script
 
