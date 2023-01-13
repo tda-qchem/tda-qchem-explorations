@@ -9,14 +9,21 @@
 
 This example illustrates the calculation of the magnetically-induced current density (MICD) tensor in the LiH molecule in the DIRAC software, followed by the calculation of the Omega index with the QCTEN script and its subsequent topological analysis in the TTK software.
 
-The first step involving quantum chemistry calculations aims to export the MICD tensor and its gradient on a regular 3D grid.
 
-The purpose of the second step is a pointwise derivation of a scalar function from these tensor fields. In this case, the studied scalar field represents the so-called Omega index, used as an indicator of vortices in the first-order current density field. This step also involves translating data exported from DIRAC in TXT to the VTI format favored by the TTK code. At the same time, it applies the resampling filter ("ResampleToImage") without changing the number of grid points or grid bounds.
 
-The final step involves analyzing the Omega scalar field in the TTK software. It involves the topological simplification of this scalar field and its subsequent analysis that leads to the extraction of axial (AV) and toroidal (TV) vortices.
+The first step involving quantum chemistry calculations aims to compute the MICD tensor and its gradient and export them on a 3D grid. 
 
-Details of this work can be found in the publication [on arXiv](https://arxiv.org/abs/2212.08690).
-All data files can be downloaded from [zenodo](https://zenodo.org/record/7446735#.Y8BlkNKE4XU).
+
+
+The purpose of the second step is a pointwise derivation of a scalar function from these tensor fields. In this case, the studied scalar field represents the so-called Omega index, used as an indicator of vortices in the first-order current density field. This step also involves translating data exported from DIRAC in TXT to the VTI format favored by the TTK code. Simultaneously, it applies the resampling filter ("ResampleToImage") without changing the number of grid points or grid bounds.
+
+
+
+The final step involves analyzing the Omega scalar field in the TTK software. It starts with extracting all critical point pairs, determining a persistence threshold for the salient pairs, and using this threshold to simplify the topology of the Omega scalar field. Then, the computation of the Morse-Smale complex of such simplified field results, in particular, in the extraction of its one-dimensional separatrices. A subset of these separatrices connecting 2-saddles and maxima well captures the center lines of vortices. These can then be associated with axial and toroidal vortices in the MICD of the LiH molecule. Notable TTK filters employed in this analysis are the `PersistenceDiagram`, `TopologicalSimplification`, `MorseSmaleComplex`, and `PersistentGenerators`.
+
+
+
+Details of this work can be found in the publication [on arXiv](https://arxiv.org/abs/2212.08690). All data files, particularly those that result from the first two steps of the above-described analysis procedure, can be downloaded from [zenodo](https://zenodo.org/record/7446735#.Y8BlkNKE4XU).
 
 
 
