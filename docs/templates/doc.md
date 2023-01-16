@@ -1,13 +1,24 @@
 # title
 
-| ![figure.png](screenshots/EXAMPLE/figure.png) |
-|:--:|
-| Caption|
+| ![figure.png](screenshots/EXAMPLE/figure.png) {width=500}|
+|:-:|
+|<div style="width:500px"><b>Caption</b></div>|
+
 
 
 # Pipeline description
 
+This example illustrates ...
+Steps ...
+For  more details on this analysis, please see ...
+All links are [at the bottom of this page](#resources-and-additional-information).
+
+Below, we describe these steps in more detail.
+
+
 ## Quantum chemistry calculations
+
+description of a molecular system and of QM model used in calculations
 
 ### Inputs and run scripts
 
@@ -22,14 +33,13 @@
 
 ### Execution
 
-### Further description
-
 
 ## Calculation of scalar functions for the topological data analysis
 
 ### Inputs
 ### Outputs
 ### Run script
+
 
 ## Topological Data Analysis
 
@@ -50,7 +60,15 @@
 
 ### Python script
 
-### Further description
+
+## Resources and additional information
+
+* [DIRAC](http://www.diracprogram.org/)
+* [TTK](https://topology-tool-kit.github.io/)
+
+* Related data:
+
+
 
 
 
