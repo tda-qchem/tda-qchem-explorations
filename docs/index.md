@@ -17,6 +17,7 @@ Each example includes:
 
 These examples assume a default installation of DIRAC, TTK and QCTEN. 
 
+# Full pipeline automatization
 
 
 # List of examples

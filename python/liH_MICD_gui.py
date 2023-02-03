@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # state file generated using paraview version 5.10.1
 
 # uncomment the following three lines to ensure this script works in future versions
@@ -316,7 +318,7 @@ SetActiveView(renderView9)
 # ----------------------------------------------------------------
 
 # create a new 'XML Image Data Reader'
-start_data_bzvti = XMLImageDataReader(registrationName='start_data_bz.vti', FileName=['/data/julien/Pro/git/collaborations/gosia/tda-qchem/tda-qchem-explorations/data/LiH_MICD/vti/start_data_bz.vti'])
+start_data_bzvti = XMLImageDataReader(registrationName='start_data_bz.vti', FileName=['data/LiH_MICD/vti/start_data_bz.vti'])
 start_data_bzvti.PointArrayStatus = ['bz_jx', 'bz_jy', 'bz_jz']
 start_data_bzvti.TimeArray = 'None'
 

@@ -63,6 +63,7 @@ description of a molecular system and of QM model used in calculations
 
 ## Resources and additional information
 
+* [Prerequisites](https://tda-qchem.github.io/tda-qchem-examples/)
 * [DIRAC](http://www.diracprogram.org/)
 * [TTK](https://topology-tool-kit.github.io/)
 

@@ -74,8 +74,8 @@ pam --inp=$inp_scf --mol=$mol --outcmo
 
 ```
 mol=LiH.xyz
-inp_rsp=rsp.inp
-pam --inp=$inp_rsp --mol=$mol --incmo --get="DFCOEF=DFCOEF.smb TBMO PAMXVC"
+inp_prp=prp.inp
+pam --inp=$inp_prp --mol=$mol --incmo --get="DFCOEF=DFCOEF.smb TBMO PAMXVC"
 ```
 
 
@@ -87,7 +87,7 @@ pam --inp=$inp_rsp --mol=$mol --incmo --get="DFCOEF=DFCOEF.smb TBMO PAMXVC"
       mol=LiH.xyz
       vis=jbx
       inp_vis=$vis.inp
-      pam --inp=$inp_vis --mol=$mol --put="DFCOEF.smb TBMO PAMXVC" --get="plot.3d.vector=$vis.txt"
+      pam --inp=$inp_vis --mol=$mol --put="DFCOEF.smb=DFCOEF TBMO PAMXVC" --get="plot.3d.vector=$vis.txt"
       ```
 
     * involving the elements of the gradient of the MICD tensor, on an example of the `gradjbx.inp` file:
@@ -96,7 +96,7 @@ pam --inp=$inp_rsp --mol=$mol --incmo --get="DFCOEF=DFCOEF.smb TBMO PAMXVC"
       mol=LiH.xyz
       vis=gradjbx
       inp_vis=$vis.inp
-      pam --inp=$inp_vis --mol=$mol --put="DFCOEF.smb TBMO PAMXVC" --get="plot.3d.tensor=$vis.txt"
+      pam --inp=$inp_vis --mol=$mol --put="DFCOEF.smb=DFCOEF TBMO PAMXVC" --get="plot.3d.tensor=$vis.txt"
       ```
 
     * analogous computations should be done with the `jby.inp` file (please change of `vis=jbx` to `vis=jby`) and the `jbz.inp` file (please change `vis=jbx` to `vis=jby`),
@@ -150,14 +150,17 @@ paraview --state=pvsm/lih.pvsm
 
 ## Resources and additional information
 
+* [Prerequisites](https://tda-qchem.github.io/tda-qchem-examples/)
 * [DIRAC](http://www.diracprogram.org/)
 * [TTK](https://topology-tool-kit.github.io/)
 * [qcten](TODO)
 
-* Related data: the publication on [arXiv](https://arxiv.org/abs/2212.08690), data files generated in this analysis on [zenodo](https://zenodo.org/record/7446735#.Y8BlkNKE4XU).
-
 * The calculations and export of the magnetically-induced current density are also discusssed in [the official DIRAC tutorial](http://www.diracprogram.org/doc/release-22/tutorials/visual/general/tutorial.html#densities-and-currents-induced-by-a-magnetic-field).
 
+* Related data: the publication on [arXiv](https://arxiv.org/abs/2212.08690) and its [1-page summary](), data files generated in this analysis on [zenodo](https://zenodo.org/record/7446735#.Y8BlkNKE4XU).
+
+* To fully reproduce the results reported in the publication, please check [this link]().
+* To fully reproduce the publication, please check [this link]().
 
 
 
