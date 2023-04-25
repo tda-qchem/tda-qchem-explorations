@@ -22,6 +22,26 @@ These examples assume a default installation of DIRAC, TTK and QCTEN.
 
 # List of examples
 
+## Completed and published
+
+[The magnetically-induced current density in LiH molecule studied with the Omega function](LiH_MICD/)
+
+
+## WIP
+
+[Exploring correlations between the electron density, the molecular electrostatic potential, and the bare nuclear potential in simple molecules](bivariate_ED_MESP_BNP)
+
+[Exploring the topology of the molecular electrostatic potential in simple molecules](MESP_theory)
+
+
+### Old files, need review:
+
+[The magnetically-induced current density in C6H6 molecule studied with the Omega function](C6H6_MICD/)
+
+[The magnetically-induced current density in C4H4 molecule studied with the Omega function](C4H4_MICD/)
+
+[Partitioning of a scalar function and integration over basins: electron density of H2O molecule](H2O_ED_basins/)
+
 
 <!--- [Intermolecular hydrogen bonds in water dimer](H2OH2O_Hbonds/) --->
 
@@ -31,15 +51,8 @@ These examples assume a default installation of DIRAC, TTK and QCTEN.
 
 <!--- [Intramolecular hydrogen bonds in CH2CHSAu molecule](CH2CHSAu_Hbonds/) --->
 
-[The magnetically-induced current density in LiH molecule studied with the Omega function](LiH_MICD/)
-
-[The magnetically-induced current density in C6H6 molecule studied with the Omega function](C6H6_MICD/)
-
-[The magnetically-induced current density in C4H4 molecule studied with the Omega function](C4H4_MICD/)
+## List of molecular systems under study
 
 
-# List of examples - data generation in progress:
-
-[Partitioning of a scalar function and integration over basins: electron density of H2O molecule](H2O_ED_basins/)
 
 
