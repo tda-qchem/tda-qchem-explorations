@@ -34,6 +34,14 @@ These examples assume a default installation of DIRAC, TTK and QCTEN.
 [Exploring the topology of the molecular electrostatic potential in simple molecules](MESP_theory)
 
 
+### Calculations in progress:
+
+[Exploring the transfer of relativistic effects in halogen-bonded complexes](relativistic-xbs)
+
+[Exploring $\sigma$-hole interactions through the topology of the molecular electrostatic potential and the electron density on benchmark data sets](sigma-hole-interactions-database)
+
+
+
 ### Old files, need review:
 
 [The magnetically-induced current density in C6H6 molecule studied with the Omega function](C6H6_MICD/)
