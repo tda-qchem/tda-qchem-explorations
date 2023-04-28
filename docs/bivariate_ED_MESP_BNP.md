@@ -30,8 +30,6 @@ Data is generated in the `DIRAC` software, the topological analysis is performed
 
 
 
-
-
 ### Definitions:
 
   * for definitions of MESP, ED, BNP, RDG, L(ED), please see [this document](link-TODO)
@@ -49,17 +47,29 @@ Data is generated in the `DIRAC` software, the topological analysis is performed
 
   * H2O-H2O (water dimer):
   
-    * mol file: [h2o-h2o.csv](../data/h2o-h2o/geom.csv)
+    * [CSV file with molecular geometry](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/h2o-h2o/geom.csv)
     * real-space quantum chemistry data in VTI format:
-      * ED: [density.128.vti](../data/h2o-h2o/vti/dirac/dc_b3lyp_dyallav3z/super/density_visgrid_cube_128/density.128.vti)
-      * BNP: [espn.128.vti](../data/h2o-h2o/vti/dirac/dc_b3lyp_dyallav3z/super/espn_visgrid_cube_128/espn.128.vti)
-    * `paraview --state=pvsm/bivariate_ED_MESP_BNP/H2OH2O_espn_density.pvsm`
+      * ED: [density.128.vti](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/h2o-h2o/dirac/dc_b3lyp_dyallav3z/super/density.128.vti)
+      * BNP: [espn.128.vti](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/h2o-h2o/dirac/dc_b3lyp_dyallav3z/super/espn.128.vti)
+    * first explorations: go to the root directory of [this repository](https://github.com/tda-qchem/tda-qchem-explorations) and enter the following command:
+
+      ``` bash
+      paraview --state=pvsm/bivariate_ED_MESP_BNP/h2o-h2o_espn_density.pvsm
+      ```
+
    
   * C2H6O (oxirane) 
   
-    * mol file: [oxirane.csv](../data/oxirane/geom.csv)
+    * [CSV file with molecular geometry](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/oxirane/geom.csv)
     * real-space quantum chemistry data in VTI format:
-      * ED: [density.128.vti](../data/oxirane/vti/dirac/dc_b3lyp_dyallav3z/super/density_visgrid_cube_128/density.128.vti)
-      * BNP: [espn.128.vti](../data/oxirane/vti/dirac/dc_b3lyp_dyallav3z/super/espn_visgrid_cube_128/espn.128.vti)
-    * `paraview --state=pvsm/bivariate_ED_MESP_BNP/oxirane_espn_density.pvsm`
+      * ED: [density.128.vti](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/oxirane/dirac/dc_b3lyp_dyallav3z/super/density.128.vti)
+      * BNP: [espn.128.vti](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/oxirane/dirac/dc_b3lyp_dyallav3z/super/espn.128.vti)
+    * first explorations: go to the root directory of [this repository](https://github.com/tda-qchem/tda-qchem-explorations) and enter the following command:
+
+      ``` bash
+      paraview --state=pvsm/bivariate_ED_MESP_BNP/oxirane_espn_density.pvsm
+      ```
+
+  
+
   
