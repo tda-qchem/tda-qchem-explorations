@@ -2,13 +2,13 @@ site_name: qchem-tda-explorations
 site_description: >-
     A collection of examples accompanying the TDA-Qchem book (scratch repository).
 site_author: Gosia Olejniczak, Julien Tierny
-site_url: https://github.com/tda-qchem/tda-qchem-explorations/blob/main/
+site_url: https://github.com/tda-qchem/tda-qchem-explorations/tree/main/
 docs_dir: docs
 site_dir: build
 
-nav:
-    - Home: index.md
-    - About: README.md
+#nav:
+    #- Home: index.md
+    #- About: README.md
 
 theme:
   name: material
@@ -19,11 +19,11 @@ theme:
       display.background_color: grey
       background-color: grey
   features:
-    - navigation.expand
+    - content.code.copy
+    #- navigation.expand
     #- navigation.top
     #- toc.follow
-    - toc.integrate
-
+    #- toc.integrate
 
 markdown_extensions:
     - attr_list
@@ -43,3 +43,9 @@ markdown_extensions:
     - footnotes
     - toc:
         permalink: true
+
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
