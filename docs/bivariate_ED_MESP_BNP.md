@@ -69,14 +69,13 @@ Data is generated in the `DIRAC` software, the topological analysis is performed
 
   * joint analysis of BNP and ED:
     * reassessing homeomorphism between BNP and ED
-      * examples we look at: (1) H2O-H2O and (2) oxirane: according to [this work](https://onlinelibrary.wiley.com/doi/full/10.1002/qua.22215), BNP and ED are homeomorphic in (1) but not in (2)
+      * examples we look at: (1) H2O-H2O, (2) oxirane, and (3) tetrahedrane: according to [this work](https://onlinelibrary.wiley.com/doi/full/10.1002/qua.22215), BNP and ED are homeomorphic in (1) but not in (2-3)
 
 
-  * joint analysis of MESP and ED:
+  * joint analysis of MESP and ED - WIP:
 
     * typical analysis of MESP involves plotting MESP on the selected isosurface of ED (typically, $\rho=0.001$) with contrasting colors corresponding to negative and positive MESP areas; this is used to identify the sites on the molecular surface rich/poor in electron density (respectively)
 
-    * examples we look at: WIP
 
 
 
