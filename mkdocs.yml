@@ -32,7 +32,8 @@ markdown_extensions:
     - pymdownx.inlinehilite
     - pymdownx.superfences
     - pymdownx.snippets
-    - pymdownx.arithmatex
+    - pymdownx.arithmatex:
+        generic: true
     - pymdownx.tasklist:
         custom_checkbox: true
     - pymdownx.magiclink

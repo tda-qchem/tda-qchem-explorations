@@ -32,7 +32,7 @@ Data is generated in the `DIRAC` software, the topological analysis is performed
 
 ### Definitions:
 
-  * for definitions of MESP, ED, BNP, RDG, L(ED), please see [this document](link-TODO)
+  * for definitions of MESP, ED, BNP, RDG, L(ED), please see [this document](definitions.md)
 
   * bivariate functions we explore here:
 
