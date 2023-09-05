@@ -15,12 +15,7 @@ Data is generated in the `DIRAC` software, the topological analysis is performed
 
   * for definitions of MESP, ED, BNP, RDG, L(ED), please see [this document](definitions.md)
 
-  * bivariate functions we explore here:
-
-    * BNP ($V_{nuc}$) and ED ($\rho$)
-
-
-#### Our test systems:
+### Our test systems:
 
   * H2O-H2O (water dimer):
   
@@ -63,17 +58,17 @@ Data is generated in the `DIRAC` software, the topological analysis is performed
 
 ### Motivation for these explorations:
 
-  * here we run simple tests to understand how we can/should build bivariate analysis protocols for more complex functions and systems:
-    * [WIP: exploring the transfer of relativistic effects in halogen-bonded complexes](relativistic-xbs.md)
+#### Joint analysis of BNP and ED
+
+We start with explorations of the bivariate function, f = f(BNP, ED). The purpose is to reasses the homeomorphism between BNP and ED function for the (1) H2O-H2O, (2) oxirane, and (3) tetrahedrane molecular systems. According to [this work](https://onlinelibrary.wiley.com/doi/full/10.1002/qua.22215), BNP and ED are homeomorphic in (1) but not in (2) and (3).
+
+
+#### Future explorations (WIP)
+
+  * [exploring the transfer of relativistic effects in halogen-bonded complexes](relativistic-xbs.md)
     * if possible, automatize the workflow and run it on databases, [WIP - exploring $\sigma$-hole interactions](sigma-hole-interactions-database.md))
 
-  * joint analysis of BNP and ED:
-    * reassessing homeomorphism between BNP and ED
-      * examples we look at: (1) H2O-H2O, (2) oxirane, and (3) tetrahedrane: according to [this work](https://onlinelibrary.wiley.com/doi/full/10.1002/qua.22215), BNP and ED are homeomorphic in (1) but not in (2-3)
-
-
-  * joint analysis of MESP and ED - WIP:
-
+  * joint analysis of MESP and ED
     * typical analysis of MESP involves plotting MESP on the selected isosurface of ED (typically, $\rho=0.001$) with contrasting colors corresponding to negative and positive MESP areas; this is used to identify the sites on the molecular surface rich/poor in electron density (respectively)
 
 

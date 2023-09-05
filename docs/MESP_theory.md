@@ -10,7 +10,7 @@ This example illustrates the calculation of the molecular electrostatic potentia
 ### Definitions:
 
   * for definitions of MESP, please see [this document](definitions.md)
-  * we also use the electron density (ED), calculated with the same setup and on the same grid
+  * in these exploartions, we also use the electron density (ED), calculated with the same setup and on the same grid
 
 
 #### Our test systems:
@@ -24,7 +24,7 @@ This example illustrates the calculation of the molecular electrostatic potentia
     * first explorations: go to the root directory of [this repository](https://github.com/tda-qchem/tda-qchem-explorations) and enter the following command:
 
       ``` bash
-      paraview --state=pvsm/bivariate_ED_MESP_BNP/h2o-h2o_mesp.pvsm
+      paraview --state=pvsm/MESP_theory/h2o-h2o_esp.pvsm
       ```
 
  
