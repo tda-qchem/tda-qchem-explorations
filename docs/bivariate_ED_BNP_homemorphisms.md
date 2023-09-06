@@ -1,9 +1,9 @@
-# Exploring correlations between the electron density, the molecular electrostatic potential, and the bare nuclear potential in simple molecules
+# Exploring correlations between the electron density and the bare nuclear potential in simple molecules
 
 
 # Pipeline description
 
-This example applies the TDA tools for the bivariate analysis of selected molecular descriptors, including the molecular electrostatic potential (MESP), the bare nuclear potential (BNP), the electron density (ED), the reduced density gradient (RDG) and the electron density laplacian (L(ED)) of a few simple molecules.
+This example applies the TDA tools for the bivariate analysis of selected molecular descriptors, including the bare nuclear potential (BNP) and the electron density (ED) of a few simple molecules.
 
 Data is generated in the `DIRAC` software, the topological analysis is performed in the `TTK` software.
 
@@ -13,7 +13,7 @@ Data is generated in the `DIRAC` software, the topological analysis is performed
 
 ### Definitions:
 
-  * for definitions of MESP, ED, BNP, RDG, L(ED), please see [this document](definitions.md)
+  * for definitions of studied functions, please see [this document](definitions.md)
 
 ### Our test systems:
 
@@ -58,18 +58,8 @@ Data is generated in the `DIRAC` software, the topological analysis is performed
 
 ### Motivation for these explorations:
 
-#### Joint analysis of BNP and ED
-
-We start with explorations of the bivariate function, f = f(BNP, ED). The purpose is to reasses the homeomorphism between BNP and ED function for the (1) H2O-H2O, (2) oxirane, and (3) tetrahedrane molecular systems. According to [this work](https://onlinelibrary.wiley.com/doi/full/10.1002/qua.22215), BNP and ED are homeomorphic in (1) but not in (2) and (3).
-
-
-#### Future explorations (WIP)
-
-  * [exploring the transfer of relativistic effects in halogen-bonded complexes](relativistic-xbs.md)
-    * if possible, automatize the workflow and run it on databases, [WIP - exploring $\sigma$-hole interactions](sigma-hole-interactions-database.md))
-
-  * joint analysis of MESP and ED
-    * typical analysis of MESP involves plotting MESP on the selected isosurface of ED (typically, $\rho=0.001$) with contrasting colors corresponding to negative and positive MESP areas; this is used to identify the sites on the molecular surface rich/poor in electron density (respectively)
+The purpose of these explorations is to reasses the homeomorphism between BNP and ED function for the (1) H2O-H2O, (2) oxirane, and (3) tetrahedrane molecular systems.
+According to [this work](https://onlinelibrary.wiley.com/doi/full/10.1002/qua.22215), BNP and ED are homeomorphic in system (1) but not in molecules (2) and (3).
 
 
 
