@@ -29,7 +29,9 @@ These examples assume a default installation of DIRAC, TTK and QCTEN.
 
 ## WIP
 
-[Exploring correlations between the electron density, the molecular electrostatic potential, and the bare nuclear potential in simple molecules](bivariate_ED_MESP_BNP)
+[Exploring correlations between the electron density and the bare nuclear potential in simple molecules](bivariate_ED_BNP_homemorphisms.md)
+
+[Exploring correlations between the electron density and the molecular electrostatic potential](bivariate_ED_MESP.md)
 
 [Exploring the topology of the molecular electrostatic potential in simple molecules](MESP_theory)
 
