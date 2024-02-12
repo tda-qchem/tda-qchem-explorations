@@ -29,7 +29,14 @@ These examples assume a default installation of DIRAC, TTK and QCTEN.
 
 ## WIP
 
-[Exploring correlations between the electron density and the bare nuclear potential in simple molecules](bivariate_ED_BNP_homemorphisms.md)
+[Exploring correlations between the electron density and the bare nuclear potential in a set of water clusters](water_clusters_ED-BNP-homeomorphism.md)
+
+[Exploring correlations between the electron density and the bare nuclear potential in a few selected simple molecules](simple_ED_BNP_homemorphisms.md)
+
+
+
+
+
 
 [Exploring correlations between the electron density and the molecular electrostatic potential](bivariate_ED_MESP.md)
 
