@@ -6,25 +6,45 @@ Each example includes:
 
 * inputs and run scripts for a relevant quantum chemistry software
 * a short description of outputs from quantum chemistry calculations
-* screenshots from TTK
+* screenshots from [TTK](https://topology-tool-kit.github.io/)
 * a ParaView state file that allows reproducing the figures
-* a short description of outputs and analysis in TTK
+* a short description of outputs and analysis in [TTK](https://topology-tool-kit.github.io/)
 * a Python code that allows reproducing the full workflow
-* links to quantum chemistry software and TTK documentation
+* links to quantum chemistry software and [TTK](https://topology-tool-kit.github.io/) documentation
+
+This website also contains:
+
+* A list of molecular descriptors (with the notation and analytical formulas): [link](definitions.md)
+* A short description of quantum chemistry and data models used in all calculations: [link](models.md)
+
+How to cite this website: 
+
+* Gosia - TODO: (1) mention it is a companion to our book, (2) add DOI
 
 
 # Prerequisites
 
-These examples assume a default installation of DIRAC, TTK and QCTEN. 
+These examples assume a default installation of [DIRAC](http://www.diracprogram.org/), [TTK](https://topology-tool-kit.github.io/) and [qcten](https://github.com/gosiao/qcten).
+
 
 # Full pipeline automatization
 
+writeme
 
 # List of examples
 
 ## Completed and published
 
-[The magnetically-induced current density in LiH molecule studied with the Omega function](LiH_MICD/)
+| Name | Screenshot |
+|:-:|:-:|
+|[The magnetically-induced current density in LiH molecule studied with the Omega function](LiH_MICD/)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
+
+
+### Referred to in the book (unpublished)
+
+[Description of covalent and hydrogen bonds in water dimer](H2OH2O_ED_bonds)
+
+
 
 
 ## WIP

@@ -20,7 +20,7 @@ Data is generated in the `DIRAC` software, the topological analysis is performed
 
 # Selection of molecular systems and dataset description
 
-* H2O-H2O (water dimer):
+## H2O-H2O (water dimer):
 
   * [CSV file with molecular geometry](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/h2o-h2o/geom.csv)
   * real-space quantum chemistry data in VTI format:
@@ -33,7 +33,7 @@ Data is generated in the `DIRAC` software, the topological analysis is performed
     ```
 
  
-* C2H6O (oxirane) 
+## C2H6O (oxirane) 
 
   * [CSV file with molecular geometry](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/oxirane/geom.csv)
   * real-space quantum chemistry data in VTI format:
@@ -46,7 +46,7 @@ Data is generated in the `DIRAC` software, the topological analysis is performed
     ```
 
  
-* C4H4 (tetrahedrane)
+## C4H4 (tetrahedrane)
 
   * [CSV file with molecular geometry](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/tetrahedrane/geom.csv)
   * real-space quantum chemistry data in VTI format:
@@ -59,7 +59,7 @@ Data is generated in the `DIRAC` software, the topological analysis is performed
     ```
 
 
-### Motivation for these explorations:
+# Motivation for these explorations:
 
 The purpose of these explorations is to reasses the homeomorphism between BNP and ED function for the (1) H2O-H2O, (2) oxirane, and (3) tetrahedrane molecular systems.
 According to [this work](https://onlinelibrary.wiley.com/doi/full/10.1002/qua.22215), BNP and ED are homeomorphic in system (1) but not in molecules (2) and (3).
