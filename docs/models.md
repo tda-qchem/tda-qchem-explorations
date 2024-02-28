@@ -10,6 +10,7 @@
 * Methods:
 
     * DFT: Density Functional Theory with the following exchange--correlation functionals: `B3LYP`, `BP86`;
+	* DFTB (Density-Functional Tight-Binding methods), GFNn-xTB (n = 0, 1, 2; extended Tight-Binding methods for geometries, frequencies and NCIs) - variants of the DFT;
     * The dispersion correction of Grimme was applied in some cases, when used in conjunction with calculations in the `AMS` software (mentioned as the `-D` suffix in the DFT functional names).
 
 * Basis sets

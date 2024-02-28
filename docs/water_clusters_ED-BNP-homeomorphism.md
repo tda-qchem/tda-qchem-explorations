@@ -20,9 +20,10 @@ Data is generated in the `ADF` software, the topological analysis is performed i
 
 # Selection of molecular systems and dataset description
 
-All datasets used in this example can be downloaded from [Google Disc](https://drive.google.com/drive/u/2/folders/1P1xhseed2snQC7HzYXxu5aY2XLeglGsQ).
 
 ## Water cluster geometries downloaded from the database
+
+Datasets used in this example can be downloaded from [Google Disc](https://drive.google.com/drive/u/2/folders/1P1xhseed2snQC7HzYXxu5aY2XLeglGsQ).
 
 * [Database link](https://sites.uw.edu/wdbase/) and [the related publication](https://doi.org/10.1063/1.5128378); structures were not reoptimized:
 
@@ -42,25 +43,28 @@ All datasets used in this example can be downloaded from [Google Disc](https://d
 
 ## Exploration of the potential energy surface (PES) of the water clusters with 5 water molecules, (H2O)5
 
-* PES scan and geometry optimization are done with the same methods (DFT); this allows to study the relation between the topology of ED and BNP, and the energy of structures.
+Datasets used in this example can be downloaded from [Google Disc](https://drive.google.com/drive/u/2/folders/1VEdaAPV7DtiIArKcD0kFCyP7FDdeLgwq)
 
-* dataset involves the structures corresponding to the minima and saddles of the energy surface within the 5KJ/mol energy range (refined with DFT methods)
-* data is in `PES_selected_5kjmol.tar.gz` (~XXXXX)
-* For each geometry (directories in `PES_selected_5kjmol.tar.gz`), the data contains:
+* Idea: for a selected molecular system, we tracked the motion of all atomic nuclei along one selected normal mode (harmonic oscillator approximation); then selected a few snapshots of molecular geometries along the mode and, for each, we calculated the ED and BNP functions:
+    * in particular, the new positions, [x', y', z'], of an atomic nucleus are calculated from the equation: `x' = x + N*fx*dx*epsilon`, `x' = x + N*fy*dy*epsilon`, `z' = z + N*fz*dz*epsilon`, where: [x, y, z] is the position of this nucleus in the equilibrium molecular geometry, [fx, fy, fz] is the vector of the distortion (applied to this nucleus), [dx, dy, dz] is the size of a voxel cube in x, y, z directions (corresponding to the grid for the equilibrium geometry), N=1.5 (arbitrarily chosen factor that ensures that the step is larger than the voxel dimension), and epsilon is an integer in the range from -9 to 9 (also arbitrarily chosen range)
+    * data directory with  `geom_0_mode0` in its name corresponds to the equlibrium geometry
+    * the names of other data directories include some of the information mentioned above (also, see explanations below)
+
+* For each geometry (directories in Google Disc), the data contains:
   * `start_state.vti` file with "rho" and "bnp" scalar fields (as described above)
   * `helper.txt` file with the following data (in order of columns): 
-    * index - corresponds to energy ordering (from an initial PES exploration)
-    * name of the structure (indices correspond to an index in column 1)
-    * grid dimensions (the number of x, y, z points)
-    * structure classification (according to the vibrational analysis from an initial exploration):
-      * "MIN" = the geometry is a local minimum, 
-      * "TS x <--> y" = the geometry is a transition state (a saddle on PES) connecting minima "x" and "y" (indices "x" and "y")
-    * energy value from an initial exploration
-      * all energy values are referenced to the lowest energy (hence the first one is 0 and it corresponds to a global minimum)
-    * refined energy value E(LDA) - based on more accurate DFT methods; energy is a functional of the electron density (see Equations below)
-    * refined energy value E(GGA) - based on more accurate DFT methods; energy is a functional of the electron density and its gradient (see Equations below)
-    * force vectors ([fx, fy, fz]) - see Equations below
+    * `mol_name` - name of a water cluster; here, we consider one system (`W5_struc_6`)
+    * `struct_index` - name of the structure (unused in this example)
+    * `mode` - an index of the normal mode; here we consider only the lowest-frequency mode (`mode0`)
+    * `epsilon` - a parameter to denote how much the structure is distorted from the equilibrium geometry 
+    * `energy` - single-point energy calculated for this structure
+    * `nx, ny, nz` - grid dimensions (the number of x, y, z points)
+    * `lx, ly, lz` - length of the grid cube in x, y, z directions
+    * `dx, dy, dz` - the size of a voxel cube in x, y, z directions
 
+* Advantages of this approach: 
+    * for the equilibrium geometry, all calculations are done with the same methods (DFT); this allows to study the relation between the topology of ED and BNP, and the energy of structures.
+    * for other "distorted" geometries, the same formalism is used to calculate ED and BNP, so all ED/BNP data is consistent in the whole series
   
 
 ## Quantum chemistry calculations

@@ -1,7 +1,5 @@
 # Description of covalent and hydrogen bonds in water dimer
 
-REWORK
-
  ![fig:overview_h2o_h2o](screenshots/H2OH2O_ED_bonds/h2o_h2o_criticalPoints.jpg){width=300} | 
  ![fig:overview_h2o_h2o](screenshots/H2OH2O_ED_bonds/h2o_h2o_bondPersistence.jpg){width=300}  
 |:-:|
@@ -48,27 +46,19 @@ see `\cite{seijas.etal_ijms_2023}` - M062X/aug-cc-pVTZ + CP and CCSD(T)/CBS/CBS 
 
 The molecular structure of water dimer in its gas-phase equilibrium geometry was downloaded from [XXX]() and reoptimized with XXX
 
-The ED and its gradient were calculated analytically in the development version of the `DIRAC` software (commit hash `XXXXX`) with the Dirac-Coulomb Hamiltonian, the B3LYP exchange-correlation functional, and the def-TZVP basis set applied for both atoms. London atomic orbitals and the simple magnetic balance scheme were applied in response calculations. The densities were exported on the cube grid of 128 points in each Cartesian direction using the default visualization options in `DIRAC`.
-
-
-
-First, we consider the topology of its electron density, modeled with the DFT method using the DC Hamiltonian, B3LYP exchange-correlation functional and the basis set of 3$\zeta$ quality\footnote{The relativistic DC Hamiltonian is not necessary for this molecular system, yet, since in the latter part of the book, we will compare the topologies of H$_2$X-H$_2$O dimers (with X denoting heavy elements of the oxygen family), we opt for the consistent description of all systems in this series. Also, only all-electron four-component models can serve as a reliable reference for other theoretical approaches and and are indispensable for comparison with experimental results. All methods are discussed in~\autoref{sec:descriptors_concepts_bonds}} and exported on a regular 256$^3$-point grid.
-~                                                                                                                                                             
+ED was calculated analytically in the development version of the `DIRAC` software (commit hash `XXXXX`) with the Dirac-Coulomb Hamiltonian, the B3LYP exchange-correlation functional, and the all-electron aug-cc-pVTZ basis set applied to all atoms. The density was exported on the cube grid of 256 points in each Cartesian direction using the default visualization options in `DIRAC`.
 
 
 ### `DIRAC` inputs
 
-* Molecular geometry of LiH molecule in XYZ format (in Angstrom): [2H2O.xyz](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/LiH.xyz)
+* Molecular geometry of water dimer in XYZ format (in Angstrom): [2H2O.xyz](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/LiH.xyz)
 * Input for a wave function optimization: [scf.inp](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/dirac/dc_b3lyp_def2tzvp/inputs/scf.inp)
 * Input for calculations of the ED scalar field: [ed.inp]()
-* Input for calculations of the reduced gradient of ED scalar field: [rdg.inp]()
 
 ### `DIRAC` outputs
 
 * Files with exported elements of the ED scalar field and and its gradient on a grid in TXT format; these are also available on [zenodo](XXXXX)
 * `DIRAC` text output files, available in [the repository](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/dirac/dc_b3lyp_def2tzvp/outputs) and on [zenodo](https://zenodo.org/record/7446735#.Y8BlkNKE4XU).
-
-
 
 
 ### Execution
@@ -101,7 +91,7 @@ pam --inp=$inp_vis --mol=$mol --put="DFCOEF.smb=DFCOEF TBMO PAMXVC" --get="plot.
 * ED-related data in VTI format:
 
     * `start_data_ed.vti` file in [the repository](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/vti/start_data_omega_bz.vti) and on [zenodo](https://zenodo.org/record/7446735#.Y8E2dtKZNhF); data description:
-        * `ED` - corresponds to Omega function calculated for the magnetic field applied perpendicularly to the Li-H bond ("bz");
+        * `ED` - corresponds to the electron density of water dimer
 
 
 ### Outputs
@@ -126,10 +116,6 @@ paraview --state=pvsm/H2OH2O_ED_bonds.pvsm
 
 * The calculations and export of the electron density are also discusssed in [the official DIRAC tutorial](XXXX).
 
-* Related data: the publication on [arXiv](XXXXXXXX) and its [1-page summary](), data files generated in this analysis on [zenodo](https://zenodo.org/record/7446735#.Y8BlkNKE4XU).
-
-* To fully reproduce the results reported in the publication, please check [this link]().
-* To fully reproduce the publication, please check [this link]().
 
 
 
