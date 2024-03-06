@@ -1,0 +1,14 @@
+name: struc_analysis
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - py3dmol
+  - pandas
+  - rdkit
+  - matplotlib
+  - python=3.10
+  - seaborn
+  - numpy
+  - crest
+  - xyz2mol
