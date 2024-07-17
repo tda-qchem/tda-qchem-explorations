@@ -45,10 +45,7 @@ Quantum chemistry calculations involve `CREST` and `ADF` software, the topologic
     - W6_state_47_mode_24
     - W6_state_50_mode_20
 
-|<source src="test/W6_state_50_mode_20/out.mp4" type="video/mp4">
-|:-:|
-|<div style="width:500px"><b>example: visualization of molecular vibrations of W6, state50, along the normal mode 20 (W6_state_50_mode_20)</b></div>|
-
+![type:video](./videos/W6_state_50_mode_20.mp4)
 
 
 
