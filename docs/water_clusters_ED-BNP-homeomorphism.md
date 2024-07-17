@@ -21,6 +21,35 @@ Data is generated in the `ADF` software, the topological analysis is performed i
 # Selection of molecular systems and dataset description
 
 
+## The description of the current pipeline (gosia,17/07)
+
+- Molecular systems, data:
+  - water molecule and water clusters, (H2O)x for size x=1-30; in total, we consider 30 different systems; in data, we refer to them as Wx;
+  - each water cluster has many energetic minima; i.e., for each x, we have N$_x$ minima = N$_x$ different structures ("equilibrium geometries"); in data, this is denoted as **state**;
+  - for each of these states, we consider its normal modes, which represent directions and frequencies of molecular vibrations; the rule counting the normal modes that applies here is 3N_at - 6, where N_at is the number of atoms; hence here, for a cluster (H2O)_X that has 3X atoms, there are 3*(3X)-6 = 9X-6 possible directions, in which we can "distort" the equilibrium structure; in data, this is denoted as mode
+  - along each of 9X-6 normal modes of each of N_X minima of (H2O)_X, we generate 10 (an arbitrary value) structures by distorting the equilibrium structure in +v and -v direction, where v represents a normal mode vector; by doing this, we arrive at 11 geometries in total (10 distorted + 1 equilibrium); in data, this is denoted as geom
+  - for each of "geom", we calculated two scalar fields: "RHO" (electron density) and "BNP" (bare nuclear potential); the generated vti files contain both fields; we use the grids adapted to the system (i.e., the number of grid points will vary), but we maintain consistent spacing of grid points (here=0.1) and the border around molecule (here=2.0) in each case,
+  - Notes above also show that we deal with huge number of files; the size of vti file depends on a particular geom (for W6, it seems to be max. 100MB);
+  - to demonstrate the workflow and the idea, we then selected a few clusters (this example: W6), a few "states" for each, and a few "geoms"; selection criteria are discussed below
+- Working examples - selection criteria:
+  - Among many possible structural descriptors to classify the structures of water clusters, we considered the ones discussed in https://doi.org/10.1063/5.0009933, in particular:
+    - "rings": Trimers, Tetramers, Pentamers, Hexamers; the rings are determined for "projected graphs" of water clusters, in which each water molecule is a node and each hydrogen bond is an edge; see Fig.2 in this paper;
+    - our first selection criterion ("sc1"): look for cases, in which the molecular motion causes the number of Hexamers to change; see Fig. 3 in this paper
+  - Example: W6:
+    - Number of states, modes, geometries:
+      - initial #states (from wdbase) = 80; after the quantum chemistry refinement: #state=54
+      - each structure has 9*6-6 = 48 normal modes, #mode=48; for each mode we generated 10 distorted geometries from an equilibrium structure, #geom=11
+      - this gives 54*48*11 distinct geometries;
+      - after applying "sc1", we have just a few cases to consider:
+        - W6_state_47_mode_5
+        - W6_state_47_mode_20
+        - W6_state_47_mode_24
+        - W6_state_50_mode_20
+
+
+
+
+
 ## Water cluster geometries downloaded from the database
 
 Datasets used in this example can be downloaded from [Google Disc](https://drive.google.com/drive/u/2/folders/1P1xhseed2snQC7HzYXxu5aY2XLeglGsQ).
