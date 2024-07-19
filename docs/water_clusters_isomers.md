@@ -37,16 +37,13 @@ Quantum chemistry calculations involve `CREST` and `ADF` software, the topologic
 ### Example: W6:
 - Number of states, modes, geometries:
   - initial #states (from wdbase) = 80; after the quantum chemistry refinement: #state=54
-  - each structure has 9*6-6 = 48 normal modes, #mode=48; for each mode we generated 10 distorted geometries from an equilibrium structure, #geom=11
-  - this gives 54*48*11 distinct geometries;
-  - after applying "sc1", we have just a few cases to consider:
-    - W6_state_47_mode_5
-    - W6_state_47_mode_20
-    - W6_state_47_mode_24
-    - W6_state_50_mode_20
+  - each structure has $9*6-6 = 48$ normal modes, #mode=48; for each mode we generated 10 distorted geometries from an equilibrium structure, #geom=11
+  - this gives $54*48*11$ distinct geometries;
+  - after applying "sc1", we have just a few cases to consider; a video example of `W6_state_50_mode_20`:
 
 ![type:video](./videos/W6_state_50_mode_20.mp4)
 
+- This data is available at https://zenodo.org/records/12779079
 
 
 # Selection of molecular systems and dataset description (older pipeline)
