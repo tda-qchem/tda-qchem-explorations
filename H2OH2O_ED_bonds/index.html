@@ -1,0 +1,841 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A collection of examples accompanying the TDA-Qchem book (scratch repository).">
+      
+      
+        <meta name="author" content="Gosia Olejniczak, Julien Tierny">
+      
+      
+        <link rel="canonical" href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/H2OH2O_ED_bonds/">
+      
+      
+        <link rel="prev" href="../H2OH2O_ED_ESP/">
+      
+      
+        <link rel="next" href="../H2O_ED_ESP/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>Description of covalent and hydrogen bonds in water dimer - qchem-tda-explorations</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.35f28582.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#description-of-covalent-and-hydrogen-bonds-in-water-dimer" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="qchem-tda-explorations" class="md-header__button md-logo" aria-label="qchem-tda-explorations" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            qchem-tda-explorations
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Description of covalent and hydrogen bonds in water dimer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="qchem-tda-explorations" class="md-nav__button md-logo" aria-label="qchem-tda-explorations" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    qchem-tda-explorations
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../C4H4_MICD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The magnetically-induced current density in C4H4 molecule studied with the Omega function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../C6H6_MICD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The magnetically-induced current density in C6H6 molecule studied with the Omega function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H2OH2O_ED_ESP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between different molecular descriptors: electron density (ED) and electrostatic potential (ESP) in H2O-H2O dimer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Description of covalent and hydrogen bonds in water dimer
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H2O_ED_ESP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between different molecular descriptors: electron density (ED) and electrostatic potential (ESP) in H2O molecule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H2O_ED_basins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    title
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H2O_and_H2OH2O_ED_ESP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between different molecular descriptors: electron density (ED) and electrostatic potential (ESP) in H2O and H2O-H2O dimer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LiH_MICD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vortices in the magnetically-induced current density in LiH molecule studied through the lens of the Omega function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MESP_theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring the topology of the molecular electrostatic potential in simple molecules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bivariate_ED_MESP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between the electron density and the molecular electrostatic potential.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../definitions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Descriptions of models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../relativistic-xbs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring the transfer of relativistic effects in halogen-bonded complexes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sigma-hole-interactions-database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring \(\sigma\)-hole interactions through the topology of the molecular electrostatic potential and the electron density on benchmark data sets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../simple_ED_BNP_homemorphisms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between the electron density and the bare nuclear potential in simple molecules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../water_clusters_ED-BNP-homeomorphism/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between the electron density and the bare nuclear potential in a set of water clusters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../water_clusters_isomers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring the energy landscape of water clusters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_19" >
+        
+          
+          <label class="md-nav__link" for="__nav_19" id="__nav_19_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Notebooks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_19_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_19">
+            <span class="md-nav__icon md-icon"></span>
+            Notebooks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_19_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_19_1" id="__nav_19_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Water clusters explorations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_19_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_19_1">
+            <span class="md-nav__icon md-icon"></span>
+            Water clusters explorations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/water_clusters_explorations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<div><h1 id="description-of-covalent-and-hydrogen-bonds-in-water-dimer">Description of covalent and hydrogen bonds in water dimer<a class="headerlink" href="#description-of-covalent-and-hydrogen-bonds-in-water-dimer" title="Permanent link">¶</a></h1>
+<p><img alt="fig:overview_h2o_h2o" src="screenshots/H2OH2O_ED_bonds/h2o_h2o_criticalPoints.jpg" width="300"> | 
+ <img alt="fig:overview_h2o_h2o" src="screenshots/H2OH2O_ED_bonds/h2o_h2o_bondPersistence.jpg" width="300"><br>
+|:-:|
+|</p><div style="width:500px"><b>An automatic approach based on Topological Data Analysis extracts the structure and the bonding patterns in water dimer as specific critical points 
+(left plot: maxima and 2-saddles marked as dark-green and light-green points) and specific sub-sets of separatrices (right plot: red and blue curves represent low-persistence and high-persistence 1-separatrices between maxima and 2-saddles) of the Morse-Smale complex of the electron density scalar field.</b></div>|
+<h1 id="pipeline-description">Pipeline description<a class="headerlink" href="#pipeline-description" title="Permanent link">¶</a></h1>
+<p>This example illustrates the analysis of the electron density of the water dimer aimed at the description and discernment of covalent bonds (O-H) and non-covalent interactions (O---H). First, the electron density (ED) is computed with the <code>DIRAC</code> software given the input atom configuration, followed by the generation of the VTI file and a subsequent topological analysis in the <code>TTK</code> software.</p>
+<p>The first step involving quantum chemistry calculations aims to compute the ED scalar field and export it on a 3D grid.</p>
+<p>The purpose of the second step is to translate data exported from <code>DIRAC</code> in TXT to the VTI format favored by the <code>TTK</code> code. Simultaneously, it applies the resampling filter ("ResampleToImage") without changing the number of grid points or grid bounds.</p>
+<p>The final step involves analyzing the ED scalar field in the <code>TTK</code> software. </p>
+<p>The analysis starts with extracting all critical point pairs and one-dimensional separatrices of the Morse-Smale complex. 
+In the next step, the features of chemical significance are selected, including maxima, 2-saddles, and a subset of separatrices which connect 2-saddles to maxima and do not touch the boundary of the domain. 
+The intermolecular hydrogen bond can be easily isolated: the corresponding <span class="arithmatex">\(2\)</span>-saddle is located outside of the isosurface of ED, which indicates that it has a much lower
+density. Thus, saddle-maximum separatrices attached to <span class="arithmatex">\(2\)</span>-saddles with a low density (typically, below <span class="arithmatex">\(0.1\)</span>) are identified as non-covalent bonds (in red, right figure).
+The strength of bonds can be evaluated by the topological persistence of the critical point pair involving the <span class="arithmatex">\(2\)</span>-saddle.
+This analysis can therefore be further refined, in particular by characterizing the importance of the atoms and the strength of the bonds.
+One suggestion is demonstrated in the figure above (right plot): the density of each atom is visualized with the radius and the color of the corresponding sphere, while covalent and non-covalent bonds are marked with curves of different colors.
+No persistence-driven topological simplification was applied to the electron density field at the input of the topological analysis pipeline. By construction, this field is smooth and exhibits no noise.</p>
+<p>The notable <code>TTK</code> filter employed in this analysis is the <code>MorseSmaleComplex</code>.</p>
+<p>For more details on this analysis, please see the publication XXXXX. All data files generated in this analysis are on <a href="XXXXXXXXXXX">zenodo</a>. All links are <a href="#resources-and-additional-information">at the bottom of this page</a>.</p>
+<hr>
+<h2 id="quantum-chemistry-calculations">Quantum chemistry calculations<a class="headerlink" href="#quantum-chemistry-calculations" title="Permanent link">¶</a></h2>
+<h3 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">¶</a></h3>
+<p>see /media/gosia/Transcend/qchem_visualization_repo_reviewed/explorations/h2o-h2o
+see <code>\cite{seijas.etal_ijms_2023}</code> - M062X/aug-cc-pVTZ + CP and CCSD(T)/CBS/CBS no CP.</p>
+<p>The molecular structure of water dimer in its gas-phase equilibrium geometry was downloaded from <a href="">XXX</a> and reoptimized with XXX</p>
+<p>ED was calculated analytically in the development version of the <code>DIRAC</code> software (commit hash <code>XXXXX</code>) with the Dirac-Coulomb Hamiltonian, the B3LYP exchange-correlation functional, and the all-electron aug-cc-pVTZ basis set applied to all atoms. The density was exported on the cube grid of 256 points in each Cartesian direction using the default visualization options in <code>DIRAC</code>.</p>
+<h3 id="dirac-inputs"><code>DIRAC</code> inputs<a class="headerlink" href="#dirac-inputs" title="Permanent link">¶</a></h3>
+<ul>
+<li>Molecular geometry of water dimer in XYZ format (in Angstrom): <a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/LiH.xyz">2H2O.xyz</a></li>
+<li>Input for a wave function optimization: <a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/dirac/dc_b3lyp_def2tzvp/inputs/scf.inp">scf.inp</a></li>
+<li>Input for calculations of the ED scalar field: <a href="">ed.inp</a></li>
+</ul>
+<h3 id="dirac-outputs"><code>DIRAC</code> outputs<a class="headerlink" href="#dirac-outputs" title="Permanent link">¶</a></h3>
+<ul>
+<li>Files with exported elements of the ED scalar field and and its gradient on a grid in TXT format; these are also available on <a href="XXXXX">zenodo</a></li>
+<li><code>DIRAC</code> text output files, available in <a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/dirac/dc_b3lyp_def2tzvp/outputs">the repository</a> and on <a href="https://zenodo.org/record/7446735#.Y8BlkNKE4XU">zenodo</a>.</li>
+</ul>
+<h3 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p>Below, we assume that the <code>pam</code> script of <code>DIRAC</code> is available in <code>$PATH</code>.</p>
+</li>
+<li>
+<p>Step 1. Wave function optimization:</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code>mol=2H2O.xyz
+inp_scf=scf.inp
+pam --inp=$inp_scf --mol=$mol --outcmo
+</code></pre></div>
+<ul>
+<li>Step 2. Calculations and export of real-space densities,</li>
+</ul>
+<div class="highlight"><pre><span></span><code>mol=2H2O.xyz
+inp_vis=ed.inp
+pam --inp=$inp_vis --mol=$mol --put="DFCOEF.smb=DFCOEF TBMO PAMXVC" --get="plot.3d.vector=$vis.txt"
+</code></pre></div>
+<h2 id="topological-data-analysis">Topological Data Analysis<a class="headerlink" href="#topological-data-analysis" title="Permanent link">¶</a></h2>
+<h3 id="inputs">Inputs<a class="headerlink" href="#inputs" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p>The molecular geometry of water dimer in CSV format (in atomic units) is available in the <a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/LiH.csv">2H2O.csv</a> file.</p>
+</li>
+<li>
+<p>ED-related data in VTI format:</p>
+<ul>
+<li><code>start_data_ed.vti</code> file in <a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/vti/start_data_omega_bz.vti">the repository</a> and on <a href="https://zenodo.org/record/7446735#.Y8E2dtKZNhF">zenodo</a>; data description:<ul>
+<li><code>ED</code> - corresponds to the electron density of water dimer</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="outputs">Outputs<a class="headerlink" href="#outputs" title="Permanent link">¶</a></h3>
+<ul>
+<li>The <code>Paraview</code> state files and all other files enabling the reproduction of the above screenshot and all images attached to the companion publication are in <a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/pvsm">the repository</a>.</li>
+</ul>
+<h3 id="paraview">ParaView<a class="headerlink" href="#paraview" title="Permanent link">¶</a></h3>
+<p>To reproduce the images and to explore the TDA pipeline, go to the root directory of <a href="https://github.com/tda-qchem/tda-qchem-explorations">this repository</a> and enter the following command:</p>
+<div class="highlight"><pre><span></span><code>paraview<span class="w"> </span>--state<span class="o">=</span>pvsm/H2OH2O_ED_bonds.pvsm
+</code></pre></div>
+<h2 id="resources-and-additional-information">Resources and additional information<a class="headerlink" href="#resources-and-additional-information" title="Permanent link">¶</a></h2>
+<ul>
+<li><a href="https://tda-qchem.github.io/tda-qchem-examples/">Prerequisites</a></li>
+<li><a href="http://www.diracprogram.org/">DIRAC</a></li>
+<li><a href="https://topology-tool-kit.github.io/">TTK</a></li>
+<li>
+<p><a href="TODO">qcten</a></p>
+</li>
+<li>
+<p>The calculations and export of the electron density are also discusssed in <a href="XXXX">the official DIRAC tutorial</a>.</p>
+</li>
+</ul></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

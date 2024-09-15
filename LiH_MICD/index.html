@@ -1,0 +1,900 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A collection of examples accompanying the TDA-Qchem book (scratch repository).">
+      
+      
+        <meta name="author" content="Gosia Olejniczak, Julien Tierny">
+      
+      
+        <link rel="canonical" href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/LiH_MICD/">
+      
+      
+        <link rel="prev" href="../H2O_and_H2OH2O_ED_ESP/">
+      
+      
+        <link rel="next" href="../MESP_theory/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>Vortices in the magnetically-induced current density in LiH molecule studied through the lens of the Omega function - qchem-tda-explorations</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.35f28582.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vortices-in-the-magnetically-induced-current-density-in-lih-molecule-studied-through-the-lens-of-the-omega-function" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="qchem-tda-explorations" class="md-header__button md-logo" aria-label="qchem-tda-explorations" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            qchem-tda-explorations
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Vortices in the magnetically-induced current density in LiH molecule studied through the lens of the Omega function
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="qchem-tda-explorations" class="md-nav__button md-logo" aria-label="qchem-tda-explorations" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    qchem-tda-explorations
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../C4H4_MICD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The magnetically-induced current density in C4H4 molecule studied with the Omega function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../C6H6_MICD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The magnetically-induced current density in C6H6 molecule studied with the Omega function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H2OH2O_ED_ESP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between different molecular descriptors: electron density (ED) and electrostatic potential (ESP) in H2O-H2O dimer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H2OH2O_ED_bonds/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Description of covalent and hydrogen bonds in water dimer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H2O_ED_ESP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between different molecular descriptors: electron density (ED) and electrostatic potential (ESP) in H2O molecule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H2O_ED_basins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    title
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H2O_and_H2OH2O_ED_ESP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between different molecular descriptors: electron density (ED) and electrostatic potential (ESP) in H2O and H2O-H2O dimer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Vortices in the magnetically-induced current density in LiH molecule studied through the lens of the Omega function
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MESP_theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring the topology of the molecular electrostatic potential in simple molecules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bivariate_ED_MESP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between the electron density and the molecular electrostatic potential.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../definitions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Descriptions of models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../relativistic-xbs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring the transfer of relativistic effects in halogen-bonded complexes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sigma-hole-interactions-database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring \(\sigma\)-hole interactions through the topology of the molecular electrostatic potential and the electron density on benchmark data sets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../simple_ED_BNP_homemorphisms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between the electron density and the bare nuclear potential in simple molecules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../water_clusters_ED-BNP-homeomorphism/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between the electron density and the bare nuclear potential in a set of water clusters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../water_clusters_isomers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring the energy landscape of water clusters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_19" >
+        
+          
+          <label class="md-nav__link" for="__nav_19" id="__nav_19_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Notebooks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_19_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_19">
+            <span class="md-nav__icon md-icon"></span>
+            Notebooks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_19_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_19_1" id="__nav_19_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Water clusters explorations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_19_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_19_1">
+            <span class="md-nav__icon md-icon"></span>
+            Water clusters explorations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/water_clusters_explorations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<div><h1 id="vortices-in-the-magnetically-induced-current-density-in-lih-molecule-studied-through-the-lens-of-the-omega-function">Vortices in the magnetically-induced current density in LiH molecule studied through the lens of the Omega function<a class="headerlink" href="#vortices-in-the-magnetically-induced-current-density-in-lih-molecule-studied-through-the-lens-of-the-omega-function" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="Omega_bz.png" src="../screenshots/LiH_MICD/repImageGray.png" width="500"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><div style="width:500px"><b>An automatic approach based on Topological Data Analysis extracts axial (blue) and toroidal (green) vortices in magnetically-induced current density as specific sub-sets of the separatrices (gray curves) of the Morse-Smale complex of the Omega index.</b></div></td>
+</tr>
+</tbody>
+</table>
+<h1 id="pipeline-description">Pipeline description<a class="headerlink" href="#pipeline-description" title="Permanent link">¶</a></h1>
+<p>This example illustrates (1) the calculation of the magnetically-induced current density (MICD) tensor in the LiH molecule in the <code>DIRAC</code> software, followed by (2) the calculation of the Omega index with the <code>qcten</code> script and (3) its subsequent topological analysis in the <code>TTK</code> software.</p>
+<p>The first step involving quantum chemistry calculations aims to compute the MICD tensor and its gradient and export them on a 3D grid.</p>
+<p>The purpose of the second step is a pointwise derivation of a scalar function from these tensor fields. In this case, the studied scalar field represents the so-called Omega index, used as an indicator of vortices in the first-order current density field. This step also involves translating data exported from <code>DIRAC</code> in TXT to the VTI format favored by the <code>TTK</code> code. Simultaneously, it applies the resampling filter ("ResampleToImage") without changing the number of grid points or grid bounds.</p>
+<p>The final step involves analyzing the Omega scalar field in the <code>TTK</code> software. It starts with extracting all critical point pairs, determining a persistence threshold for the salient pairs, and using this threshold to simplify the topology of the Omega scalar field. Then, the computation of the Morse-Smale complex of such simplified field results, among others, in the extraction of its one-dimensional separatrices. A subset of these separatrices connecting 2-saddles and maxima well captures the center lines of vortices. These can then be associated with axial and toroidal vortices in the MICD of the LiH molecule. Notable <code>TTK</code> filters employed in this analysis are the <code>PersistenceDiagram</code>, <code>TopologicalSimplification</code>, <code>MorseSmaleComplex</code>, and <code>PersistentGenerators</code>.</p>
+<p>For more details on this analysis, please see the publication <a href="https://arxiv.org/abs/2212.08690">on arXiv</a>. All data files generated in this analysis are on <a href="https://zenodo.org/record/7446735#.Y8BlkNKE4XU">zenodo</a>. All links are <a href="#resources-and-additional-information">at the bottom of this page</a>.</p>
+<p>Below, we describe these three steps in more detail.</p>
+<h2 id="quantum-chemistry-calculations">Quantum chemistry calculations<a class="headerlink" href="#quantum-chemistry-calculations" title="Permanent link">¶</a></h2>
+<h3 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">¶</a></h3>
+<p>The experimental geometry of LiH molecule from the <a href="https://cccbdb.nist.gov/exp2x.asp?casno=7580678&amp;charge=0#NISTdiatomic%20and%20https://www.nist.gov/pml/diatomic-spectral-database">NIST database</a> was used (R(Li-H) = 1.595 Angstrom).</p>
+<p>The MICD tensor and its gradient were calculated analytically in the development version of the <code>DIRAC</code> software (commit hash <code>2330f11</code>) with the Dirac-Coulomb Hamiltonian, the B3LYP exchange-correlation functional, and the def-TZVP basis set applied for both atoms. London atomic orbitals and the simple magnetic balance scheme were applied in response calculations. The densities were exported on the cube grid of 128 points in each Cartesian direction using the default visualization options in <code>DIRAC</code>.</p>
+<h3 id="dirac-inputs"><code>DIRAC</code> inputs<a class="headerlink" href="#dirac-inputs" title="Permanent link">¶</a></h3>
+<ul>
+<li>Molecular geometry of LiH molecule in XYZ format (in Angstrom): <a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/LiH.xyz">LiH.xyz</a></li>
+<li>Input for a wave function optimization: <a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/dirac/dc_b3lyp_def2tzvp/inputs/scf.inp">scf.inp</a></li>
+<li>Input for calculations of the magnetic-field response (uses NMR shielding calculations): <a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/dirac/dc_b3lyp_def2tzvp/inputs/prp.inp">prp.inp</a></li>
+<li>Inputs for calculations of the components of the MICD tensor, composed of the elements of the current density vector induced by the magnetic field applied in 
+    the "x"-direction (<a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/dirac/dc_b3lyp_def2tzvp/inputs/visgrid_cube_128/jbx.inp">jbx.inp</a>), 
+    the "y"-direction (<a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/dirac/dc_b3lyp_def2tzvp/inputs/visgrid_cube_128/jby.inp">jby.inp</a>), and 
+    the "z"-direction (<a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/dirac/dc_b3lyp_def2tzvp/inputs/visgrid_cube_128/jbz.inp">jbz.inp</a>)</li>
+<li>Inputs for calculations of the components of the gradient of the MICD tensor, composed of the elements of the gradient of the current density vector induced by the magnetic field applied in 
+    the "x"-direction (<a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/dirac/dc_b3lyp_def2tzvp/inputs/visgrid_cube_128/gradjbx.inp">gradjbx.inp</a>), 
+    the "y"-direction (<a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/dirac/dc_b3lyp_def2tzvp/inputs/visgrid_cube_128/gradjby.inp">gradjby.inp</a>), and 
+    the "z"-direction (<a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/dirac/dc_b3lyp_def2tzvp/inputs/visgrid_cube_128/gradjbz.inp">gradjbz.inp</a>)</li>
+</ul>
+<h3 id="dirac-outputs"><code>DIRAC</code> outputs<a class="headerlink" href="#dirac-outputs" title="Permanent link">¶</a></h3>
+<ul>
+<li>Files with exported elements of the MICD tensor and its gradient on a grid in TXT format; these are also available on <a href="https://zenodo.org/record/7446735#.Y8BlkNKE4XU">zenodo</a>.</li>
+<li><code>DIRAC</code> text output files, available in <a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/dirac/dc_b3lyp_def2tzvp/outputs">the repository</a> and on <a href="https://zenodo.org/record/7446735#.Y8BlkNKE4XU">zenodo</a>.</li>
+</ul>
+<h3 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p>Below, we assume that the <code>pam</code> script of <code>DIRAC</code> is available in <code>$PATH</code>.</p>
+</li>
+<li>
+<p>Step 1. Wave function optimization:</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code>mol=LiH.xyz
+inp_scf=scf.inp
+pam --inp=$inp_scf --mol=$mol --outcmo
+</code></pre></div>
+<ul>
+<li>Step 2. Response calculations:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>mol=LiH.xyz
+inp_prp=prp.inp
+pam --inp=$inp_prp --mol=$mol --incmo --get="DFCOEF=DFCOEF.smb TBMO PAMXVC"
+</code></pre></div>
+<ul>
+<li>
+<p>Step 3. Calculations and export of real-space densities,</p>
+<ul>
+<li>involving the elements of the MICD tensor, on an example of the <code>jbx.inp</code> file:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>mol=LiH.xyz
+vis=jbx
+inp_vis=$vis.inp
+pam --inp=$inp_vis --mol=$mol --put="DFCOEF.smb=DFCOEF TBMO PAMXVC" --get="plot.3d.vector=$vis.txt"
+</code></pre></div>
+<ul>
+<li>involving the elements of the gradient of the MICD tensor, on an example of the <code>gradjbx.inp</code> file:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>mol=LiH.xyz
+vis=gradjbx
+inp_vis=$vis.inp
+pam --inp=$inp_vis --mol=$mol --put="DFCOEF.smb=DFCOEF TBMO PAMXVC" --get="plot.3d.tensor=$vis.txt"
+</code></pre></div>
+<ul>
+<li>analogous computations should be done with the <code>jby.inp</code> file (please change of <code>vis=jbx</code> to <code>vis=jby</code>) and the <code>jbz.inp</code> file (please change <code>vis=jbx</code> to <code>vis=jby</code>),</li>
+<li>analogous computations should be done with the <code>gradjby.inp</code> file (please change of <code>vis=gradjbx</code> to <code>vis=gradjby</code>) and the <code>gradjbz.inp</code> file (please change <code>vis=gradjbx</code> to <code>vis=gradjby</code>).</li>
+</ul>
+</li>
+</ul>
+<h2 id="calculation-of-scalar-functions-for-the-topological-data-analysis">Calculation of scalar functions for the topological data analysis<a class="headerlink" href="#calculation-of-scalar-functions-for-the-topological-data-analysis" title="Permanent link">¶</a></h2>
+<h3 id="inputs">Inputs<a class="headerlink" href="#inputs" title="Permanent link">¶</a></h3>
+<ul>
+<li>Data exported from <code>DIRAC</code>:<ul>
+<li>The "x"/"y"/"z" elements of the current density vector field induced by the magnetic field applied in the "x" direction are in the 4th/5th/6th-column of the <code>jbx.txt</code> file.</li>
+<li>The "x"/"y"/"z" elements of the current density vector field induced by the magnetic field applied in the "y" direction are in the 4th/5th/6th-column of the <code>jby.txt</code> file.</li>
+<li>The "x"/"y"/"z" elements of the current density vector field induced by the magnetic field applied in the "z" direction are in the 4th/5th/6th-column of the <code>jbz.txt</code> file.</li>
+<li>The "x"/"y"/"z" elements of the gradient of the current density vector field induced by the magnetic field applied in the "z" direction are in the <code>gradjbx.txt</code> file, starting from the 4th column).</li>
+<li>In all TXT files exported from <code>DIRAC</code>, first three columns refer to the "x"/"y"/"z"-coordinates of grid vertices.</li>
+</ul>
+</li>
+</ul>
+<h3 id="outputs">Outputs<a class="headerlink" href="#outputs" title="Permanent link">¶</a></h3>
+<h3 id="run-script">Run script<a class="headerlink" href="#run-script" title="Permanent link">¶</a></h3>
+<h2 id="topological-data-analysis">Topological Data Analysis<a class="headerlink" href="#topological-data-analysis" title="Permanent link">¶</a></h2>
+<h3 id="inputs_1">Inputs<a class="headerlink" href="#inputs_1" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p>It may help to mark the positions of the Li and H nuclei on the plots; for this purpose, the molecular geometry of the LiH molecule in CSV format (in atomic units) is available in the <a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/LiH.csv">LiH.csv</a> file.</p>
+</li>
+<li>
+<p>MICD-related data in VTI format:</p>
+<ul>
+<li>
+<p>Omega function derived from the magnetically-induced current density vector corresponding to the perturbation of the magnetic field applied perpendicularly to the Li-H bond: <code>start_data_omega_bz.vti</code> file in <a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/vti/start_data_omega_bz.vti">the repository</a> and on <a href="https://zenodo.org/record/7446735#.Y8E2dtKZNhF">zenodo</a>; data description:</p>
+<ul>
+<li><code>omega_bz</code> - corresponds to Omega function calculated for the magnetic field applied perpendicularly to the Li-H bond ("bz");</li>
+<li><code>bz_wz</code> - corresponds to the "z"-component of the curl of the current density vector induced by the magnetic field applied perpendicularly to the Li-H bond ("bz"); it is a zz-component of the vorticity tensor.</li>
+</ul>
+</li>
+<li>
+<p>The elements of the magnetically-induced current density vector corresponding to the perturbation of the magnetic field applied perpendicularly to the Li-H bond are on the <code>start_data_bz.vti</code> file in <a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/vti/start_data_bz.vti">the repository</a> and on <a href="https://zenodo.org/record/7446735#.Y8E2dtKZNhF">zenodo</a>; the "x"/"y"/"z" elements of this vector are marked as  <code>bz_jx</code>, <code>bz_jy</code>, <code>bz_jz</code>, respectively.</p>
+</li>
+<li>
+<p>Additionally, on <a href="https://zenodo.org/record/7446735#.Y8E2dtKZNhF">zenodo</a>, we also share the VTI file which contains all the elements of the full MICD tensor (<code>startdatajbtensor.vti</code> file).</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="outputs_1">Outputs<a class="headerlink" href="#outputs_1" title="Permanent link">¶</a></h3>
+<ul>
+<li>The <code>Paraview</code> state files and all other files enabling the reproduction of the above screenshot and all images attached to the companion publication are in <a href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/pvsm">the repository</a>.</li>
+</ul>
+<h3 id="paraview">ParaView<a class="headerlink" href="#paraview" title="Permanent link">¶</a></h3>
+<p>To reproduce the images and to explore the TDA pipeline, go to the root directory of <a href="https://github.com/tda-qchem/tda-qchem-explorations">this repository</a> and enter the following command:</p>
+<div class="highlight"><pre><span></span><code>paraview<span class="w"> </span>--state<span class="o">=</span>pvsm/lih.pvsm
+</code></pre></div>
+<h2 id="resources-and-additional-information">Resources and additional information<a class="headerlink" href="#resources-and-additional-information" title="Permanent link">¶</a></h2>
+<ul>
+<li><a href="https://tda-qchem.github.io/tda-qchem-examples/">Prerequisites</a></li>
+<li><a href="http://www.diracprogram.org/">DIRAC</a></li>
+<li><a href="https://topology-tool-kit.github.io/">TTK</a></li>
+<li>
+<p><a href="TODO">qcten</a></p>
+</li>
+<li>
+<p>The calculations and export of the magnetically-induced current density are also discusssed in <a href="http://www.diracprogram.org/doc/release-22/tutorials/visual/general/tutorial.html#densities-and-currents-induced-by-a-magnetic-field">the official DIRAC tutorial</a>.</p>
+</li>
+<li>
+<p>Related data: the publication on <a href="https://arxiv.org/abs/2212.08690">arXiv</a> and its <a href="">1-page summary</a>, data files generated in this analysis on <a href="https://zenodo.org/record/7446735#.Y8BlkNKE4XU">zenodo</a>.</p>
+</li>
+<li>
+<p>To fully reproduce the results reported in the publication, please check <a href="">this link</a>.</p>
+</li>
+<li>To fully reproduce the publication, please check <a href="">this link</a>.</li>
+</ul></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

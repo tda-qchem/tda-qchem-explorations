@@ -1,0 +1,869 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A collection of examples accompanying the TDA-Qchem book (scratch repository).">
+      
+      
+        <meta name="author" content="Gosia Olejniczak, Julien Tierny">
+      
+      
+        <link rel="canonical" href="https://github.com/tda-qchem/tda-qchem-explorations/tree/main/water_clusters_ED-BNP-homeomorphism/">
+      
+      
+        <link rel="prev" href="../simple_ED_BNP_homemorphisms/">
+      
+      
+        <link rel="next" href="../water_clusters_isomers/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>Exploring correlations between the electron density and the bare nuclear potential in a set of water clusters - qchem-tda-explorations</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.35f28582.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#exploring-correlations-between-the-electron-density-and-the-bare-nuclear-potential-in-a-set-of-water-clusters" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="qchem-tda-explorations" class="md-header__button md-logo" aria-label="qchem-tda-explorations" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            qchem-tda-explorations
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Exploring correlations between the electron density and the bare nuclear potential in a set of water clusters
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="qchem-tda-explorations" class="md-nav__button md-logo" aria-label="qchem-tda-explorations" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    qchem-tda-explorations
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../C4H4_MICD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The magnetically-induced current density in C4H4 molecule studied with the Omega function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../C6H6_MICD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The magnetically-induced current density in C6H6 molecule studied with the Omega function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H2OH2O_ED_ESP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between different molecular descriptors: electron density (ED) and electrostatic potential (ESP) in H2O-H2O dimer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H2OH2O_ED_bonds/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Description of covalent and hydrogen bonds in water dimer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H2O_ED_ESP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between different molecular descriptors: electron density (ED) and electrostatic potential (ESP) in H2O molecule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H2O_ED_basins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    title
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H2O_and_H2OH2O_ED_ESP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between different molecular descriptors: electron density (ED) and electrostatic potential (ESP) in H2O and H2O-H2O dimer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LiH_MICD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vortices in the magnetically-induced current density in LiH molecule studied through the lens of the Omega function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MESP_theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring the topology of the molecular electrostatic potential in simple molecules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bivariate_ED_MESP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between the electron density and the molecular electrostatic potential.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../definitions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Descriptions of models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../relativistic-xbs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring the transfer of relativistic effects in halogen-bonded complexes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sigma-hole-interactions-database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring \(\sigma\)-hole interactions through the topology of the molecular electrostatic potential and the electron density on benchmark data sets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../simple_ED_BNP_homemorphisms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between the electron density and the bare nuclear potential in simple molecules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Exploring correlations between the electron density and the bare nuclear potential in a set of water clusters
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../water_clusters_isomers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring the energy landscape of water clusters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_19" >
+        
+          
+          <label class="md-nav__link" for="__nav_19" id="__nav_19_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Notebooks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_19_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_19">
+            <span class="md-nav__icon md-icon"></span>
+            Notebooks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_19_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_19_1" id="__nav_19_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Water clusters explorations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_19_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_19_1">
+            <span class="md-nav__icon md-icon"></span>
+            Water clusters explorations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/water_clusters_explorations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<div><h1 id="exploring-correlations-between-the-electron-density-and-the-bare-nuclear-potential-in-a-set-of-water-clusters">Exploring correlations between the electron density and the bare nuclear potential in a set of water clusters<a class="headerlink" href="#exploring-correlations-between-the-electron-density-and-the-bare-nuclear-potential-in-a-set-of-water-clusters" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;" width="500"><img alt="figure.png" src="screenshots/EXAMPLE/figure.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><div style="width:500px"><b>Caption</b></div></td>
+</tr>
+</tbody>
+</table>
+<h1 id="pipeline-description">Pipeline description<a class="headerlink" href="#pipeline-description" title="Permanent link">¶</a></h1>
+<p>This example illustrates the analysis of the ED (electron density) and BNP (bare nuclear potential) functions calculated for the selected water clusters, (H2O)x with x = 3, ..., 30.</p>
+<p>Data is generated in the <code>ADF</code> software, the topological analysis is performed in the <code>TTK</code> software.</p>
+<h1 id="definitions">Definitions<a class="headerlink" href="#definitions" title="Permanent link">¶</a></h1>
+<ul>
+<li>for definitions of studied functions, please see <a href="../definitions/">this document</a></li>
+</ul>
+<h1 id="selection-of-molecular-systems-and-dataset-description">Selection of molecular systems and dataset description<a class="headerlink" href="#selection-of-molecular-systems-and-dataset-description" title="Permanent link">¶</a></h1>
+<h2 id="the-description-of-the-current-pipeline-gosia1707">The description of the current pipeline (gosia,17/07)<a class="headerlink" href="#the-description-of-the-current-pipeline-gosia1707" title="Permanent link">¶</a></h2>
+<ul>
+<li>Molecular systems, data:</li>
+<li>water molecule and water clusters, (H2O)x for size x=1-30; in total, we consider 30 different systems; in data, we refer to them as Wx;</li>
+<li>each water cluster has many energetic minima; i.e., for each x, we have N<span class="arithmatex">\(_x\)</span> minima = N<span class="arithmatex">\(_x\)</span> different structures ("equilibrium geometries"); in data, this is denoted as <strong>state</strong>;</li>
+<li>for each of these states, we consider its normal modes, which represent directions and frequencies of molecular vibrations; the rule counting the normal modes that applies here is 3N_at - 6, where N_at is the number of atoms; hence here, for a cluster (H2O)_X that has 3X atoms, there are 3*(3X)-6 = 9X-6 possible directions, in which we can "distort" the equilibrium structure; in data, this is denoted as mode</li>
+<li>along each of 9X-6 normal modes of each of N_X minima of (H2O)_X, we generate 10 (an arbitrary value) structures by distorting the equilibrium structure in +v and -v direction, where v represents a normal mode vector; by doing this, we arrive at 11 geometries in total (10 distorted + 1 equilibrium); in data, this is denoted as geom</li>
+<li>for each of "geom", we calculated two scalar fields: "RHO" (electron density) and "BNP" (bare nuclear potential); the generated vti files contain both fields; we use the grids adapted to the system (i.e., the number of grid points will vary), but we maintain consistent spacing of grid points (here=0.1) and the border around molecule (here=2.0) in each case,</li>
+<li>Notes above also show that we deal with huge number of files; the size of vti file depends on a particular geom (for W6, it seems to be max. 100MB);</li>
+<li>to demonstrate the workflow and the idea, we then selected a few clusters (this example: W6), a few "states" for each, and a few "geoms"; selection criteria are discussed below</li>
+<li>Working examples - selection criteria:</li>
+<li>Among many possible structural descriptors to classify the structures of water clusters, we considered the ones discussed in <a href="https://doi.org/10.1063/5.0009933">https://doi.org/10.1063/5.0009933</a>, in particular:<ul>
+<li>"rings": Trimers, Tetramers, Pentamers, Hexamers; the rings are determined for "projected graphs" of water clusters, in which each water molecule is a node and each hydrogen bond is an edge; see Fig.2 in this paper;</li>
+<li>our first selection criterion ("sc1"): look for cases, in which the molecular motion causes the number of Hexamers to change; see Fig. 3 in this paper</li>
+</ul>
+</li>
+<li>Example: W6:<ul>
+<li>Number of states, modes, geometries:</li>
+<li>initial #states (from wdbase) = 80; after the quantum chemistry refinement: #state=54</li>
+<li>each structure has 9*6-6 = 48 normal modes, #mode=48; for each mode we generated 10 distorted geometries from an equilibrium structure, #geom=11</li>
+<li>this gives 54<em>48</em>11 distinct geometries;</li>
+<li>after applying "sc1", we have just a few cases to consider:<ul>
+<li>W6_state_47_mode_5</li>
+<li>W6_state_47_mode_20</li>
+<li>W6_state_47_mode_24</li>
+<li>W6_state_50_mode_20</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="water-cluster-geometries-downloaded-from-the-database">Water cluster geometries downloaded from the database<a class="headerlink" href="#water-cluster-geometries-downloaded-from-the-database" title="Permanent link">¶</a></h2>
+<p>Datasets used in this example can be downloaded from <a href="https://drive.google.com/drive/u/2/folders/1P1xhseed2snQC7HzYXxu5aY2XLeglGsQ">Google Disc</a>.</p>
+<ul>
+<li>
+<p><a href="https://sites.uw.edu/wdbase/">Database link</a> and <a href="https://doi.org/10.1063/1.5128378">the related publication</a>; structures were not reoptimized:</p>
+</li>
+<li>
+<p>water clusters, (H2O)x with x = 3, ..., 30, corresponding to putative minima found with the TTM2.1-F potential within the 1KJ/mol energy range:</p>
+</li>
+<li>data is in <code>selected_1kjmol.tar.gz</code> (~1.8GB)</li>
+<li>
+<p>for each water cluster, (H2O)x, there can be more than 1 geometry, hence more than one data set</p>
+</li>
+<li>
+<p>water clusters with 5 water molecules, (H2O)x with x=5, corresponding to putative minima found with the TTM2.1-F potential within the 5KJ/mol energy range</p>
+</li>
+<li>
+<p>data is in <code>selected_5kjmol.tar.gz</code> (~116MB)</p>
+</li>
+<li>
+<p>For each geometry, the data (directories in <code>selected_1kjmol.tar.gz</code> and <code>selected_5kjmol.tar.gz</code>) contains:</p>
+</li>
+<li><code>start_state.vti</code> file with "rho" and "bnp" scalar fields:<ul>
+<li>"rho" denotes the electron density (ED)</li>
+<li>"bnp" denotes the bare nuclear potential (BNP) - IMPORTANT: we should analyse its negative value (I did not change the sign to stay consistent with calculations, but this property is by definition &gt;0)</li>
+</ul>
+</li>
+<li><code>helper.txt</code> file with the name of the molecule, grid dimensions (the number of x, y, z points) and energy value (as reported in the database).</li>
+</ul>
+<h2 id="exploration-of-the-potential-energy-surface-pes-of-the-water-clusters-with-5-water-molecules-h2o5">Exploration of the potential energy surface (PES) of the water clusters with 5 water molecules, (H2O)5<a class="headerlink" href="#exploration-of-the-potential-energy-surface-pes-of-the-water-clusters-with-5-water-molecules-h2o5" title="Permanent link">¶</a></h2>
+<p>Datasets used in this example can be downloaded from <a href="https://drive.google.com/drive/u/2/folders/1VEdaAPV7DtiIArKcD0kFCyP7FDdeLgwq">Google Disc</a></p>
+<ul>
+<li>
+<p>Idea: for a selected molecular system, we tracked the motion of all atomic nuclei along one selected normal mode (harmonic oscillator approximation); then selected a few snapshots of molecular geometries along the mode and, for each, we calculated the ED and BNP functions:</p>
+<ul>
+<li>in particular, the new positions, [x', y', z'], of an atomic nucleus are calculated from the equation: <code>x' = x + N*fx*dx*epsilon</code>, <code>x' = x + N*fy*dy*epsilon</code>, <code>z' = z + N*fz*dz*epsilon</code>, where: [x, y, z] is the position of this nucleus in the equilibrium molecular geometry, [fx, fy, fz] is the vector of the distortion (applied to this nucleus), [dx, dy, dz] is the size of a voxel cube in x, y, z directions (corresponding to the grid for the equilibrium geometry), N=1.5 (arbitrarily chosen factor that ensures that the step is larger than the voxel dimension), and epsilon is an integer in the range from -9 to 9 (also arbitrarily chosen range)</li>
+<li>data directory with  <code>geom_0_mode0</code> in its name corresponds to the equlibrium geometry</li>
+<li>the names of other data directories include some of the information mentioned above (also, see explanations below)</li>
+</ul>
+</li>
+<li>
+<p>For each geometry (directories in Google Disc), the data contains:</p>
+</li>
+<li><code>start_state.vti</code> file with "rho" and "bnp" scalar fields (as described above)</li>
+<li>
+<p><code>helper.txt</code> file with the following data (in order of columns): </p>
+<ul>
+<li><code>mol_name</code> - name of a water cluster; here, we consider one system (<code>W5_struc_6</code>)</li>
+<li><code>struct_index</code> - name of the structure (unused in this example)</li>
+<li><code>mode</code> - an index of the normal mode; here we consider only the lowest-frequency mode (<code>mode0</code>)</li>
+<li><code>epsilon</code> - a parameter to denote how much the structure is distorted from the equilibrium geometry </li>
+<li><code>energy</code> - single-point energy calculated for this structure</li>
+<li><code>nx, ny, nz</code> - grid dimensions (the number of x, y, z points)</li>
+<li><code>lx, ly, lz</code> - length of the grid cube in x, y, z directions</li>
+<li><code>dx, dy, dz</code> - the size of a voxel cube in x, y, z directions</li>
+</ul>
+</li>
+<li>
+<p>Advantages of this approach: </p>
+<ul>
+<li>for the equilibrium geometry, all calculations are done with the same methods (DFT); this allows to study the relation between the topology of ED and BNP, and the energy of structures.</li>
+<li>for other "distorted" geometries, the same formalism is used to calculate ED and BNP, so all ED/BNP data is consistent in the whole series</li>
+</ul>
+</li>
+</ul>
+<h2 id="quantum-chemistry-calculations">Quantum chemistry calculations<a class="headerlink" href="#quantum-chemistry-calculations" title="Permanent link">¶</a></h2>
+<p>TODO later</p>
+<h2 id="calculation-of-scalar-functions-for-the-topological-data-analysis">Calculation of scalar functions for the topological data analysis<a class="headerlink" href="#calculation-of-scalar-functions-for-the-topological-data-analysis" title="Permanent link">¶</a></h2>
+<p>TODO later</p>
+<h2 id="topological-data-analysis">Topological Data Analysis<a class="headerlink" href="#topological-data-analysis" title="Permanent link">¶</a></h2>
+<p>TODO later</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
