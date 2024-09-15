@@ -30,3 +30,10 @@ cd ..
 mkdocs serve
 ```
 
+* It might be helpful to work in conda environment:
+
+```
+conda create -n mkdocs mkdocs mkdocs-material mkdocs-video
+conda activate mkdocs
+```
+

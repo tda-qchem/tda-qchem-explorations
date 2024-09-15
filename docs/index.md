@@ -44,6 +44,18 @@ Summary and work progress: [LINK](XXXX)
 |[The magnetically-induced current density in LiH molecule studied with the Omega function](LiH_MICD/)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
 
 
+## Unpublished
+
+
+### Current stack
+
+
+| Name | Screenshot |
+|:-:|:-:|
+|[The magnetically-induced current density in simple molecules: analysis of the selected scalar functions](MICD_simple/)|![ExampleImage](screenshots/TODO.jpg)|
+
+
+
 ### Referred to in the book (unpublished)
 
 | Name | Screenshot |
@@ -54,12 +66,11 @@ Summary and work progress: [LINK](XXXX)
 |[Elusive intramolecular Au $\cdots$ H non-covalent interaction in a small gold complexes](elusiveAuH_ED_RDG_bonds)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
 
 
-
-
-## WIP (only placeholders in the book)
+### WIP (only placeholders in the book)
 
 | Name | Screenshot |
 |:-:|:-:|
+|[Exploring correlations between the electron density and the bare nuclear potential in a few selected simple molecules](simple_ED_BNP_homemorphisms.md)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
 |[Exploring correlations between the electron density and the bare nuclear potential in a few selected simple molecules](simple_ED_BNP_homemorphisms.md)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
 |[Exploring correlations between the electron density and the bare nuclear potential in a set of water clusters](water_clusters_ED-BNP-homeomorphism.md)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
 |[Exploring correlations between the electron density and the molecular electrostatic potential](bivariate_ED_MESP.md)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|

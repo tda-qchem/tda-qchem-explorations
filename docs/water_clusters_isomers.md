@@ -47,6 +47,8 @@ Quantum chemistry calculations involve `CREST` and `ADF` software, the topologic
 
 ![type:video](./videos/W6_state_50_mode_20.mp4)
 
+* the QM part of the workflow involves the ADF (2023.104) software and PyADF ().
+
 
 
 # Selection of molecular systems and dataset description (older pipeline)
