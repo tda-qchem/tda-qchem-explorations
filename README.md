@@ -4,6 +4,8 @@ A collection of examples accompanying the TDA-Qchem book (scratch repository).
 
 ## Contributing
 
+### Text
+
 * Add a markdown file with example description to `docs`; a template is available: `docs/templates/doc.md`:
 
 ```
@@ -36,4 +38,12 @@ mkdocs serve
 conda create -n mkdocs mkdocs mkdocs-material mkdocs-video
 conda activate mkdocs
 ```
+
+### Data
+
+* Create a corresponding directory in `data`; with the following subdirectories:
+  `dirac/MODEL_USED/inputs`, `dirac/MODEL_USED/inputs/visgrid_cube_XXX` `dirac/outputs`, `vti`
+
+* Add molecular geometry (XYZ in Angstrom, maybe also CSV in Bohr) 
+
 
