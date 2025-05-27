@@ -50,7 +50,7 @@ Summary and work progress: [LINK-TODO](XXXX)
 | Name | Screenshot |
 |:-:|:-:|
 |[Description of covalent and hydrogen bonds in water dimer](H2OH2O_ED_bonds)|![ExampleImage](screenshots/H2OH2O_ED_bonds/h2o_h2o_bondPersistence.jpg){width=200}|
-|[Intramolecular hydrogen bonds in derivatives of 1H-pyrrole](C5H6ON2_ED_bonds)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
+WIP HERE: |[Intramolecular hydrogen bonds: 1H-pyrrole and phenol derivatives](C5H6ON2_ED_bonds)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
 |[Description of simple halogen bonds: At-At $\cdots$ NH3 example](AtAtNH3_ED_RDG_bonds)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
 |[Elusive intramolecular Au $\cdots$ H non-covalent interaction in a small gold complexes](elusiveAuH_ED_RDG_bonds)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
 
