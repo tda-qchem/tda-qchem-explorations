@@ -8,7 +8,7 @@
 
 # Pipeline description
 
-This example illustrates the analysis of the ED (electron density) and BNP (bare nuclear potential) functions calculated for a few selected simple molecular systems.
+This example demonstrates the analysis of the homeomorphism between two molecular descriptors, ED (electron density) and BNP (bare nuclear potential), calculated for a few selected simple molecular systems.
 
 Data is generated in the `DIRAC` software, the topological analysis is performed in the `TTK` software.
 
@@ -20,7 +20,7 @@ Data is generated in the `DIRAC` software, the topological analysis is performed
 
 # Selection of molecular systems and dataset description
 
-## H2O-H2O (water dimer):
+## H2O-H2O (water dimer) - TO REVIEW:
 
   * [CSV file with molecular geometry](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/h2o-h2o/geom.csv)
   * real-space quantum chemistry data in VTI format:
@@ -59,10 +59,20 @@ Data is generated in the `DIRAC` software, the topological analysis is performed
     ```
 
 
-# Motivation for these explorations:
+# Commentary
 
 The purpose of these explorations is to reasses the homeomorphism between BNP and ED function for the (1) H2O-H2O, (2) oxirane, and (3) tetrahedrane molecular systems.
-According to [this work](https://onlinelibrary.wiley.com/doi/full/10.1002/qua.22215), BNP and ED are homeomorphic in system (1) but not in molecules (2) and (3).
+According to [Popelier .....](https://onlinelibrary.wiley.com/doi/full/10.1002/qua.22215), BNP and ED are homeomorphic in system (1) but not in molecules (2) and (3).
+
+As indicated in the cited work, the lack of homeomorphism can be attributed to different reasons
+
+Our analyses show that the ....
+
+We revisit this issue on an example of water clusters in XXXX.
+
+
+
+
 
 
 
