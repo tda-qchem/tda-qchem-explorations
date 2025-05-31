@@ -1,16 +1,15 @@
-# Exploring the energy landscape and the chemical bond robustness of water clusters
+# Exploring the potential energy surface of water hexamer through its electron density: chemical bond robustness under molecular vibrations
 
-| ![figure.png](screenshots/EXAMPLE/figure.png) {width=500}|
+| ![figure.png](screenshots/water_clusters_isomers_robustness/bondStabilityPaper_teaser_composed.jpg) {width=500}|
 |:-:|
 |<div style="width:500px"><b>Caption</b></div>|
 
 
-
 # Pipeline description
 
-This example illustrates the analysis of the electron density (ED) calculated for small water clusters, (H2O)x with x = 3, ..., 30.
+This example illustrates the analysis of the electron density (ED) calculated for water hexame, (H2O)6
 
-Quantum chemistry calculations involve `CREST` and `ADF` software, the topological analysis is performed in the `TTK` software.
+Quantum chemistry calculations involve `ADF` software, the topological analysis is performed in the `TTK` software.
 
 
 # Definitions
@@ -21,7 +20,7 @@ Quantum chemistry calculations involve `CREST` and `ADF` software, the topologic
 # The description of the current pipeline (gosia,17/07)
 
 ## Molecular systems, data:
-CHECK THIS:
+RESTART HERE
 - water molecule and water clusters, (H2O)$_x$ for size x=1-30; in total, we consider 30 different systems; in data, we refer to them as Wx;
 - each water cluster has many energetic minima; i.e., for each x, we have N$_x$ minima = N$_x$ different structures ("equilibrium geometries"); in data, this is denoted as **state**;
 - for each of these states, we consider its normal modes, which represent directions and frequencies of molecular vibrations; 
