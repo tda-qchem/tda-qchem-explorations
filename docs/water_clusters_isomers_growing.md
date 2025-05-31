@@ -1,6 +1,6 @@
-# Exploring the energy landscape and the chemical bond robustness of water clusters
+# The evolution of hydrogen bond networks: the electron-density-based description of isomers of water cluster of increasing size
 
-| ![figure.png](screenshots/EXAMPLE/figure.png) {width=500}|
+| ![figure.png](screenshots/water_clusters_isomers_growing/figure.png) {width=500}|
 |:-:|
 |<div style="width:500px"><b>Caption</b></div>|
 
