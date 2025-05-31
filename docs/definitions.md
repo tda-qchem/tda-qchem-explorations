@@ -10,6 +10,12 @@ s(\vec{r}) = \frac{1}{2(3\pi^2)^{1/3}}\frac{|\nabla\rho(\vec{r})|}{\rho(\vec{r})
 \label{eq:redgrad}
 $$
 
+* Lambda2, involving the second eigenvalue of the ED Hessian (in ascending/descending order):
+
+$$
+\Lambda_2 = sign(\lambda_2)\rho(\vec{r})
+$$
+
 * molecular electrostatic potential (MESP, $V(\vec{r})$):
 
 $$

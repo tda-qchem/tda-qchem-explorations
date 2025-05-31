@@ -1,12 +1,21 @@
-# Description of covalent and hydrogen bonds in water dimer
+# Description of hydrogen bonds in formamide dimer
 
-![fig:overview_h2o_h2o](screenshots/H2OH2O_ED_bonds/h2o_h2o_criticalPoints.jpg){width=250} | ![fig:overview_h2o_h2o](screenshots/H2OH2O_ED_bonds/h2o_h2o_bondPersistence.jpg){width=250} 
+![fig:overview_h2o_h2o](screenshots/formamide_dimer_bonds/formamide_dimer_cover.jpg){width=250} | ![fig:overview_](screenshots/formamide_dimer_bonds/formamide_dimer_cover.jpg){width=250} 
 :---:|:---:
-|<div style="width:500px"><b>An automatic approach based on Topological Data Analysis extracts the structure and the bonding patterns in water dimer as specific critical points (left plot: maxima and 2-saddles marked as dark-green and light-green points) and specific sub-sets of separatrices (right plot: red and blue curves represent low-persistence and high-persistence 1-separatrices between maxima and 2-saddles) of the Morse-Smale complex of the electron density scalar field (gosia - copied from the book).</b></div>|
+|<div style="width:500px"><b>An automatic approach based on Topological Data Analysis extracts the structure and the bonding patterns in formamide dimer .......</b></div>|
+
+
+# Chemical context
+
+Formamide dimer is an archetypal example of hydrogen-bonded systems, in which the substantial contribution to the hydrogen bond (HB) is due to *orbital interactions*.
+The electron density (ED), electrostatic potential (ESP) and Lambda2 are some of the best-suited molecular descriptors to explore how this interaction manifests in real space.
+
+Here, we first demonstrate the TDA of ED. Then, we complement it with the visualization of Lambda2.
 
 
 # Pipeline description
 
+TODO: adapt to ED, ESP,...
 This example illustrates the analysis of the electron density of the water dimer, which aims to describe and discern covalent bonds (O-H) and non-covalent interactions (O---H). First, the electron density (ED) is computed with the `DIRAC` software given the input atom configuration, followed by the generation of the VTI file and a subsequent topological analysis in the `TTK` software.
 
 The first step, which involves quantum chemistry calculations, is to compute the ED scalar field and export it on a 3D grid.
