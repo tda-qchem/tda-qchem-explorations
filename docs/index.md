@@ -1,6 +1,7 @@
 This website collects examples of TDA applications to Quantum Chemistry. It is a scratch repository for generating examples discussed in the TDA-QCHEM book.
 
 Each example includes:
+
 * inputs and run scripts for relevant quantum chemistry software,
 * a short description of outputs from quantum chemistry calculations,
 * screenshots from [TTK](https://topology-tool-kit.github.io/),
@@ -15,16 +16,17 @@ This website also contains:
 * A short description of quantum chemistry and data models used in all calculations: [link](models.md)
 
 How to cite this website:
+
 * TODO: mention it is a companion to our book
 * TODO: add DOI
-
 
 # Prerequisites
 
 These examples assume a default installation of [DIRAC](http://www.diracprogram.org/), [TTK](https://topology-tool-kit.github.io/) and [qcten](https://github.com/gosiao/qcten).
-Selected examples also use [CREST](XXX) and [AMS](xxx) software. Among all these codes, only `AMS` is commercial; however, all quantum chemistry data is also available for download at [this link](xxx).
-Add info about conda environment; additional scripts for HPC; etc.
+Selected examples also use [CREST](XXX) and [AMS](xxx) software, and the [PyADF](library) for more complex chemistry workflows. 
+Among all these codes, only `AMS` is commercial; however, all quantum chemistry data is also available for download from Zenodo (links to data are provided in each tutorial).
 
+TODO: Add info about conda environment; additional scripts for HPC; etc.
 
 # Full pipeline automatization
 
@@ -33,7 +35,6 @@ TODO
 # List of examples
 
 Summary and work progress: [LINK-TODO](XXXX)
-
 
 ## Completed and published
 
@@ -44,7 +45,7 @@ Summary and work progress: [LINK-TODO](XXXX)
 
 
 
-## Unpublished
+## Unpublished, WIP
 
 | Name | Screenshot |
 |:-:|:-:|

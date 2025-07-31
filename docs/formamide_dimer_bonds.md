@@ -7,10 +7,9 @@
 
 # Chemical context
 
-Formamide dimer is an archetypal example of hydrogen-bonded systems, in which the substantial contribution to the hydrogen bond (HB) is due to *orbital interactions*.
-The electron density (ED), electrostatic potential (ESP) and Lambda2 are some of the best-suited molecular descriptors to explore how this interaction manifests in real space.
-
-Here, we first demonstrate the TDA of ED. Then, we complement it with the visualization of Lambda2.
+Formamide dimer is an example of hydrogen-bonded systems, in which the substantial contribution to the hydrogen bond (HB) is due to *orbital interactions*.
+We explore what can be learned from the analysis of its electron density (ED) and the electron localization function (ELF). We confront it with the "deformation density" plots for the total electron density and the density of the selected orbitals.
+Specifically, we are interested in the description of charge transfer and polarization effects that are significant mechanisms for the hydrogen bond in this dimer.
 
 
 # Pipeline description

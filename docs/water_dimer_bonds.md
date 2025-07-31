@@ -7,10 +7,10 @@
 
 # Chemical context
 
-Water dimer is an archetypal example of hydrogen-bonded (HB) systems, in which the non-covalent interaction is dominated by the *electrostatic contribution*.
-The electron density (ED), its derivatives and their functions (such as Lambda2), and the molecular electrostatic potential (ESP) are some of the best-suited molecular descriptors to explore how such interaction manifests in real space.
+Water dimer is an example of hydrogen-bonded (HB) systems, in which the non-covalent interaction is dominated by the *electrostatic contribution*.
+The electron density (ED), its derivatives and their functions (such as Lambda2), and the molecular electrostatic potential (ESP) are some of the best-suited molecular descriptors to explore how such interaction manifests in real space. In this example, we demonstrate what can be learned from the topological analysis of these descriptors.
 
-Moreover, it is a system exhibiting covalent (O-H) and inter-molecular non-covalent (O---H) interactions between the same types of atoms, in which the hydrogen atoms have three different "roles" (marked as "a", "d", and "f" in the figure below XXXX, denoting the HB acceptor, the HB donor and the free center, respectively).
+Water dimer has covalent (O-H) and inter-molecular non-covalent (O---H) interactions between the same types of atoms, and the hydrogen atoms in this system have three different "roles" (marked as "a", "d", and "f" in the figure below XXXX, denoting the HB acceptor, the HB donor and the free - only covalently bonded - center, respectively).
 
 The primary goal of this example is to illustrate the TDA of the electron density of the water dimer to describe and discern covalent bonds (O-H) and non-covalent interactions (O---H).
 A more in-depth analysis of HBs is then followed with the illustration of the joint analysis of ED and Lambda2, and ED and ESP. The latter is more thouroughly discussed in a separate tutorial (LINK). 
