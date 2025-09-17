@@ -1,0 +1,36 @@
+**DIRAC
+**MOLECULE
+*SYMMETRY
+.NOSYM
+*BASIS
+.DEFAULT
+ aug-cc-pVTZ
+*CHARGE
+.CHARGE
+0
+**HAMILTONIAN
+.LEVY-LEBLOND
+.DFT
+b3lyp
+**INTEGRALS
+*READIN
+.UNCONTRACT
+**WAVE FUNCTION
+.SCF
+*SCF
+.EVCCNV
+1.0E-8  1.0D-6
+.CLOSED SHELL
+20
+**VISUAL
+.GRIDS
+2
+id=1 input=dft
+id=2 input=create typ=1 ndim=3 spacing=[0.05,0.05,0.05] margin=2.0
+.GRIDFUNCTIONS
+4
+name=ed id_grid=1 purpose=integration outpri=yes
+name=ed id_grid=2 purpose=visualization export=yes file_out=ed_spacing0.05_margin2.h5
+name=rdg id_grid=2 purpose=visualization export=yes file_out=rdg_spacing0.05_margin2.h5
+name=ed_sign_lambda2 id_grid=2 purpose=visualization export=yes file_out=ed_sign_lambda2_spacing0.05_margin2.h5
+*END OF

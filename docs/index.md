@@ -12,8 +12,9 @@ Each example includes:
 
 This website also contains:
 
-* A list of molecular descriptors (with the notation and analytical formulas): [link](definitions.md)
-* A short description of quantum chemistry and data models used in all calculations: [link](models.md)
+* A list of molecular functions studied in all examples (with the notation and analytical formulas): [link](definitions.md)
+* A short description of quantum chemistry and data models used in all calculations: [link](qc_models.md)
+* A short description of representations and color coding used in all figures: [link](topo_models.md)
 
 How to cite this website:
 
@@ -44,13 +45,21 @@ Summary and work progress: [LINK-TODO](XXXX)
 |[Exploring the potential energy surface of water hexamer through its electron density: chemical bond robustness under molecular vibrations](water_clusters_isomers_robustness.md)|![ExampleImage](screenshots/water_clusters_isomers_robustness/bondStabilityPaper_teaser_composed.jpg)|
 
 
-
 ## Unpublished, WIP
 
 | Name | Screenshot |
 |:-:|:-:|
+|[Description of covalent and hydrogen bonds in water dimer](water_dimer_bonds)|![ExampleImage](screenshots/water_dimer_bonds/cover.jpg){width=200}|
 
-|[Description of covalent and hydrogen bonds in water dimer](water_dimer_bonds)|![ExampleImage](screenshots/water_dimer_bonds/water_dimer_cover.jpg){width=200}|
+
+
+## OLD
+
+| Name | Screenshot |
+|:-:|:-:|
+|[Exploring $\sigma$-hole interactions on a benchmark molecular database](sigma-hole-interactions-database)|![ExampleImage](screenshots/sigma-hole-interactions-database/TODO.png)|
+
+
 |[Description of hydrogen bonds in formamide dimer](formamide_dimer_bonds)|![ExampleImage](screenshots/formamide_dimer_bonds/formamide_dimer_cover.jpg){width=200}|
 |[Description of hydrogen bonds in benzene-HF dimer](benzene_hf_dimer_bonds)|![ExampleImage](screenshots/benzene_hf_dimer_bonds/benzene_hf_dimer_cover.jpg){width=200}|
 |[Description of intramolecular hydrogen bonds in derivatives of 1H-pyrrole](intramolecular_hydrogen_bonds.md)|![ExampleImage](screenshots/intramolecular_hydrogen_bonds/intramolecular_hydrogen_bonds_cover.jpg)|
@@ -71,6 +80,7 @@ Summary and work progress: [LINK-TODO](XXXX)
 |[Exploring correlations between the electron density and the bare nuclear potential in a few selected simple molecules](simple_ED_BNP_homemorphisms.md)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
 |[Exploring correlations between the electron density and the bare nuclear potential in a few selected simple molecules](simple_ED_BNP_homemorphisms.md)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
 |[Exploring correlations between the electron density and the bare nuclear potential in a set of water clusters](water_clusters_ED-BNP-homeomorphism.md)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
+|[Exploring correlations between the electron density and the molecular electrostatic potential](bivariate_ED_MESP.md)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
 |[Exploring the topology of the molecular electrostatic potential in simple molecules](MESP_theory)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
 
 
@@ -84,8 +94,7 @@ Summary and work progress: [LINK-TODO](XXXX)
 
 |[Potential energy surface exploration: description of isomers in a set of water clusters](water_clusters_PES_isomers.md)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
 
-|[Exploring $\sigma$-hole interactions through the topology of the molecular electrostatic potential and the electron density on benchmark data sets](sigma-hole-interactions-database)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
-
+|[Exploring the transfer of relativistic effects in halogen-bonded complexes](relativistic-xbs)|![ExampleImage](screenshots/LiH_MICD/repImageGray.jpg)|
 |[The magnetically-induced current density in simple molecules: analysis of the selected scalar functions](MICD_simple/)|![ExampleImage](screenshots/TODO.jpg)|
 
 

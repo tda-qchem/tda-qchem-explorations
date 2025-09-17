@@ -41,9 +41,13 @@ conda activate mkdocs
 
 ### Data
 
-* Create a corresponding directory in `data`; with the following subdirectories:
-  `dirac/MODEL_USED/inputs`, `dirac/MODEL_USED/inputs/visgrid_cube_XXX` `dirac/outputs`, `vti`
+Create the content of the `data` directory:
 
-* Add molecular geometry (XYZ in Angstrom, maybe also CSV in Bohr) 
+* Create a corresponding directory in `data`; with the following subdirectories:
+  `QC-software/MODEL_USED/inputs`, `QC-software/MODEL_USED/outputs`, `vti`, `ttk`
+
+  * gosia (decision Sept/2025): vti files are not on git due to size; they can be downloaded from Zenodo (with links provided in docs)
+
+* Add molecular geometry (XYZ in Angstrom and CSV in Bohr) to `coordinates` 
 
 
