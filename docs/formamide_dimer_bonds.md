@@ -1,119 +1,157 @@
 # Description of hydrogen bonds in formamide dimer
 
-![fig:overview_h2o_h2o](screenshots/formamide_dimer_bonds/formamide_dimer_cover.jpg){width=250} | ![fig:overview_](screenshots/formamide_dimer_bonds/formamide_dimer_cover.jpg){width=250} 
-:---:|:---:
-|<div style="width:500px"><b>An automatic approach based on Topological Data Analysis extracts the structure and the bonding patterns in formamide dimer .......</b></div>|
+<div class="grid" markdown>
+
+![fig:overview_formamide_dimer](screenshots/formamide_dimer_bonds/formamide_dimer_cover.jpg)
+
+![fig:overview_formamide_dimer_diff](screenshots/formamide_dimer_bonds/formamide_dimer_cover.jpg)
+
+</div>
+
+<div style="font-size: 75%;"><b><i>
+WRITEME: An automatic approach based on Topological Data Analysis extracts the structure and the bonding patterns in water dimer as specific critical points (left plot: maxima and 2-saddles marked as dark-green and light-green points) and specific sub-sets of separatrices (right plot: red and blue curves represent low-persistence and high-persistence 1-separatrices between maxima and 2-saddles) of the Morse-Smale complex of the electron density scalar field of this molecular system. In the right plot, the colors and radii of spheres corresponding to atoms are based on topological information. 
+</i></b></div>
+
+---
 
 
 # Chemical context
 
 Formamide dimer is an example of hydrogen-bonded systems, in which the substantial contribution to the hydrogen bond (HB) is due to *orbital interactions*.
-We explore what can be learned from the analysis of its electron density (ED) and the electron localization function (ELF). We confront it with the "deformation density" plots for the total electron density and the density of the selected orbitals.
+Here, we analyze the electron density (ED, $\rho(\vec{r})$) and its derivatives, such as the reduced density gradient (RDG, $s(\vec{r})$) and the sign of the Laplacian of the ED (L2(ED), $sign(\lambda_2)\rho(\vec{r})$), of this dimer and two monomers. We confront it with the QTAIM picture and the so-called *"deformation density"* plots. In addition to the total electron density, we also explore the densities of the selected molecular orbitals.
 Specifically, we are interested in the description of charge transfer and polarization effects that are significant mechanisms for the hydrogen bond in this dimer.
+
+Formamide dimer has two HBs.... GOSIA-TODO:description+figure
+
+![fig:formamide_dimer_bonds_geom](screenshots/formamide_dimer_bonds/geom.png){width=50%}
 
 
 # Pipeline description
 
-TODO: adapt to ED, ESP,...
-This example illustrates the analysis of the electron density of the water dimer, which aims to describe and discern covalent bonds (O-H) and non-covalent interactions (O---H). First, the electron density (ED) is computed with the `DIRAC` software given the input atom configuration, followed by the generation of the VTI file and a subsequent topological analysis in the `TTK` software.
+All quantum chemistry calculations are done analytically in the `DIRAC` software. Exported scalar fields are then transformed to `VTI` files - one for each molecular system (i.e., the dimer and each monomer) and one for each demonstration (i.e., the total densities and those corresponding to selected molecular orbitals).
 
-The first step, which involves quantum chemistry calculations, is to compute the ED scalar field and export it on a 3D grid.
-
-The second step translates data exported from DIRAC in TXT to the VTI format favored by the TTK code. Simultaneously, it applies the resampling filter ("ResampleToImage") without changing the number of grid points or bounds.
-
-The final step involves analyzing the ED scalar field in the `TTK` software.
-
-The analysis starts with extracting all critical point pairs and one-dimensional separatrices of the Morse-Smale complex.
-In the next step, the features of chemical significance are selected, including maxima, 2-saddles, and a subset of separatrices that connect 2-saddles to maxima and do not touch the domain's boundary. 
-The intermolecular hydrogen bond can be easily isolated: the corresponding $2$-saddle is located outside the isosurface of ED, indicating a much lower density. Thus, saddle-maximum separatrices attached to $2$-saddles with a low density (typically, below $0.1$) are identified as non-covalent bonds (in red, right figure).
-The strength of bonds can be evaluated by the topological persistence of the critical point pair involving the $2$-saddle.
-Therefore, this analysis can be further refined, in particular by characterizing the importance of the atoms and the strength of the bonds.
-The figure above (right plot) also introduces a specific molecular representation: the density of each atom (i.e., its value at the maximum) is visualized with the radius and the color of the corresponding sphere, while covalent and non-covalent bonds are marked with curves of different colors.
-No persistence-driven topological simplification was applied to the electron density field at the input of the topological analysis pipeline. 
-
-
-The essential `TTK` filters employed in this analysis: `MorseSmaleComplex`.
-
-For more details on this analysis, please see the publication XXXXX. All data files generated in this analysis are on [zenodo](XXXXXXXXXXX). All links are [at the bottom of this page](#resources-and-additional-information).
+WRITEME
 
 
 ## Quantum chemistry calculations
 
 ### Setup
 
+The molecular structure of formamide dimer in its gas-phase equilibrium geometry was downloaded from the [S22 database](http://www.begdb.org/index.php?action=oneMolecule&state=show&id=82) and used in calculations without reoptimization. The geometries of monomers are as in the dimer.
 
-
-The molecular structure of water dimer in its gas-phase equilibrium geometry was downloaded from [S22 database](http://www.begdb.org/index.php?action=oneMolecule&state=show&id=82) and used in calculations without reoptimization.
-
-ED was calculated analytically in the development version of the `DIRAC` software (commit hash `4fc3ae6`) with the Dirac-Coulomb Hamiltonian, the B3LYP exchange-correlation functional, and the all-electron aug-cc-pVTZ basis set applied to all atoms. The density was exported on the cube grid of 256 points in each Cartesian direction using the default visualization options in `DIRAC`.
+All calculations were done analytically, using the development version of the `DIRAC` software (commit hash `XXXX`). The quantum chemistry model was based on the Levy-Leblond Hamiltonian, the B3LYP exchange-correlation functional, and the all-electron aug-cc-pVTZ basis set applied to all atoms. All molecular descriptors studied in this tutorial were exported on the rectilinear grid generated for the dimer, assuming the 0.05 a.u. grid resolution and the 2.0 a.u. margin (see `DIRAC` manual for the description of visualization options). The same grid was used for each monomer.
 
 
 ### `DIRAC` inputs
 
-* Molecular geometry of water dimer in XYZ format (in Angstrom): [2H2O.xyz](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/H2OH2O_ED_bonds/geom.xyz)
-* Input for a wave function optimization: [scf.inp](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/H2OH2O_ED_bonds/dirac/dc_b3lyp_def2tzvp/inputs/scf.inp) <<---RESTART!!
-* Input for calculations of the ED scalar field: [ed.inp]()
+* Molecular geometries in XYZ format (in Angstrom):
+    * of the dimer: [geom.xyz](../data/formamide_dimer/coordinates/geom.xyz)
+    * of the first monomer: [geom.xyz](../data/formamide_dimer/coordinates/geom.xyz)
+    * of the second monomer: [geom.xyz](../data/formamide_dimer/coordinates/geom.xyz)
+* Input for a wave function optimization: 
+    * of the dimer: [scf.inp](TODO)
+    * of each monomer: [scf.inp](TODO)
+* Input for calculations of scalar fields:
+    * of the dimer: [vis.inp](TODO)
+    * of each monomer: [vis.inp](TODO)
 
-### `DIRAC` outputs
+### Calculations
 
-* Files with exported elements of the ED scalar field and and its gradient on a grid in TXT format; these are also available on [zenodo](XXXXX)
-* `DIRAC` text output files, available in [the repository](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/dirac/dc_b3lyp_def2tzvp/outputs) and on [zenodo](https://zenodo.org/record/7446735#.Y8BlkNKE4XU).
-
-
-### Execution
-
-* Below, we assume that the `pam` script of `DIRAC` is available in `$PATH`.
+With the `pam` script of `DIRAC` available in `$PATH`, the calculations are done in two steps.
+For example, for the dimer:
 
 * Step 1. Wave function optimization:
 
 ```
-mol=2H2O.xyz
+mol=geom.xyz
 inp_scf=scf.inp
 pam --inp=$inp_scf --mol=$mol --outcmo
 ```
 
-* Step 2. Calculations and export of real-space densities,
+* Step 2. Calculations and export of real-space densities:
 
 ```
-mol=2H2O.xyz
-inp_vis=ed.inp
-pam --inp=$inp_vis --mol=$mol --put="DFCOEF.smb=DFCOEF TBMO PAMXVC" --get="plot.3d.vector=$vis.txt"
+mol=geom.xyz
+inp_vis=vis.inp
+pam --inp=$inp_vis --mol=$mol --incmo --get="ed*.h5 rdg.h5"
 ```
+
+See `DIRAC` manual for "Resources and additional information".
+This procedure should be repeated for each monomer, using dedicated inputs (as listed above).
+
+## Generation of VTI files
+
+We provide a script for reformatting HDF5 files exported from `DIRAC` into one VTI file used by `TTK`: [prep_vti.sh](../python/utils/prep_vti.sh).
+It needs an input file, which contains the names of HDF5 files that should be used; this is provided as [prep_vti.inp](../data/formamide_dimer/vti/super/prep_vti.inp) ADAPT
+
+Copy these two files to the directory containing HDF5 files exported from `DIRAC` and execute:
+
+```
+./prep_vti.sh 
+```
+
+Simultaneously, this applies the resampling filter ("ResampleToImage") without changing the number of grid points or the domain's bounds.
+We do this to change the type of input data from a 'point cloud data' to a 'uniform rectilinear grid data', which is optimal for TTK.
+
+The workflow demonstrated here is adapted to data organized into three folders - for the dimer ("supermolecule" in `data/vti/super`) and the two monomers ("subsystems", in `data/vti/sub1` and `data/vti/sub2`).
+
+All VTI files can also be downloaded from [Zenodo](https://zenodo.org/records/17223709).
+
 
 
 ## Topological Data Analysis
 
-### Inputs
+GOSIA/JULIEN-TODO: prepare pvsm and python scripts
 
-* The molecular geometry of water dimer in CSV format (in atomic units) is available in the [2H2O.csv](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/LiH.csv) file.
+To reproduce the images and to explore the TDA pipeline, use the [PVSM](pvsm/formamide_dimer_bonds/ed_rdg_led.pvsm) state file or the [PYTHON](python/formamide_dimer_bonds/ed_rdg_led.py) script:
 
-* ED-related data in VTI format:
+* create (see sections above) `VTI` files or download the tar and unpack it to the `data/formamide_dimer/vti` directory; the data is organized into three folders - one for the dimer (as [super/start_data_ed_rdg_led.vti](`data/formamide_dimer/vti/super/start_data_ed_rdg_led.vti`)) and two for the two monomers (as [sub1/start_data_ed_rdg_led.vti](`data/formamide_dimer/vti/sub1/start_data_ed_rdg_led.vti`) and [sub2/start_data_ed_rdg_led.vti](`data/formamide_dimer/vti/sub2/start_data_ed_rdg_led.vti`)) 
 
-    * `start_data_ed.vti` file in [the repository](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/data/LiH_MICD/vti/start_data_omega_bz.vti) and on [zenodo](https://zenodo.org/record/7446735#.Y8E2dtKZNhF); data description:
-        * `ED` - corresponds to the electron density of water dimer
+* go to the root directory of this repository ([here](../)) and enter the following command:
 
+GOSIA-draft 1: working on the scatterplot, f(ED) vs. f(RDG) for the dimer:
 
-### Outputs
-
-* The `Paraview` state files and all other files enabling the reproduction of the above screenshot and all images attached to the companion publication are in [the repository](https://github.com/tda-qchem/tda-qchem-explorations/tree/main/pvsm).
-
-
-### ParaView
-
-To reproduce the images and to explore the TDA pipeline, go to the root directory of [this repository](https://github.com/tda-qchem/tda-qchem-explorations) and enter the following command:
-
-``` bash
-paraview --state=pvsm/H2OH2O_ED_bonds.pvsm
 ```
+paraview --state=pvsm/formamide_dimer_bonds/ed_rdg_led.pvsm
+```
+
+GOSIA-draft 2: exploring the ED difference, ED(super)-ED(sub1)-ED(sub2):
+
+```
+paraview --state=pvsm/formamide_dimer_bonds/ed_difference.pvsm
+```
+
+GOSIA-draft 3: comparing ED(super) with f=ED(sub1)+ED(sub2):
+
+```
+paraview --state=pvsm/formamide_dimer_bonds/ed_and_edsubsum.pvsm
+```
+
+
+
+or run the python script (TODO later?):
+
+```
+pvpython python/formamide_dimer_bonds/ed_rdg_led.py
+```
+
+These scripts also import input atomic coordinates (in a.u.), which are in the [`geom.csv`](`data/formamide_dimer/coordinates/geom.csv`) file.
+
+
 
 ## Resources and additional information
 
 * [Prerequisites](https://tda-qchem.github.io/tda-qchem-examples/)
 * [DIRAC](http://www.diracprogram.org/)
+* useful `DIRAC` tutorials:
+    * [links](XXXX).
 * [TTK](https://topology-tool-kit.github.io/)
+* useful `TTK` tutorials:
+    * [Molecule1](https://topology-tool-kit.github.io/examples/interactionSites/)
+    * [Molecule2](https://topology-tool-kit.github.io/examples/morseMolecule/)
+    * [Bivariate analysis](https://topology-tool-kit.github.io/examples/builtInExample2/)
 * [qcten](TODO)
 
-* The calculations and export of the electron density are also discusssed in [the official DIRAC tutorial](XXXX).
 
 
 
