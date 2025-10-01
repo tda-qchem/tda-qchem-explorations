@@ -139,20 +139,3 @@ These scripts also import input atomic coordinates (in a.u.), which are in the [
 
 
 
-## Resources and additional information
-
-* [Prerequisites](https://tda-qchem.github.io/tda-qchem-examples/)
-* [DIRAC](http://www.diracprogram.org/)
-* useful `DIRAC` tutorials:
-    * [links](XXXX).
-* [TTK](https://topology-tool-kit.github.io/)
-* useful `TTK` tutorials:
-    * [Molecule1](https://topology-tool-kit.github.io/examples/interactionSites/)
-    * [Molecule2](https://topology-tool-kit.github.io/examples/morseMolecule/)
-    * [Bivariate analysis](https://topology-tool-kit.github.io/examples/builtInExample2/)
-* [qcten](TODO)
-
-
-
-
-
