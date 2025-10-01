@@ -15,6 +15,7 @@ This website also contains:
 * A list of molecular functions studied in all examples (with the notation and analytical formulas): [link](definitions.md)
 * A short description of quantum chemistry and data models used in all calculations: [link](qc_models.md)
 * A short description of representations and color coding used in all figures: [link](topo_models.md)
+* A list of computer codes and other resources used in all examples: [link](codes.md)
 
 How to cite this website:
 
