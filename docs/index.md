@@ -43,7 +43,8 @@ Summary and work progress: [LINK-TODO](XXXX)
 | Name | Screenshot |
 |:-:|:-:|
 |[The magnetically-induced current density in LiH molecule studied with the Omega function](LiH_MICD/)|![ExampleImage](screenshots/LiH_MICD/repImageGray.png){width=200}|
-|[Exploring the potential energy surface of water hexamer through its electron density: chemical bond robustness under molecular vibrations](water_clusters_isomers_robustness.md)|![ExampleImage](screenshots/water_clusters_isomers_robustness/bondStabilityPaper_teaser_composed.jpg)|
+|[Exploring the potential energy surface of water hexamer through its electron density: chemical bond robustness under molecular vibrations](water_clusters_W6_isomers_vibrations.md)|![ExampleImage](screenshots/water_clusters_W6_isomers_vibrations/bondStabilityPaper_teaser_composed.jpg)|
+|[Exploring the tunneling effects in water hexamer](water_hexamer_isomers_tunneling.md)|![ExampleImage](screenshots/water_hexamer_isomers_tunneling/bondStabilityPaper_teaser_composed.jpg)|
 
 
 ## Unpublished, WIP

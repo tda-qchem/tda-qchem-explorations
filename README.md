@@ -37,6 +37,7 @@ mkdocs serve
 ```
 conda create -n mkdocs mkdocs mkdocs-material mkdocs-video
 conda activate mkdocs
+pip install mkdocs-site-urls
 ```
 
 ### Data
