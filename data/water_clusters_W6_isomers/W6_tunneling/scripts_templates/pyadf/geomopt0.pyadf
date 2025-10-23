@@ -1,0 +1,44 @@
+#
+import numpy
+import os
+from pathlib import Path
+
+from pyadf import *
+if 'pyadfenv' not in globals():
+    from pyadf.Initialization import *
+
+results_dir=pyadfenv.outdir
+
+# 1. molecular data:
+geometries_dir = pyadfenv.outdir
+file_mol  = os.path.join(geometries_dir, 'MOLFILENAME_THIS')
+
+m_mol  = molecule(file_mol)
+m_mol.set_charge(MOLCHARGE_THIS)
+m_mol.set_symmetry('NOSYM')
+
+print(m_mol.print_coordinates())
+
+# 2. general settings for ADF job
+
+settings = adfsettings(zlmfit=True)
+settings.set_ZORA('scalar ZORA')
+settings.set_unrestricted('UNRESTRICTED_THIS')
+settings.set_noncollinear('NONCOLLINEAR_THIS')
+basis_set = 'DZP'
+settings.set_functional('PBE')
+settings.set_dispersion('Grimme4')
+settings.ncycles=1000                     
+settings.set_integration(accint=4.0)
+settings.set_dependency(True)
+settings.set_exactdensity(True)
+settings.set_save_tapes([21,10,41])
+settings.set_occupations(['KEEPORBITALS '+str(settings.ncycles)])
+gen_sym_opts = ['NOSYM', 'NOSYMFIT', 'NUCLEARMODEL gaussian', 'TOTALENERGY', 'NumericalQuality basic']
+
+# 3. run geometry optimization
+geom_settings = adfgeometrysettings(iterations=150, converge={'Gradients': '1e-3'})
+result_geom = adfgeometryjob(m_mol, basis_set, core='Large', settings=settings, geometrysettings=geom_settings).run()
+
+m_mol_final = result_geom.get_molecule()
+m_mol_final.write(os.path.join(results_dir, 'molecule_optimized_0.xyz'))

@@ -1,9 +1,4 @@
-# Exploring the potential energy surface of water hexamer through its electron density: chemical bond robustness under molecular vibrations
-
-| ![figure.png](screenshots/water_clusters_W6_isomers_vibrations/bondStabilityPaper_teaser_composed.jpg) {width=500}|
-|:-:|
-|<div style="width:500px"><b>Caption</b></div>|
-
+# Exploring the robustness of hydrogen bonds in isomers of water hexamer under molecular vibrations
 
 <div class="grid" markdown>
 
@@ -47,9 +42,9 @@ The initial molecular structures of four isomers of W6 (precisely, ring, prism, 
 were taken from the literature. The first step involved the geometry optimization and frequency calculations. The latter confirmed that the optimized geometries correspond to the ground electronic state, and yielded a set of $3N_{at} - 6$ = 48 normal modes for each isomer.
 Secondly, for each normal mode of each isomer, we generated 20 (an arbitrary value) structures by distorting the equilibrium structure in $+\vec{v}$ and $-\vec{v}$ directions, where $\vec{v}$ represents a normal mode vector. This led to 21 geometries in total (including the equilibrium geometry). The extreme displacements of nuclei were calculated assuming the classical turing point (in a simple harmonic model of vibrations) multiplied by 4 (an arbitrary value). 
 
-All calculations were done in the AMS software using PyADF and in-house scripts (available [here](../data/water_clusters_W6_isomers)), using the non-relativistic Hamiltonian, the DFT method with the PBE0 functional, and the TZ2P basis set.
+All calculations were done in the AMS software using PyADF and in-house scripts (available [in `data` directory](../data/water_clusters_W6_isomers)), using the non-relativistic Hamiltonian, the DFT method with the PBE0 functional, and the TZ2P basis set.
 
-The vibrations of all isomers can be explored in a Jupyter notebook (also available [here](../data/water_clusters_W6_isomers)). The gif below presents one of the selected modes: 
+The vibrations of all isomers can be explored in a Jupyter notebook (also available [in `data` directory](../data/water_clusters_W6_isomers)). The gif below presents one of the selected modes: 
 
 ![type:video](./videos/water_clusters_W6_isomers_vibrations/W6_prism_mp2_mode_20.mp4)
 

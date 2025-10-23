@@ -1,0 +1,58 @@
+#
+import numpy
+import os
+from pathlib import Path
+
+from pyadf import *
+if 'pyadfenv' not in globals():
+    from pyadf.Initialization import *
+
+results_dir=pyadfenv.outdir
+
+# 1. molecular data:
+geometries_dir = pyadfenv.outdir
+file_mol_n  = os.path.join(geometries_dir, 'MOLFILENAME_THIS')
+file_mol_o  = os.path.join(geometries_dir, 'molecule_optimized_0.xyz')
+if os.path.exists(file_mol_o):
+    file_mol = file_mol_o
+else:
+    file_mol = file_mol_n
+
+m_mol  = molecule(file_mol)
+m_mol.set_charge(MOLCHARGE_THIS)
+m_mol.set_symmetry('NOSYM')
+
+print(m_mol.print_coordinates())
+
+# 2. general settings for ADF job
+settings = adfsettings(zlmfit=True)
+settings.set_ZORA('HAMILTONIAN_THIS')
+settings.set_unrestricted('UNRESTRICTED_THIS')
+settings.set_noncollinear('NONCOLLINEAR_THIS')
+basis_set = 'BASISSET_THIS'
+settings.set_functional('DFTFUN_THIS')
+settings.set_dispersion('Grimme4')
+settings.ncycles=1000                     
+settings.set_integration(accint=6.0, becke='Good')
+settings.set_dependency(True)
+settings.set_exactdensity(True)
+settings.set_save_tapes([21,10,41])
+settings.set_occupations(['KEEPORBITALS '+str(settings.ncycles)])
+gen_sym_opts = ['NOSYM', 'NOSYMFIT', 'NUCLEARMODEL gaussian', 'TOTALENERGY', 'NumericalQuality Good']
+
+# 3. run geometry optimization
+geom_settings = adfgeometrysettings(iterations=200, converge={'Gradients': '1e-4'})
+result_geom = adfgeometryjob(m_mol, basis_set, settings=settings, geometrysettings=geom_settings).run()
+
+m_mol_final = result_geom.get_molecule()
+m_mol_final.write(os.path.join(results_dir, 'molecule_optimized.xyz'))
+
+# check vibrational frequencies and save them
+result_freq = adffreqjob(m_mol_final, basis_set, settings=settings, geometrysettings=geom_settings).run()
+
+freqs = result_freq.get_frequencies()
+modes_c = result_freq.get_normalmodes_c()
+
+numpy.savetxt(os.path.join(results_dir, 'freqs.txt'), freqs)
+numpy.savetxt(os.path.join(results_dir, 'modes.txt'), modes_c)
+

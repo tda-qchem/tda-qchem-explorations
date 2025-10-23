@@ -1,0 +1,1 @@
+COPIED FROM:  /net/pr2/projects/plgrid/plggqcembed/gosia-storage/STORAGE_from_home/projects/water_clusters_explorations/single_calculations/W6_geoms_selected_litgeoms_refined/explorations_rs_trajectories/W6_cage_mp2/nonrel/PBE0/TZ2P/gridspacing0.05/normal_modes_tracking/generated_structures/summary

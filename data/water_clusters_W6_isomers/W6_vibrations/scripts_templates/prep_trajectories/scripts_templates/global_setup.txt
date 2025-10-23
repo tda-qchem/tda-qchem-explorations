@@ -1,0 +1,8 @@
+molname=MOLNAME_THIS
+gridspacing=GRIDSPACING_THIS
+epsilon=1.5 
+Ntest=NTEST_THIS
+# dx, dy, dz is the grid resolution - by default should be in Angstrom
+dx=DX_THIS
+dy=DY_THIS
+dz=DZ_THIS

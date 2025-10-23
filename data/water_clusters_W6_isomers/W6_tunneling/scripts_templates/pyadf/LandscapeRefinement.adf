@@ -1,0 +1,15 @@
+PESExploration
+   Job LandscapeRefinement
+   DynamicSeedStates No
+   Optimizer
+      MaxIterations 500
+   End
+End
+
+Task PESExploration
+
+SYSTEMBLOCK_THIS
+
+Engine DFTB
+  useSymmetry No
+EndEngine

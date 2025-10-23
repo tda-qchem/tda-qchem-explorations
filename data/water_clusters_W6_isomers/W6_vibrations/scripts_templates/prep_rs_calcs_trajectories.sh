@@ -1,0 +1,72 @@
+#!/bin/bash
+
+preamble
+
+calc_dir=$exec_rs_traj
+
+for mf in $geom_dir/*.xyz
+do
+  tmpg=$(basename $mf)
+  m=${tmpg%.*}
+  for h in "${ham[@]}"
+  do
+    for f in "${fun[@]}"
+    do
+      for b in "${bas[@]}"
+      do
+        hh=$(echo $h | tr -d ' ')
+        n=$m'/'$hh'/'$f'/'$b
+
+        unr="False"
+        ncl="False"
+        if [ "$hh" == "spinorbitZORA" ]; then
+          unr="True"
+          ncl="True"
+        fi
+
+        wrkdir_parent=$calc_dir/$n/gridspacing$gridspacing/normal_modes_tracking
+
+        jobname=rho_bnp
+        coordir=$wrkdir_parent/generated_structures/summary
+
+        for mode in $coordir/*
+        do
+          cd $mode
+          mode_base=$(basename ${mode})
+          for coor in coordinates/*.xyz
+          do
+            tmp=$(basename ${coor})
+            coor_mol=${tmp%.*}
+
+            wrkdir=$wrkdir_parent/calculations/$jobname/$mode_base/$coor_mol
+            data_dir=$wrkdir
+            mkdir -p $wrkdir
+
+            cp $coor                           $wrkdir/
+            cp $src_dir/pyadf/$jobname.pyadf   $wrkdir/
+            cp $src_dir/pyadf/run_$jobname.sh  $wrkdir/
+
+            sed -i "s@DATADIR_THIS@$data_dir@g" $wrkdir/$jobname.pyadf
+            sed -i "s@DATADIR_THIS@$data_dir@g" $wrkdir/run_$jobname.sh
+            sed -i "s@MOLFILENAME_THIS@$tmp@g"  $wrkdir/$jobname.pyadf
+            sed -i "s@MOLCHARGE_THIS@0@g"       $wrkdir/$jobname.pyadf
+            if [ "$h" != "nonrel" ]; then
+              sed -i "s@HAMILTONIAN_THIS@$h@g"    $wrkdir/$jobname.pyadf
+              sed -i "s@UNRESTRICTED_THIS@$unr@g" $wrkdir/$jobname.pyadf
+              sed -i "s@NONCOLLINEAR_THIS@$ncl@g" $wrkdir/$jobname.pyadf
+            else
+              sed -i "/HAMILTONIAN_THIS/d"    $wrkdir/$jobname.pyadf
+              sed -i "/UNRESTRICTED_THIS/d"    $wrkdir/$jobname.pyadf
+              sed -i "/NONCOLLINEAR_THIS/d"    $wrkdir/$jobname.pyadf
+            fi
+            sed -i "s@DFTFUN_THIS@$f@g"         $wrkdir/$jobname.pyadf
+            sed -i "s@BASISSET_THIS@$b@g"       $wrkdir/$jobname.pyadf
+            sed -i "s@GRIDSPACING_THIS@$gridspacing@g"  $wrkdir/$jobname.pyadf
+
+          done
+          cd $here
+        done
+      done
+    done
+  done
+done

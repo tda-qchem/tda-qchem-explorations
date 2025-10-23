@@ -1,0 +1,20 @@
+# general info:
+--ttk_task=start
+#
+# info about input files (from qchem calculations):
+--finp=dens_cgrid.csv
+--prep=True
+--varnames=rho
+--nr_header_lines=2
+--npoints=nx,ny,nz
+--sep=
+#
+--finp=bnp_cgrid.csv
+--prep=True
+--varnames=bnp
+--nr_header_lines=2
+--npoints=nx,ny,nz
+--sep=
+#
+# info about output files from TTK analysis:
+--fout_num=start_data.vti

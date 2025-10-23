@@ -1,0 +1,52 @@
+#
+import numpy
+import os
+from pathlib import Path
+
+from pyadf import *
+if 'pyadfenv' not in globals():
+    from pyadf.Initialization import *
+
+results_dir=pyadfenv.outdir
+
+# 1. molecular data
+geometries_dir = pyadfenv.outdir
+file_mol  = os.path.join(geometries_dir, 'MOLFILENAME_THIS')
+
+m_mol  = molecule(file_mol)
+m_mol.set_charge(MOLCHARGE_THIS)
+m_mol.set_symmetry('NOSYM')
+
+print(m_mol.print_coordinates())
+
+# 2. general settings for ADF job
+settings = adfsettings(zlmfit=True)
+settings.set_ZORA('HAMILTONIAN_THIS')
+settings.set_unrestricted('UNRESTRICTED_THIS')
+settings.set_noncollinear('NONCOLLINEAR_THIS')
+basis_set = 'BASISSET_THIS'
+settings.set_functional('DFTFUN_THIS')
+settings.set_dispersion('Grimme4')
+settings.ncycles=1000                     
+settings.set_integration(accint=6.0, becke='Good')
+settings.set_dependency(True)
+settings.set_exactdensity(True)
+settings.set_save_tapes([21,10,41])
+settings.set_occupations(['KEEPORBITALS '+str(settings.ncycles)])
+gen_sym_opts = ['NOSYM', 'NOSYMFIT', 'NUCLEARMODEL gaussian', 'TOTALENERGY', 'NumericalQuality Good']
+
+# 3. run SCF
+r_mol  = adfsinglepointjob(m_mol,  basis_set, settings=settings, options=gen_sym_opts).run()
+
+# 4. export quantity on a numerical grid
+# regular grid
+cgrid = cubegrid(r_mol.get_molecule(), spacing=GRIDSPACING_THIS, border=2.0)
+gridinfo=cgrid.get_grid_block(True)
+print(gridinfo)
+
+dens_cgrid = r_mol.get_density(grid=cgrid)
+dens_cgrid.get_xyzvfile(os.path.join(results_dir, 'dens_cgrid.csv'))
+
+bnp_cgrid = r_mol.get_potential(grid=cgrid, pot='nuc')
+bnp_cgrid.get_xyzvfile(os.path.join(results_dir, 'bnp_cgrid.csv'))
+
