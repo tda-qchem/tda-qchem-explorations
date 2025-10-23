@@ -3,7 +3,7 @@
 
 * [Prerequisites](https://tda-qchem.github.io/tda-qchem-examples/)
 
-Quantum chemistry codes:
+Quantum chemistry software:
 
 * [`DIRAC`](http://www.diracprogram.org/)
     * [`DIRAC` tutorials](link)
@@ -22,8 +22,14 @@ Quantum chemistry codes:
     * literature: [@pracht.etal_jcp_2024]
 * [ROSE]()
     * literature: [@
+
+Additional scripts:
+
 * [DensToolKit](https://github.com/jmsolano/denstoolkit)
     * literature: [@solano-altamirano.hernandez-perez_cpc_2015,@solano-altamirano.etal_tjocp_2024]
+
+* [molden2aim.x](https://github.com/zorkzou/Molden2AIM.git)
+
 
 Topological Data Analysis software:
 
