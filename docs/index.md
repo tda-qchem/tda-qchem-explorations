@@ -52,6 +52,7 @@ Summary and work progress: [LINK-TODO](XXXX)
 | Name | Screenshot |
 |:-:|:-:|
 |[Description of covalent and hydrogen bonds in water dimer](water_dimer_bonds)|![ExampleImage](screenshots/water_dimer_bonds/cover.jpg){width=200}|
+|[Description of covalent bonds in small hydrocarbons from the perspective of electron localization function](small_hydrocarbons_bonds_elf_lol)|![ExampleImage](screenshots/small_hydrocarbons_bonds_elf_lol/cover.jpg){width=200}|
 
 
 
