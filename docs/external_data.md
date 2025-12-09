@@ -3,6 +3,7 @@
 
 ## Single use cases
 
+<!--ED and derivatives-->
 * [water molecule: ED and its derivatives](
 * [benzene molecule: ED](zenodo...)
 * [C5H6ON2: ED](zenodo...)
@@ -19,16 +20,23 @@
 * [AtAt---NH3 dimer: ED and MESP]()
 
 
+<!--localization functions-->
 <!--project:simple_hydrocarbons-->
 * [C2H2, C2H4, C2H6: ELF, LOL, MagGradLOL, MagLED](https://zenodo.org/records/17712356)
 <!--project:ammonia_boranes-->
-* [BH3NH3: ELF, LOL, MagGradLOL, MagLED](https://zenodo.org/records/17731640)
+* [BH3NH3: ELF, LOL](https://zenodo.org/records/17731640)
 <!--project:benzene-->
-[Benzene (C6H6): ELF, LOL, MagGradLOL, MagLED](https://zenodo.org/records/17737610)
+[Benzene (C6H6): ELF, LOL](https://zenodo.org/records/17737610)
 <!--project:cyclobutadiene_c4h4-->
-* [Cyclobutadiene (C4H4): ELF, LOL, MagGradLOL, MagLED](https://zenodo.org/records/17733251)
+* [Cyclobutadiene (C4H4): ELF, LOL](https://zenodo.org/records/17733251)
 <!--project:ferrocene-->
 * [ferrocene: ELF, LOL](https://zenodo.org/records/17758976)
+<!--project:diatomic_molecules-->
+
+
+<!--symmetry breaking-->
+<!--project:cyclobutadiene_c4h4-->
+* [Cyclobutadiene (C4H4): wip]()
 
 
 ## Molecular sets and databases
@@ -42,6 +50,10 @@
 * [nucleobases and base pairs: ED](https://zenodo.org/records/17638256)
 
 
+<!--localization functions-->
+<!--project:diatomic_molecules-->
+* [N2 (dissociation): ELF, LOL](https://zenodo.org/records/17868130)
+* [NH3 (umbrella inversion): ELF, LOL](zenodo...)
 
 
 
